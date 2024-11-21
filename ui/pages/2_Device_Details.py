@@ -200,6 +200,21 @@ def show_device_details(mac_addr):
 
     st.divider()
 
+    # todo Jakaria: implement on device activity
+
+    st.markdown('<span style="color:red"> ** New feature</span>', unsafe_allow_html=True)
+    st.markdown('#### Activity: What is this device doing?')
+    st.caption(f'What are the possible activities over the {time_range_str.lower()}:')
+
+    show_activities_table(
+        mac_addr,
+        last_n_seconds=time_range,
+        group_by_col=group_by_col,
+        show_empty=show_empty
+    )
+
+    st.divider()
+
     return
 
 
@@ -277,6 +292,26 @@ def show_activity_graph(mac_addr, last_n_seconds=20, group_by_col='reg_domain', 
         )
         with column:
             st.plotly_chart(fig, use_container_width=True)
+
+
+# todo Jakaria: implement the activity tracker table 
+def show_activities_table(mac_addr, last_n_seconds=20, group_by_col='reg_domain', show_empty=True):
+
+    try:
+        data_df = deferred_action.execute(
+            func=traffic_rate.get_data_usage,
+            args=(mac_addr, last_n_seconds, group_by_col, show_empty),
+            ttl=5
+        )
+    except deferred_action.NoResultYet as pending_job_count:
+        show_pending_job_count(pending_job_count)
+        return
+
+    row_widths = [0.3, 0.25, 0.25, 0.2]
+
+    # Row header
+    cols = st.columns(row_widths)
+    st.caption(f'Number of elements: {len(data_df)}')
 
 
 def show_data_usage_table(mac_addr, last_n_seconds=20, group_by_col='reg_domain', show_empty=True):
@@ -429,6 +464,6 @@ with st.empty():
 # Auto-refresh
 if 'page_auto_refresh' in st.session_state and st.session_state['page_auto_refresh']:
     time.sleep(4)
-    st.experimental_rerun()
+    st.rerun()
 
 

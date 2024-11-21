@@ -18,6 +18,73 @@ COLORS = ['#bf2c1c', '#2e1591', '#ea09d0', '#56db39', '#ddd14b', '#cec10c', '#68
 
 
 
+# Created by Jakaria 
+# Description: following function query the hostname table and returns the entire table
+
+@st.cache_data(ttl=5, show_spinner=False)
+def get_hostname_list():
+    """Returns a list of all device names, IP addresses, and MAC addresses."""
+
+    hostname_list = []
+
+    with model.db:
+
+        query = model.Hostname.select() \
+            .where(model.Hostname.ip_addr != "")
+
+        for hostname in query:
+
+            hostname_list.append('{} | {} | {} | {} | {} | {}'.format(
+                hostname.device_mac_addr,
+                hostname.hostname,
+                hostname.ip_addr,
+                hostname.reg_domain, 
+                hostname.is_advertising, 
+                hostname.data_source
+            ))
+
+    return hostname_list
+
+
+# Created by Jakaria 
+# Description: following function query the hostname and device tables and
+# returns the entire hostname table with product name from device table
+
+@st.cache_data(ttl=5, show_spinner=False)
+def get_hostname_device_list():
+    """Returns a list of all device names, IP addresses, and MAC addresses with device name."""
+
+    hostname_list = []
+
+    with model.db:
+
+        # Join Hostname with Device table on device_mac_addr to get the device name
+        query = (model.Hostname
+                 .select(
+                     model.Hostname.device_mac_addr,
+                     model.Hostname.hostname,
+                     model.Hostname.ip_addr,
+                     model.Hostname.reg_domain,
+                     model.Hostname.is_advertising,
+                     model.Hostname.data_source,
+                     model.Device.product_name
+                 )
+                 .join(model.Device, on=(model.Hostname.device_mac_addr == model.Device.mac_addr))
+                 .where(model.Hostname.ip_addr != ""))
+
+        for hostname in query:
+            # Access device's product_name through the joined Device model
+            device_name = hostname.device.product_name
+
+            hostname_list.append(
+                f"{hostname.device_mac_addr} | {hostname.hostname} | {hostname.ip_addr} | "
+                f"{hostname.reg_domain} | {hostname.is_advertising} | {hostname.data_source} | "
+                f"{device_name}"
+            )
+
+    return hostname_list
+
+
 @st.cache_data(ttl=2, show_spinner=False)
 def get_device_list():
     """Returns a list of all device names, IP addresses, and MAC addresses."""
@@ -117,8 +184,27 @@ def main():
     with st.empty():
         st.info('You have reached the bottom of the list.')
 
+    # Edited by Jakaria 
+    # Added to show activity over time
+
+    st.markdown('<span style="color:red"> ** New feature</span>', unsafe_allow_html=True)
+    st.markdown('#### Activity: What are the devices doing?')
+    st.caption(f'What are the possible activities over time')
+
+    # uncomment to show the list
+    show_list_of_hostnames()
+
+    st.divider()
+
     return
 
+def show_list_of_hostnames():
+    hostname_list = get_hostname_device_list()
+
+    for hostname in hostname_list:
+        st.markdown(hostname)
+
+    st.info('You have reached the bottom of the list.')
 
 
 def show_pending_job_count(pending_job_count):
@@ -365,6 +451,6 @@ main()
 # Auto-refresh
 if 'page_auto_refresh' in st.session_state and st.session_state['page_auto_refresh']:
     time.sleep(4)
-    st.experimental_rerun()
+    st.rerun()
 
 

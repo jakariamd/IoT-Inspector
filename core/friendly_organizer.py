@@ -15,6 +15,7 @@ import geoip2.database
 import functools
 import tldextract
 import json
+import ipaddress
 
 
 ip_country_parser = geoip2.database.Reader(
@@ -113,6 +114,11 @@ def get_hostname_from_ip_addr(ip_addr: str, in_memory_only=False) -> str:
     """
     if networking.is_private_ip_addr(ip_addr):
         return '(local network)'
+
+    # Note: Jakaria added code block for multicast ip checking
+    # Note: consult Danny
+    if ipaddress.ip_address(ip_addr).is_multicast:
+        return '(multicast)'
 
     # Ask the in-memory cache
     try:

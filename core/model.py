@@ -92,6 +92,9 @@ class Hostname(BaseModel):
     is_advertising = IntegerField(default=0)
     data_source = TextField(default="")
 
+    # todo [Jakaria] we need to include the (epoch)time information here 
+    # use case: given an IP address, we want to know the hostname (can be different based on access time)
+
 
 class FriendlyIdentity(BaseModel):
 
