@@ -675,57 +675,14 @@ def write_pending_burst_to_db(flow_key, pop_time, pop_burst):
     # todo: check datafrme before storing
     # todo: store data to somewhere
     # todo: debug Error processing packet: dictionary changed size during iteration
+    # make the dictionary operation lock safe
 
     common.log(f'[Writing Feature]: {flow_key} \t {pop_time} \t {d}')
 
     return
 
 
-
-
-# # todo now: hostname = dst_hostname.lower() or dst_hostname.lower()
-
-#     # Note: Key is different from IoT Inspector: inspector use different sets of 7 elements, different order
-#     # Save the flow into a temporary flow queue
-    
-#     flow_key = (ip_proto, src_ip_addr, src_port, dst_ip_addr, dst_port, src_mac_addr)
-#     hostname = dst_hostname.lower()
-
-#     #  check if local packet or incoming packet 
-#     if ipaddress.ip_address(dst_ip_addr).is_private and ipaddress.ip_address(src_ip_addr).is_private == False: # incoming packet 
-#         flow_key = (ip_proto, dst_ip_addr, dst_port, src_ip_addr, src_port, dst_mac_addr)
-#         hostname = src_hostname.lower()
-
-#     if ipaddress.ip_address(dst_ip_addr).is_private and ipaddress.ip_address(src_ip_addr).is_private: # incoming local packet
-#         if ipaddress.ip_address(dst_ip_addr) > ipaddress.ip_address(src_ip_addr):
-#             flow_key = (ip_proto, dst_ip_addr, dst_port, src_ip_addr, src_port, dst_mac_addr)
-#             hostname = src_hostname.lower()
-
-
-#     # get the start time for the burst
-
-#     burst_start_time = burst_dict_start_time.setdefault(flow_key, time_epoch)  
-
-#     # update burst packets 
-#     if (time_epoch - burst_start_time) > BURST_WRITE_INTERVAL:
-#         # clean temp dicts 
-#         pop_time = burst_dict_start_time.pop(flow_key, 0)
-#         pop_burst = burst_dict_all_burst.pop((flow_key, burst_start_time), [])
-#         # writing burst in file/db
-#         write_pending_burst_to_db(flow_key, pop_time, pop_burst)
-#         # common.log(f'[Writing Burst]: {flow_key} \t {pop_time} \t {pop_burst}')
-
-
-#     burst_dict_all_burst.setdefault((flow_key, burst_start_time), []).append([time_epoch, frame_len, _ws_protocol, hostname, ip_proto, src_ip_addr, src_port, dst_ip_addr, dst_port, src_mac_addr])
-
-#     for key in burst_dict_all_burst:
-#         if (time_epoch - key[1]) > BURST_WRITE_INTERVAL:
-#             # clean temp dicts 
-#             pop_time = burst_dict_start_time.pop(key[0], 0)
-#             pop_burst = burst_dict_all_burst.pop((key[0], key[1]), [])
-#             # writing burst in file/db
-#             write_pending_burst_to_db(key[0], pop_time, pop_burst)
-#             # common.log(f'[Writing Burst]: {key[0]} \t {pop_time} \t {pop_burst}')
-
-#     # common.log('[Burst Update]: ' + str(flow_key) + str(burst_start_time) + str(burst_dict_all_burst))
-
+def store_burst_in_db(data):
+    # store data 
+    # make to lock safe
+    return
