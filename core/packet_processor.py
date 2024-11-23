@@ -426,6 +426,7 @@ def process_burst(pkt):
     try:
         highest_layer = pkt.lastlayer()
         _ws_protocol = getattr(highest_layer, 'name', str(highest_layer))
+        # todo: check if highest layer captures the TLS versions; for now it is not 
     except: 
         _ws_protocol = protocol
     
@@ -521,6 +522,7 @@ def process_burst(pkt):
     return 
     
 
+# define the expected features of a burst 
 cols_feat = [ "meanBytes", "minBytes", "maxBytes", "medAbsDev",
              "skewLength", "kurtosisLength", "meanTBP", "varTBP", "medianTBP", "kurtosisTBP",
              "skewTBP", "network_total", "network_in", "network_out", "network_external", "network_local",
