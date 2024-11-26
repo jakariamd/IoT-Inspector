@@ -61,3 +61,8 @@ DEVICE_INSIGHTS_URL = INSPECTOR_DATA_DONATION_SERVER + '/get_product_name'
 USER_KEY_URL = INSPECTOR_DATA_DONATION_SERVER + '/get_user_key'
 DELETE_DATA_URL = INSPECTOR_DATA_DONATION_SERVER + '/delete_donated_data'
 
+
+# Note: Jakaria added the following variables 
+
+# A queue that holds processed burst (fratures) for prediction
+burst_queue = queue.Queue()

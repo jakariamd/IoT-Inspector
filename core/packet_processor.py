@@ -505,7 +505,7 @@ def process_burst(pkt):
         pop_burst = burst_dict_all_burst.pop((flow_key, burst_start_time), [])  # list if packets
 
         # writing burst in file/db
-        write_pending_burst_to_db(flow_key, pop_time, pop_burst)
+        process_pending_burst(flow_key, pop_time, pop_burst)
 
     # append the current packet with burst packets 
     burst_dict_all_burst.setdefault((flow_key, burst_start_time), []).append([time_epoch, frame_len, _ws_protocol, hostname, ip_proto, src_ip_addr, src_port, dst_ip_addr, dst_port, dst_mac_addr])
@@ -518,24 +518,23 @@ def process_burst(pkt):
             pop_burst = burst_dict_all_burst.pop((key[0], key[1]), [])
 
             # writing burst in file/db
-            write_pending_burst_to_db(key[0], pop_time, pop_burst)
+            process_pending_burst(key[0], pop_time, pop_burst)
     return 
     
 
-# define the expected features of a burst 
-cols_feat = [ "meanBytes", "minBytes", "maxBytes", "medAbsDev",
-             "skewLength", "kurtosisLength", "meanTBP", "varTBP", "medianTBP", "kurtosisTBP",
-             "skewTBP", "network_total", "network_in", "network_out", "network_external", "network_local",
-            "network_in_local", "network_out_local", "meanBytes_out_external",
-            "meanBytes_in_external", "meanBytes_out_local", "meanBytes_in_local", "device", "state", "event", "start_time", "protocol", "hosts"]
+# # define the expected features of a burst 
+# cols_feat = [ "meanBytes", "minBytes", "maxBytes", "medAbsDev",
+#              "skewLength", "kurtosisLength", "meanTBP", "varTBP", "medianTBP", "kurtosisTBP",
+#              "skewTBP", "network_total", "network_in", "network_out", "network_external", "network_local",
+#             "network_in_local", "network_out_local", "meanBytes_out_external",
+#             "meanBytes_in_external", "meanBytes_out_local", "meanBytes_in_local", "device", "state", "event", "start_time", "protocol", "hosts"]
 
 
-# todo: define the finction
-def write_pending_burst_to_db(flow_key, pop_time, pop_burst):
+# process a burst from the queue to extract features
+def process_pending_burst(flow_key, pop_time, pop_burst):
     # log the burst information
+    # todo: remove log if not needed 
     common.log(f'[Writing Burst]: {flow_key} \t {pop_time} \t {pop_burst}')
-    # target feature elements 
-    col_feat = cols_feat
 
     # create a header for storing the burst into a dataframe corresponding to burst element
     # [time_epoch, frame_len, _ws_protocol, hostname, ip_proto, src_ip_addr, src_port, dst_ip_addr, dst_port, dst_mac_addr]
@@ -671,20 +670,33 @@ def write_pending_burst_to_db(flow_key, pop_time, pop_burst):
          kurtT, skewT, network_total, network_in, network_out, network_external, network_local,
          network_in_local, network_out_local, meanBytes_out_external,
          meanBytes_in_external, meanBytes_out_local, meanBytes_in_local, my_device_mac, 'unctrl', 'unctrl', start_time, ";".join([x for x in protocol if x!= ""]), host_output ]
+    
+    store_burst_in_db(d)
 
-    # return d
+    return
         
     # todo: check datafrme before storing
     # todo: store data to somewhere
-    # todo: debug Error processing packet: dictionary changed size during iteration
+    # todo: debug Error processing packet: dictionary changed size during iteration, check the log file for detail of the error
     # make the dictionary operation lock safe
+    # common.log(f'[Writing Feature]: {flow_key} \t {pop_time} \t {d}')
 
-    common.log(f'[Writing Feature]: {flow_key} \t {pop_time} \t {d}')
-
-    return
-
-
+# store processed burst features (data) into database
+# input: a data point
+# output: None
 def store_burst_in_db(data):
-    # store data 
+    # Note: for now storing in a queue, later store in database
     # make to lock safe
-    return
+    """
+    Adds a data to the data queue.
+    """
+    with global_state.global_state_lock:
+        if not global_state.is_inspecting:
+            return
+
+    global_state.burst_queue.put(data)
+
+
+    # todo: read queue, for event prediction
+    # d = global_state.burst_queue.get()
+    # common.log(f'[Reading Feature]: Database {d}')
