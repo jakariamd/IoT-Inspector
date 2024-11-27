@@ -116,3 +116,4 @@ v2-src/.vscode/settings.json
 
 # analysis file: imported from NEU group
 analysis/
+models/

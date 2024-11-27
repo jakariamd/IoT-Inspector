@@ -44,6 +44,17 @@ def log(message: str):
             f.write(message + '\n')
 
 
+# Note: only log the events from event detection
+def event_log(message: str):
+    """Logs the events to `events.log` under the project directory, along with the timestamp."""
+
+    # Add the timestamp to the message
+    message = '[%s] %s' % (str(datetime.datetime.now()), message)
+
+    with _log_lock:
+        with open(os.path.join(get_project_directory(), 'events.log'), 'a') as f:
+            f.write(message + '\n')
+
 
 class SafeLoopThread(object):
     """
