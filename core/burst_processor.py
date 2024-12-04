@@ -6,21 +6,8 @@ import core.model as model
 import time
 import os
 import pickle
-
-
-# import scapy.all as sc
-# import core.networking as networking
-# from core.tls_processor import extract_sni
-# import core.friendly_organizer as friendly_organizer
-
-# # Jakaria: import additional libraries
-# import core.utils as utils
-# import ipaddress
 import pandas as pd
 import numpy as np
-# from scipy.stats import kurtosis
-# from scipy.stats import skew
-# from statsmodels import robust
 
 
 # define the expected features of a burst 
@@ -107,7 +94,7 @@ def get_ss_pca_model(mac_address):
     if device_name == 'Amazon Plug':
         device_name = 'amazon-plug'
     elif device_name == 'Amazon Echo':
-        device_name = 'echodot'
+        device_name = 'echodot4b'
     elif device_name == 'Ring Camera':
         device_name = 'ring-camera'
 
@@ -132,7 +119,7 @@ def get_ss_pca_model(mac_address):
 # todo: train ss/pca models with latest version of numpy, sklean 
 
 def process_burst_helper(burst):
-    common.log('[Burst Pre-Processor] Before processing burst: ' + str(burst))
+    # common.log('[Burst Pre-Processor] Before processing burst: ' + str(burst))
 
     # get device name from MAC address
     device_name = get_product_name_by_mac(burst[-6])
@@ -158,6 +145,24 @@ def process_burst_helper(burst):
     X_feature = np.append(X_feature, burst[-6:])
 
     # todo: send processed data to next step 
-    common.event_log('[Burst Pre-Processor] Process successfull device name: ' + str(device_name) + " features: " + str(X_feature))
+    common.event_log('[Burst Pre-Processor] Successfull device name: ' + str(device_name) + ' ' + burst[-1] + ' ' + burst[-2])
+
+    store_processed_burst_in_db(X_feature)
     
     return 
+
+# store standardized processed burst features (data) into database
+# input: a data point
+# output: None
+def store_processed_burst_in_db(data):
+    # Note: for now storing in a queue, later store in database
+    # make to lock safe
+    """
+    Adds a data to the data queue.
+    """
+    with global_state.global_state_lock:
+        if not global_state.is_inspecting:
+            return
+
+    global_state.ss_burst_queue.put(data)
+

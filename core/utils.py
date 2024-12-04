@@ -1,4 +1,5 @@
 import ipaddress
+from functools import lru_cache
 
 def validate_ip_address(address):
     """ check if it's a valid ip address
@@ -16,3 +17,14 @@ def validate_ip_address(address):
     except ValueError:
         # print("IP address {} is not valid".format(address)) 
         return False
+    
+@lru_cache(maxsize=128)
+def device_name_mapping(device_name):
+    if device_name == 'Amazon Plug':
+        return 'amazon-plug'
+    if device_name == 'Amazon Echo':
+        return 'echodot4b'
+    if device_name == 'Ring Camera':
+        return 'ring-camera' 
+    
+    return 'unknown'

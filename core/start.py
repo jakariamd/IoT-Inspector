@@ -1,6 +1,8 @@
 import logging
 
 import core.burst_processor
+import core.burst_processor_periodic_filter
+import core.predict_event
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
 import time
@@ -48,6 +50,8 @@ def start_threads():
 
     # Note: new thread added to continuously monitor activity 
     core.common.SafeLoopThread(core.burst_processor.process_burst, sleep_time=0)
+    core.common.SafeLoopThread(core.burst_processor_periodic_filter.periodic_filter_burst, sleep_time=0)
+    # core.common.SafeLoopThread(core.predict_event.predict_event, sleep_time=0)
 
 
     core.common.log('Inspector started')

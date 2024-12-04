@@ -66,3 +66,9 @@ DELETE_DATA_URL = INSPECTOR_DATA_DONATION_SERVER + '/delete_donated_data'
 
 # A queue that holds processed burst (fratures) for prediction
 burst_queue = queue.Queue()
+
+# A queue that holds processed (standardized) burst (fratures) for prediction
+ss_burst_queue = queue.Queue()
+
+# A queue that holds processed (standardized) burst (fratures) for prediction after filtering
+filtered_burst_queue = queue.Queue()
