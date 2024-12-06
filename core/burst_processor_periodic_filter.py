@@ -12,16 +12,16 @@ import pandas as pd
 import numpy as np
 import scipy as sp
 
-from core.utils import device_name_mapping
+from core.utils import device_name_mapping, protocol_transform
 
 # define the expected features of a burst 
-cols_feat = [ "meanBytes", "minBytes", "maxBytes", "medAbsDev",
-             "skewLength", "kurtosisLength", "meanTBP", "varTBP",
-             "medianTBP", "kurtosisTBP", "skewTBP", "network_total",
-             "network_in", "network_out", "network_external", "network_local",
-            "network_in_local", "network_out_local", "meanBytes_out_external", "meanBytes_in_external",
-            "meanBytes_out_local", "meanBytes_in_local",
-            "device", "state", "event", "start_time", "protocol", "hosts"]
+# cols_feat = [ "meanBytes", "minBytes", "maxBytes", "medAbsDev",
+#              "skewLength", "kurtosisLength", "meanTBP", "varTBP",
+#              "medianTBP", "kurtosisTBP", "skewTBP", "network_total",
+#              "network_in", "network_out", "network_external", "network_local",
+#             "network_in_local", "network_out_local", "meanBytes_out_external", "meanBytes_in_external",
+#             "meanBytes_out_local", "meanBytes_in_local",
+#             "device", "state", "event", "start_time", "protocol", "hosts"]
 
 
 
@@ -102,22 +102,22 @@ def get_periods(device_name):
 
 
 
-# todo: update function; remove [i]
-@lru_cache(maxsize=128)
-def protocol_transform(test_protocols):
-    # for i in range(len(test_protocols)):
-    if 'TCP' in test_protocols:
-        test_protocols = 'TCP'
-    elif 'MQTT' in test_protocols:
-        test_protocols = 'TCP'
-    elif 'UDP' in test_protocols:
-        test_protocols = 'UDP'
-    elif 'TLS' in test_protocols:
-        test_protocols = 'TCP'
-    if ';' in test_protocols:
-        tmp = test_protocols.split(';')
-        test_protocols = ' & '.join(tmp)
-    return test_protocols
+# # todo: update function; remove [i]
+# @lru_cache(maxsize=128)
+# def protocol_transform(test_protocols):
+#     # for i in range(len(test_protocols)):
+#     if 'TCP' in test_protocols:
+#         test_protocols = 'TCP'
+#     elif 'MQTT' in test_protocols:
+#         test_protocols = 'TCP'
+#     elif 'UDP' in test_protocols:
+#         test_protocols = 'UDP'
+#     elif 'TLS' in test_protocols:
+#         test_protocols = 'TCP'
+#     if ';' in test_protocols:
+#         tmp = test_protocols.split(';')
+#         test_protocols = ' & '.join(tmp)
+#     return test_protocols
 
 # ====================================
 # TODO: IMPLEMENT THE ENTIRE FUNCTION 

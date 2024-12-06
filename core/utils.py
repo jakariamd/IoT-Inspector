@@ -26,5 +26,28 @@ def device_name_mapping(device_name):
         return 'echodot4b'
     if device_name == 'Ring Camera':
         return 'ring-camera' 
+    if device_name == 'Tapo Bulb':
+        return 'tplink-bulb'
     
     return 'unknown'
+
+
+
+@lru_cache(maxsize=128)
+def protocol_transform(test_protocols):
+    # for i in range(len(test_protocols)):
+    if 'TCP' in test_protocols:
+        test_protocols = 'TCP'
+    elif 'MQTT' in test_protocols:
+        test_protocols = 'TCP'
+    elif 'UDP' in test_protocols:
+        test_protocols = 'UDP'
+    elif 'TLS' in test_protocols:
+        test_protocols = 'TCP'
+    if ';' in test_protocols:
+        tmp = test_protocols.split(';')
+        test_protocols = ' & '.join(tmp)
+    return test_protocols
+
+
+

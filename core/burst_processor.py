@@ -9,6 +9,8 @@ import pickle
 import pandas as pd
 import numpy as np
 
+from core.utils import device_name_mapping
+
 
 # define the expected features of a burst 
 cols_feat = [ "meanBytes", "minBytes", "maxBytes", "medAbsDev",
@@ -90,13 +92,15 @@ def get_ss_pca_model(mac_address):
     if device_name == 'Unknown Device':
         return 'Unknown Device'
     
-    # todo: write a function to map the device name to model file name 
-    if device_name == 'Amazon Plug':
-        device_name = 'amazon-plug'
-    elif device_name == 'Amazon Echo':
-        device_name = 'echodot4b'
-    elif device_name == 'Ring Camera':
-        device_name = 'ring-camera'
+    # # todo: write a function to map the device name to model file name 
+    # if device_name == 'Amazon Plug':
+    #     device_name = 'amazon-plug'
+    # elif device_name == 'Amazon Echo':
+    #     device_name = 'echodot4b'
+    # elif device_name == 'Ring Camera':
+    #     device_name = 'ring-camera'
+
+    device_name = device_name_mapping(device_name)
 
     # Load ss and pca file
     model_dir = os.path.join(
@@ -145,7 +149,7 @@ def process_burst_helper(burst):
     X_feature = np.append(X_feature, burst[-6:])
 
     # todo: send processed data to next step 
-    common.event_log('[Burst Pre-Processor] Successfull device name: ' + str(device_name) + ' ' + burst[-1] + ' ' + burst[-2])
+    common.log('[Burst Pre-Processor] Burst stored for: ' + str(device_name) + ' ' + burst[-1] + ' ' + burst[-2])
 
     store_processed_burst_in_db(X_feature)
     
