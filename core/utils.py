@@ -24,6 +24,8 @@ def device_name_mapping(device_name):
         return 'amazon-plug'
     if device_name == 'Amazon Echo':
         return 'echodot4b'
+    if device_name == 'Amazon Echo Dot':
+        return 'echoshow5'
     if device_name == 'Ring Camera':
         return 'ring-camera' 
     if device_name == 'Tapo Bulb':

@@ -243,6 +243,7 @@ def process_flow(pkt):
         src_mac_addr, dst_mac_addr, src_ip_addr, dst_ip_addr, src_port, dst_port, protocol
     )
 
+    # todo: Check if stats updates in the dics
     flow_stat_dict = flow_dict.setdefault(flow_key, {
         'start_ts': time.time(),
         'end_ts': time.time(),

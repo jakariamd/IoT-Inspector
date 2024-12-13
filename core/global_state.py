@@ -72,3 +72,6 @@ ss_burst_queue = queue.Queue()
 
 # A queue that holds processed (standardized) burst (fratures) for prediction after filtering
 filtered_burst_queue = queue.Queue()
+
+# A queue to store the events
+filtered_event_queue = {}

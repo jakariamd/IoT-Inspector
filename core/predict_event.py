@@ -89,11 +89,11 @@ def predict_event_helper(burst):
             common.event_log('[Predict-Event] predict error: ' + ' for device : ' + str(dname) + ' error: ' + str(e))
     # positive_label_set = list(positive_label_set)
 
-    # if 'Plug' in dname:
-    #     positive_label_set = ['-'.join(reversed(positive_label_set))]
 
     try: 
-        common.event_log('[Predict-Event] Success: ' + ' for device : ' + str(dname) + ' event: ' + str(list(positive_label_set)[predictions.index(1)]))
+        event = str(list(positive_label_set)[predictions.index(1)])
+        common.event_log('[Predict-Event] Success: ' + ' for device : ' + str(dname) + ' event: ' + event )
+        store_events_in_db(burst[-6], burst[-3], event)
     except:
         common.event_log('[Predict-Event] Success: ' + ' for device : ' + str(dname) + ' event: periodic/unexpected event')
     return
@@ -139,4 +139,17 @@ def get_list_of_models(device_name):
 
     return (positive_label_set, list_models)
 
+
+
+def store_events_in_db(device, time, event):
+    # Note: for now storing in a queue, later store in database
+    # make to lock safe
+    """
+    Adds a data to the data queue.
+    """
+    with global_state.global_state_lock:
+        if not global_state.is_inspecting:
+            return
+
+    global_state.filtered_event_queue.setdefault(device, []).append((time, event))
 

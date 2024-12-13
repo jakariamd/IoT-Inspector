@@ -8,6 +8,8 @@ import core.deferred_action as deferred_action
 import core.config as config
 import ui.common as common
 import ui.donation_box as donation_box
+import core.global_state as global_state
+from datetime import datetime
 
 
 
@@ -16,7 +18,7 @@ COLORS = ['#bf2c1c', '#2e1591', '#ea09d0', '#56db39', '#ddd14b', '#cec10c', '#68
 
 
 
-@st.cache_data(ttl=2, show_spinner=False)
+@st.cache_data(ttl=30, show_spinner=False)
 def get_device_list():
     """Returns a list of all device names, IP addresses, and MAC addresses."""
 
@@ -42,6 +44,13 @@ def get_device_list():
 
     return device_list
 
+
+@st.cache_data(ttl=2, show_spinner=False)
+def get_events(device_mac_addr):
+    try:
+        return global_state.filtered_event_queue[device_mac_addr]
+    except:
+        return ''
 
 def get_color_for_type(type_name):
 
@@ -204,7 +213,8 @@ def show_device_details(mac_addr):
 
     st.markdown('<span style="color:red"> ** New feature</span>', unsafe_allow_html=True)
     st.markdown('#### Activity: What is this device doing?')
-    st.caption(f'What are the possible activities over the {time_range_str.lower()}:')
+    # st.caption(f'What are the possible activities: over the {time_range_str.lower()}:')
+    st.caption(f'What are the possible activities')
 
     show_activities_table(
         mac_addr,
@@ -297,21 +307,30 @@ def show_activity_graph(mac_addr, last_n_seconds=20, group_by_col='reg_domain', 
 # todo Jakaria: implement the activity tracker table 
 def show_activities_table(mac_addr, last_n_seconds=20, group_by_col='reg_domain', show_empty=True):
 
-    try:
-        data_df = deferred_action.execute(
-            func=traffic_rate.get_data_usage,
-            args=(mac_addr, last_n_seconds, group_by_col, show_empty),
-            ttl=5
-        )
-    except deferred_action.NoResultYet as pending_job_count:
-        show_pending_job_count(pending_job_count)
+    # try:
+    #     data_df = deferred_action.execute(
+    #         func=traffic_rate.get_data_usage,
+    #         args=(mac_addr, last_n_seconds, group_by_col, show_empty),
+    #         ttl=5
+    #     )
+    # except deferred_action.NoResultYet as pending_job_count:
+    #     show_pending_job_count(pending_job_count)
+    #     return
+
+    # row_widths = [0.3, 0.25, 0.25, 0.2]
+
+    # # Row header
+    # cols = st.columns(row_widths)
+    # st.caption(f'Number of elements: {len(data_df)}')
+    events = get_events(mac_addr)
+    if events == '':
         return
+    events = events[-10:]
+    temp_time = 0
+    for event in reversed(events):
+        st.markdown(f' Time: `{datetime.fromtimestamp(float(event[0]))}` Event: `{event[1]}`')
 
-    row_widths = [0.3, 0.25, 0.25, 0.2]
 
-    # Row header
-    cols = st.columns(row_widths)
-    st.caption(f'Number of elements: {len(data_df)}')
 
 
 def show_data_usage_table(mac_addr, last_n_seconds=20, group_by_col='reg_domain', show_empty=True):
