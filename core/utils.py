@@ -30,6 +30,8 @@ def device_name_mapping(device_name):
         return 'ring-camera' 
     if device_name == 'Tapo Bulb':
         return 'tplink-bulb'
+    if device_name == 'Yi Cam':
+        return 'yi-camera'
     
     return 'unknown'
 
