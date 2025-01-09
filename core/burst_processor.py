@@ -90,7 +90,7 @@ def get_product_name_by_mac(mac_address):
 def get_ss_pca_model(mac_address):
     device_name = get_product_name_by_mac(mac_address)
     if device_name == 'Unknown Device':
-        return 'Unknown Device'
+        return "Model Unknown"
     
     # # todo: write a function to map the device name to model file name 
     # if device_name == 'Amazon Plug':
