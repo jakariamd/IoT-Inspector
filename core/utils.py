@@ -32,6 +32,10 @@ def device_name_mapping(device_name):
         return 'tplink-bulb'
     if device_name == 'Yi Cam':
         return 'yi-camera'
+    if device_name == 'Ring Doorbell':
+        return 'ring-camera'
+    if device_name == 'Wyze Cam':
+        return 'wyze-cam'
     
     return 'unknown'
 
