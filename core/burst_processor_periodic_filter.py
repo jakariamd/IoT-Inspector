@@ -1,3 +1,14 @@
+"""
+===============================================================================
+Title: Burst Processor Periodic Filter
+Author: Md Jakaria
+Date: Jan 2025
+Description: This module processes periodic bursts and includes helper functions for burst filtering.
+Reference: This code was inspired by and adapted from the work of Tianrui Hue on https://github.com/NEU-SNS/BehavIoT/tree/main.
+===============================================================================
+"""
+
+
 import core.global_state as global_state
 import core.common as common
 from core.burst_processor import get_product_name_by_mac
