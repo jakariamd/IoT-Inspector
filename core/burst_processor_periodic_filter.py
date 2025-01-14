@@ -3,7 +3,7 @@
 Title: Burst Processor Periodic Filter
 Author: Md Jakaria
 Date: Jan 2025
-Description: This module processes periodic bursts and includes helper functions for burst filtering.
+Description: This module processes bursts and includes helper functions for periodic burst filtering.
 Reference: This code was inspired by and adapted from the work of Tianrui Hue on https://github.com/NEU-SNS/BehavIoT/tree/main.
 ===============================================================================
 """
