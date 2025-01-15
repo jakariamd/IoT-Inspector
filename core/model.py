@@ -57,6 +57,8 @@ class Device(BaseModel):
     donates_data = IntegerField(default=0)
     is_blocked = IntegerField(default=0)
     favorite_time = FloatField(default=0)
+    # use this variable if 
+    is_idle = IntegerField(default=0)
 
 
 class Flow(BaseModel):
