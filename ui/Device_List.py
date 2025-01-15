@@ -211,6 +211,15 @@ def show_device(device: model.Device):
             on_change=set_device_favorite_callback,
             args=(device.mac_addr,)
         )
+        st.checkbox(
+            'Idle (not using this device)',
+            value=True if device.is_idle == 1 else False,
+            key=f'idle_{device.mac_addr}',
+            help='If checked, Inspector will will learn the periodic events for this device',
+            on_change=set_device_idle_callback,
+            args=(device.mac_addr,),
+            disabled=inspect_check_box_disabled
+        )
 
 
 @st.cache_data(ttl=5, show_spinner=False)
@@ -305,6 +314,17 @@ def set_device_favorite_callback(device_mac_addr):
         with model.db:
             model.Device.update(favorite_time=favorite_time).where(model.Device.mac_addr == device_mac_addr).execute()
 
+
+def set_device_idle_callback(device_mac_addr):
+    
+    if st.session_state[f'idle_{device_mac_addr}']:
+        is_idle = 1
+    else:
+        is_idle = 0
+
+    with model.write_lock:
+        with model.db:
+            model.Device.update(is_idle=is_idle).where(model.Device.mac_addr == device_mac_addr).execute()
 
 
 donation_box.show_on_device_list(location='below')
