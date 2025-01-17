@@ -156,8 +156,9 @@ def process_burst_helper(burst):
     return 
 
 # store standardized processed burst features (data) into database
-# input: a data point
-# output: None
+# input: a data point, output: None
+# TODO: incorporate idle device in the burst
+# idea: create a different queue for idle device, and process them separately
 def store_processed_burst_in_db(data):
     # Note: for now storing in a queue, later store in database
     # make to lock safe
