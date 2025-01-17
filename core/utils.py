@@ -57,5 +57,23 @@ def protocol_transform(test_protocols):
         test_protocols = ' & '.join(tmp)
     return test_protocols
 
+# transform multiple hosts to single host
+@lru_cache(maxsize=128)
+def host_transform(test_hosts):
+    # process host
+    if test_hosts == None:
+        return 'non'
 
+    if test_hosts!= '':
+        try:
+            tmp = test_hosts.split(';')
+        except:
+            return 'non'
+        test_hosts= tmp[0]
+    else:
+        return 'non'
 
+    test_hosts = test_hosts.lower()   
+    test_hosts = test_hosts.replace('?','')   
+
+    return test_hosts
