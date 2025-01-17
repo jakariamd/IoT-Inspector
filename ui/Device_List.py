@@ -15,7 +15,10 @@ import donation_box
 
 template.show(
     'Device List',
-    'A list of Internet-connected devices on your network.'
+    'A list of Internet-connected devices on your network. \
+    \nCheck Idle check-box if you \
+    \n\t1. Do not plan to use your device for a prolong time \
+    \n\t2. Want to let the IoT-Inspector learn your device (mostly idle activities)'
 )
 
 
@@ -212,10 +215,10 @@ def show_device(device: model.Device):
             args=(device.mac_addr,)
         )
         st.checkbox(
-            'Idle (not using this device)',
-            value=True if device.is_idle == 1 else False,
+            'Idle',
+            value=False, #if device.is_idle == 1 else False,
             key=f'idle_{device.mac_addr}',
-            help='If checked, Inspector will will learn the periodic events for this device',
+            help='If checked, Inspector will will learn the periodic events for this device. \nRemember you agree to keep your device idle while this box is checked',
             on_change=set_device_idle_callback,
             args=(device.mac_addr,),
             disabled=inspect_check_box_disabled
@@ -322,9 +325,9 @@ def set_device_idle_callback(device_mac_addr):
     else:
         is_idle = 0
 
-    with model.write_lock:
-        with model.db:
-            model.Device.update(is_idle=is_idle).where(model.Device.mac_addr == device_mac_addr).execute()
+    # with model.write_lock:
+    #     with model.db:
+    #         model.Device.update(is_idle=is_idle).where(model.Device.mac_addr == device_mac_addr).execute()
 
 
 donation_box.show_on_device_list(location='below')
