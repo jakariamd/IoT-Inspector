@@ -23,7 +23,7 @@ import pandas as pd
 import numpy as np
 import scipy as sp
 
-from core.utils import device_name_mapping, protocol_transform
+from core.utils import device_name_mapping, protocol_transform, host_transform
 
 # define the expected features of a burst 
 # cols_feat = [ "meanBytes", "minBytes", "maxBytes", "medAbsDev",
@@ -156,19 +156,22 @@ def periodic_filter_burst_helper(burst):
 
     # common.event_log('[Burst Periodic-filter] Filtering burst for : ' + str(device_name) + " " + test_hosts + " " + test_protocols)   
 
-    # process host
-    if test_hosts!= '' and test_hosts!= None:
-        try:
-            tmp = test_hosts.split(';')
-        except:
-            # print(test_hosts) #exit(1)
-            return
-        test_hosts= tmp[0]
+    # # process host
+    # if test_hosts!= '' and test_hosts!= None:
+    #     try:
+    #         tmp = test_hosts.split(';')
+    #     except:
+    #         # print(test_hosts) #exit(1)
+    #         return
+    #     test_hosts= tmp[0]
+    # if test_hosts == None:
+    #     test_hosts== 'non'
+    # test_hosts = test_hosts.lower()   
+    # test_hosts = test_hosts.replace('?','')  
+    
+    # TODO: test if host transformation is working
+    test_hosts = host_transform(test_hosts)
 
-    if test_hosts == None:
-        test_hosts== 'non'
-    test_hosts = test_hosts.lower()   
-    test_hosts = test_hosts.replace('?','')   
 
 
     # Filter local and DNS/NTP. 

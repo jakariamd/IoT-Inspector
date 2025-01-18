@@ -12,7 +12,7 @@ Reference: This code was inspired by and adapted from the work of Tianrui Hue
 import core.global_state as global_state
 import core.common as common
 import traceback
-from utils import device_name_mapping, protocol_transform
+from utils import device_name_mapping, protocol_transform, host_transform
 
 # define the expected features of a burst of an idle event 
 # we expect a idle burst coming from the burst processor thread for 
@@ -51,6 +51,7 @@ def periodic_inference_helper(burst):
     preprocessing = 1
     if preprocessing:
         protocol = protocol_transform(burst[-2])
+        domain = host_transform(burst[-1])
         
         # for i in range(len(hosts)):
         #     if hosts[i] != '' and hosts[i] != None:
@@ -62,5 +63,7 @@ def periodic_inference_helper(burst):
         #         # print(hosts[i])
         # domain_set = set(hosts)
         # print(domain_set)
+
+
 
 
