@@ -1,5 +1,8 @@
 import ipaddress
 from functools import lru_cache
+from core.common import get_project_directory
+import os
+import json
 
 def validate_ip_address(address):
     """ check if it's a valid ip address
@@ -17,7 +20,10 @@ def validate_ip_address(address):
     except ValueError:
         # print("IP address {} is not valid".format(address)) 
         return False
-    
+
+
+# NOTE: Currently using hard coded values for device names
+# TODO: Update this function to use a database or configuration file or a dropdown list from the UI to get the device names
 @lru_cache(maxsize=128)
 def device_name_mapping(device_name):
     if device_name == 'Amazon Plug':
@@ -77,3 +83,24 @@ def host_transform(test_hosts):
     test_hosts = test_hosts.replace('?','')   
 
     return test_hosts
+
+
+def add_idle_device_in_db(mac_address, is_idle=1):
+    """
+    Add device info in database
+    Args:
+        device: Device object
+    """
+    try:
+        # Load the existing JSON data from the file
+        file_path = os.path.join(get_project_directory(), 'data_devices.json')
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+            data['devices'][mac_address] = {
+                'is_idle': is_idle
+            }
+            # Save the updated JSON data back to the file
+            with open(file_path, 'w') as file:
+                json.dump(data, file, indent=4)
+    except Exception as e:
+        print('Error saving device info in database: ' + str(e))
