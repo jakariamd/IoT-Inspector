@@ -57,7 +57,8 @@ class Device(BaseModel):
     donates_data = IntegerField(default=0)
     is_blocked = IntegerField(default=0)
     favorite_time = FloatField(default=0)
-    # use this variable if 
+    # TODO: for now, we are not using the is_idle field here 
+    # we are using the json file to set the device idle
     # is_idle = IntegerField(default=0)
 
 
