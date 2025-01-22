@@ -104,3 +104,27 @@ def add_idle_device_in_db(mac_address, is_idle=1):
                 json.dump(data, file, indent=4)
     except Exception as e:
         print('Error saving device info in database: ' + str(e))
+
+
+def is_device_idle(mac_address):
+    """
+    Check if a device is set to be idle in the database
+    Args:
+        mac_address: MAC address of the device
+    Returns:
+        bool: True if the device is idle, False otherwise
+    """
+    try:
+        # Load the existing JSON data from the file
+        file_path = os.path.join(get_project_directory(), 'data_devices.json')
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+        
+        # Check if the device exists and its is_idle status
+        if mac_address in data['devices']:
+            return data['devices'][mac_address].get('is_idle', 0) == 1
+        else:
+            return False
+    except Exception as e:
+        print('Error reading device info from database: ' + str(e))
+        return False

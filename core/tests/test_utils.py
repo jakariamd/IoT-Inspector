@@ -7,7 +7,7 @@ import os
 # Add the parent directory to the sys.path to import core module
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-from core.utils import add_idle_device_in_db
+from core.utils import add_idle_device_in_db, is_device_idle
 
 @pytest.fixture
 def dummy_json_file(tmp_path):
@@ -20,7 +20,7 @@ def dummy_json_file(tmp_path):
             }
         }
     }
-    dummy_file_path = tmp_path / "model.json"
+    dummy_file_path = tmp_path / "data_devices.json"
     with open(dummy_file_path, 'w') as file:
         json.dump(dummy_data, file, indent=4)
     
@@ -71,3 +71,22 @@ def test_set_device_not_idle(dummy_json_file, mocker):
     with open(dummy_json_file, 'r') as file:
         data = json.load(file)
         assert data['devices']['00:1A:2B:3C:4D:5E']['is_idle'] == 0
+
+
+
+def test_is_device_idle(dummy_json_file, mocker):
+    # Mock the get_project_directory function to return the temporary directory
+    mock_get_project_directory = mocker.patch('core.utils.get_project_directory')
+    mock_get_project_directory.return_value = str(dummy_json_file.parent)
+
+    # Call the function to set the device as idle
+    add_idle_device_in_db('00:1A:2B:3C:4D:5P')
+
+    # Check if the device is idle
+    assert is_device_idle('00:1A:2B:3C:4D:5P') == True
+
+    # Call the function to set the device as not idle
+    add_idle_device_in_db('00:1A:2B:3C:4D:5P', is_idle=0)
+
+    # Check if the device is not idle
+    assert is_device_idle('00:1A:2B:3C:4D:5P') == False
