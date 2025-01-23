@@ -75,3 +75,6 @@ filtered_burst_queue = queue.Queue()
 
 # A queue to store the events
 filtered_event_queue = {}
+
+# A storage for the devices states (idle or not)
+devices_state = {}

@@ -1,3 +1,9 @@
+##############################################
+#   Jakaria: Updated the code to add the checkbox for the idle device
+#   Find the changes with the following tag: NOTE or JAKARIA
+##############################################
+
+
 import time
 import streamlit as st
 import template
@@ -10,6 +16,7 @@ import plotly.express as px
 import plotly.io as pio
 import core.deferred_action as deferred_action
 import donation_box
+import core.global_state as global_state
 
 
 
@@ -214,6 +221,7 @@ def show_device(device: model.Device):
             on_change=set_device_favorite_callback,
             args=(device.mac_addr,)
         )
+        # JAKARIA: Added the checkbox for the idle device 
         st.checkbox(
             'Idle',
             value=False, #if device.is_idle == 1 else False,
@@ -221,7 +229,7 @@ def show_device(device: model.Device):
             help='If checked, Inspector will will learn the periodic events for this device. \nRemember you agree to keep your device idle while this box is checked',
             on_change=set_device_idle_callback,
             args=(device.mac_addr,),
-            disabled=inspect_check_box_disabled
+            disabled=False if device.is_inspected == 1 else True
         )
 
 
@@ -317,17 +325,21 @@ def set_device_favorite_callback(device_mac_addr):
         with model.db:
             model.Device.update(favorite_time=favorite_time).where(model.Device.mac_addr == device_mac_addr).execute()
 
-
+# Jakaria: Added the function to handle the idle device on checkbox click
 def set_device_idle_callback(device_mac_addr):
-    
+
     if st.session_state[f'idle_{device_mac_addr}']:
         is_idle = 1
     else:
         is_idle = 0
 
-    # with model.write_lock:
-    #     with model.db:
-    #         model.Device.update(is_idle=is_idle).where(model.Device.mac_addr == device_mac_addr).execute()
+    # Ensure the device entry exists in the dictionary
+    global_state.devices_state.setdefault(device_mac_addr, {})['idle'] = is_idle
+
+    # Print the updated state of the device
+    # TODO: Remove this print statement after testing
+    print(f"Updated state for device {device_mac_addr}: {global_state.devices_state[device_mac_addr]}")
+
 
 
 donation_box.show_on_device_list(location='below')

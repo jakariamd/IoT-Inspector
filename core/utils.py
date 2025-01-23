@@ -85,6 +85,9 @@ def host_transform(test_hosts):
     return test_hosts
 
 
+# Jakaria: Added the following functions are not needed anymore, 
+# as we are using the variables  to store device info 
+# TODO: can be deleted, along with the data_devices.json file and test cases 
 def add_idle_device_in_db(mac_address, is_idle=1):
     """
     Add device info in database
