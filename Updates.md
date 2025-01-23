@@ -16,7 +16,7 @@ Description: To track the update of integrating the event detecting ML models to
         Comment: IoT Inspector collects all features but the epoch time
 
     2. s1_decode_idle.py 
-        description: decode pcap files to burst based on given threshold. (decode only pcap files for idle devices)
+        description: decode pcap files to burst based on given threshold(=1s). (decode only pcap files for idle devices). It basically split a pcap file to small txt files, each txt file is a burst, list the packets of the burst. This burst of packets will be transformed into feature in s2. 
         Input: Pcap files 
         Output: list of burst based on given threshold.
         Sample output: 
