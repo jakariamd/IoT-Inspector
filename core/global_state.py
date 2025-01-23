@@ -64,7 +64,7 @@ DELETE_DATA_URL = INSPECTOR_DATA_DONATION_SERVER + '/delete_donated_data'
 
 # Note: Jakaria added the following variables 
 
-# A queue that holds processed burst (fratures) for prediction
+# A queue that holds processed burst (features) for standardization and filtering 
 burst_queue = queue.Queue()
 
 # A queue that holds processed (standardized) burst (fratures) for prediction
@@ -78,3 +78,6 @@ filtered_event_queue = {}
 
 # A storage for the devices states (idle or not)
 devices_state = {}
+
+# A storage for the idle burst, periodically saved to a file based on the size of the storage
+idle_burst_queue = {}

@@ -696,9 +696,13 @@ def store_burst_in_db(data):
         if not global_state.is_inspecting:
             return
 
-    global_state.burst_queue.put(data)
+     # check if device is idle, if idle store in a separate
+    if global_state.devices_state.get(data[-6], {'is_idle': 1})['is_idle']:
+        # todo: remove logging if not nevessary
+        print('[Packet Processor] Device is idle: ' + str(data[-6]))
 
+        # todo: store in a csv/json file for future processing
+        global_state.idle_burst_queue.setdefault(data[-6], []).append(data)
 
-    # todo: read queue, for event prediction
-    # d = global_state.burst_queue.get()
-    # common.log(f'[Reading Feature]: Database {d}')
+    else:
+        global_state.burst_queue.put(data)

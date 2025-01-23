@@ -1,6 +1,6 @@
 """
 ===============================================================================
-Title: Burst Processor 
+Title: Burst Processor (Pre-Processor)
 Author: Md Jakaria
 Date: Jan 2025
 Description: This module processes bursts to standardize feature. This is basically done in s4. 
@@ -178,13 +178,7 @@ def store_processed_burst_in_db(data):
     with global_state.global_state_lock:
         if not global_state.is_inspecting:
             return
+    
+    global_state.ss_burst_queue.put(data)
         
-    # check if device is idle, if idle store in a separate
-    if global_state.devices_state.get(data[-6], {'is_idle': 1})['is_idle']:
-        # todo: remove logging if not nevessary
-        common.log('[Burst Pre-Processor] Device is idle: ' + str(data[-6]))
-        # append data in a scv file
-
-    else:
-        global_state.ss_burst_queue.put(data)
 
