@@ -334,7 +334,7 @@ def set_device_idle_callback(device_mac_addr):
         is_idle = 0
 
     # Ensure the device entry exists in the dictionary
-    global_state.devices_state.setdefault(device_mac_addr, {})['idle'] = is_idle
+    global_state.devices_state.setdefault(device_mac_addr, {})['is_idle'] = is_idle
 
     # Print the updated state of the device
     # TODO: Remove this print statement after testing
