@@ -80,4 +80,4 @@ filtered_event_queue = {}
 devices_state = {}
 
 # A storage for the idle burst, periodically saved to a file based on the size of the storage
-idle_burst_queue = {}
+idle_burst_queue = queue.Queue()

@@ -566,16 +566,24 @@ def process_pending_burst(flow_key, pop_time, pop_burst):
     minBytes = pd_burst.frame_len.min()
     maxBytes = pd_burst.frame_len.max()
     medAbsDev = robust.mad(pd_burst.frame_len)
-    skewL = skew(pd_burst.frame_len)
-    kurtL = kurtosis(pd_burst.frame_len)
+    if medAbsDev < 1e-10:
+        skewL = 0
+        kurtL = 0
+    else:
+        skewL = skew(pd_burst.frame_len)
+        kurtL = kurtosis(pd_burst.frame_len)
 
     # p = [10, 20, 30, 40, 50, 60, 70, 80, 90]
     # percentiles = np.percentile(pd_burst.frame_len, p)
-    kurtT = kurtosis(pd_burst.ts_delta)
-    skewT = skew(pd_burst.ts_delta)
     meanTBP = pd_burst.ts_delta.mean()
     varTBP = pd_burst.ts_delta.var()
     medTBP = pd_burst.ts_delta.median()
+    if varTBP < 1e-10:
+        kurtT = 0
+        skewT = 0
+    else:
+        kurtT = kurtosis(pd_burst.ts_delta)
+        skewT = skew(pd_burst.ts_delta)
 
     # compute # of packet related features
     network_in = 0 # Network going to target device.
@@ -668,11 +676,13 @@ def process_pending_burst(flow_key, pop_time, pop_burst):
             # exit(1)   # todo Jakaria commented this line
         host_output = str(external_destination_addr)
 
-    d = [ meanBytes, minBytes, maxBytes, medAbsDev, skewL, kurtL, meanTBP, varTBP, medTBP,
-         kurtT, skewT, network_total, network_in, network_out, network_external, network_local,
-         network_in_local, network_out_local, meanBytes_out_external,
-         meanBytes_in_external, meanBytes_out_local, meanBytes_in_local, my_device_mac, 'unctrl', 'unctrl', start_time, ";".join([x for x in protocol if x!= ""]), host_output ]
-    
+    d = [ meanBytes, minBytes, maxBytes, medAbsDev, skewL, 
+         kurtL, meanTBP, varTBP, medTBP, kurtT,
+         skewT, network_total, network_in, network_out, network_external, 
+         network_local, network_in_local, network_out_local, meanBytes_out_external, meanBytes_in_external, 
+         meanBytes_out_local, meanBytes_in_local, my_device_mac, 'unctrl', 'unctrl',
+         start_time, ";".join([x for x in protocol if x!= ""]), host_output ]
+
     store_burst_in_db(d)
 
     return
@@ -697,12 +707,13 @@ def store_burst_in_db(data):
             return
 
      # check if device is idle, if idle store in a separate
-    if global_state.devices_state.get(data[-6], {'is_idle': 1})['is_idle']:
+    if global_state.devices_state.get(data[-6], {'is_idle': 0})['is_idle']:
         # todo: remove logging if not nevessary
         print('[Packet Processor] Device is idle: ' + str(data[-6]))
+        print("data: ", data)
 
         # todo: store in a csv/json file for future processing
-        global_state.idle_burst_queue.setdefault(data[-6], []).append(data)
+        global_state.idle_burst_queue.put(data)
 
     else:
         global_state.burst_queue.put(data)
