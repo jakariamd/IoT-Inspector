@@ -708,10 +708,8 @@ def store_burst_in_db(data):
 
      # check if device is idle, if idle store in a separate
     if global_state.devices_state.get(data[-6], {'is_idle': 0})['is_idle']:
-        # todo: remove logging if not nevessary
-        print('[Packet Processor] Device is idle: ' + str(data[-6]))
-        print("data: ", data)
-
+        # remove logging if not nevessary
+        # print('[Packet Processor] Device is idle: ' + str(data[-6]))
         # todo: store in a csv/json file for future processing
         global_state.idle_burst_queue.put(data)
 
