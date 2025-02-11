@@ -10,7 +10,8 @@ import core.global_state as global_state
 import pandas as pd
 import urllib.parse
 import ui.donation_box as donation_box
-
+from collections import deque
+from datetime import datetime
 
 
 # Generated from https://colordesigner.io/random-color-generator
@@ -89,7 +90,7 @@ def get_hostname_device_list():
 def get_device_list():
     """Returns a list of all device names, IP addresses, and MAC addresses."""
 
-    device_list = []
+    device_list = {}
 
     with model.db:
 
@@ -103,11 +104,13 @@ def get_device_list():
             if not product_name:
                 product_name = 'Unnamed Device'
 
-            device_list.append('{} | {} | {}'.format(
-                product_name,
-                device.ip_addr,
-                device.mac_addr
-            ))
+            device_list[device.mac_addr] = (device.ip_addr, product_name)
+
+            # device_list.append('{} | {} | {}'.format(
+            #     product_name,
+            #     device.ip_addr,
+            #     device.mac_addr
+            # ))
 
     return device_list
 
@@ -191,12 +194,44 @@ def main():
     st.markdown('#### Activity: What are the devices doing?')
     st.caption(f'What are the possible activities over time')
 
-    # uncomment to show the list
-    show_list_of_hostnames()
+    # show the last 10 events for each device
+    show_events(n=10)
 
     st.divider()
 
     return
+
+@st.cache_data(ttl=2, show_spinner=True)
+def show_events(n=10):
+    """
+    Jakaria: This function is used to 
+    show the last n events for each device.
+    
+    Args:
+        n (int): The number of entries to retrieve for each device.
+    """
+    # get the device list from database
+    device_list = get_device_list()
+
+    for mac_address, time_event_list in global_state.filtered_event_queue.items():
+        # get the product name
+        product_name = device_list[mac_address][1]
+
+        # show device name and mac address
+        params = urllib.parse.urlencode({'mac_addr': mac_address})
+        st.markdown(f'#### [{product_name}]({global_state.BASE_PATH}/Device_Details?{params})')
+        st.markdown(f'{mac_address} | {device_list[mac_address][0]}')
+
+        # Use deque to keep only the last n entries
+        last_n_entries = deque(time_event_list, maxlen=n)
+
+        # Display the last n entries
+        for time, event in last_n_entries:
+            st.markdown(f' Time: `{datetime.fromtimestamp(float(time))}` Event: `{event}`')
+    
+    # show the bottom of the list
+    st.info('You have reached the bottom of the list.')
+
 
 def show_list_of_hostnames():
     hostname_list = get_hostname_device_list()
