@@ -17,6 +17,10 @@ import plotly.io as pio
 import core.deferred_action as deferred_action
 import donation_box
 import core.global_state as global_state
+from core.burst_processor import get_product_name_by_mac
+import os
+import core.common as core_common
+
 
 
 
@@ -232,6 +236,41 @@ def show_device(device: model.Device):
             disabled=False if device.is_inspected == 1 else True
         )
 
+        st.button(
+            'Analyze idle data',
+            key=f'analyze_idle_{device.mac_addr}',
+            # use_container_width=True,
+            on_click=lambda x: analyze_idle_data_callback(x),
+            args=(device.mac_addr,)
+        )
+
+    # Show the popup if needed
+    show_popup(device.mac_addr)
+
+def show_popup(device_mac_addr):
+    if st.session_state.get(f'show_popup_{device_mac_addr}', False):
+        device_name = get_product_name_by_mac(device_mac_addr)
+        st.write(f"Are you sure you want to analyze idle data for `{device_name}`?")
+        idle_file_path = os.path.join(core_common.get_project_directory(),
+                                       'idle-data', device_mac_addr + '.csv')
+
+        file_exists = os.path.exists(idle_file_path)
+        if file_exists:
+            with open(idle_file_path, 'r') as file:
+                lines = file.readlines()
+                st.write(f'The idle file contains {len(lines)} data points.')
+        else:
+            st.write('The idle file does not exist.')
+
+        if st.button("Yes", disabled=not file_exists):
+            # analyze_idle_data_callback(device_mac_addr)
+            st.session_state[f'show_popup_{device_mac_addr}'] = False
+            st.write("Analyzing idle data...")
+        if st.button("No"):
+            st.session_state[f'show_popup_{device_mac_addr}'] = False
+
+def analyze_idle_data_callback(device_mac_addr):
+    st.session_state[f'show_popup_{device_mac_addr}'] = True
 
 @st.cache_data(ttl=5, show_spinner=False)
 def get_recently_contacted_domains(mac_addr):
@@ -376,6 +415,6 @@ for (k, v) in st.session_state.items():
 if auto_refresh:
     # Auto-refresh
     if 'page_auto_refresh' in st.session_state and st.session_state['page_auto_refresh']:
-        time.sleep(2)
+        time.sleep(1)
         st.rerun()
 
