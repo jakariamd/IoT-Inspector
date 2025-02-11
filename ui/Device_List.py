@@ -226,7 +226,7 @@ def show_device(device: model.Device):
             'Idle',
             value=False, #if device.is_idle == 1 else False,
             key=f'idle_{device.mac_addr}',
-            help='If checked, Inspector will will learn the periodic events for this device. \nRemember you agree to keep your device idle while this box is checked',
+            help='If checked, Inspector will learn the periodic events for this device. \nRemember you agree to keep your device idle while this box is checked',
             on_change=set_device_idle_callback,
             args=(device.mac_addr,),
             disabled=False if device.is_inspected == 1 else True
