@@ -20,6 +20,7 @@ import core.global_state as global_state
 from core.burst_processor import get_product_name_by_mac
 import os
 import core.common as core_common
+from core.periodicity_inference import periodic_inference
 
 
 
@@ -266,6 +267,7 @@ def show_popup(device_mac_addr):
             # analyze_idle_data_callback(device_mac_addr)
             st.session_state[f'show_popup_{device_mac_addr}'] = False
             st.write("Analyzing idle data...")
+            periodic_inference(device_mac_addr)
         if st.button("No"):
             st.session_state[f'show_popup_{device_mac_addr}'] = False
 
