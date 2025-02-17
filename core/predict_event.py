@@ -1,15 +1,21 @@
+'''
+================================================================================
+Title: Predict Event
+Author: Md Jakaria
+Date: Jan 2025
+Description: This module predicts events from preprocessed and filtered bursts.
+Reference: This code was inspired by and adapted from the work of Tianrui Hue
+on https://github.com/NEU-SNS/BehavIoT/tree/main.
+================================================================================
+'''
+
 import core.global_state as global_state
 import core.common as common
 from core.burst_processor import get_product_name_by_mac
 from core.burst_processor import ttl_lru_cache
-from functools import lru_cache
 import traceback
-from functools import lru_cache
-import core.model as model
-import time
 import os
 import pickle
-import pandas as pd
 import numpy as np
 
 from core.utils import device_name_mapping, protocol_transform
@@ -36,14 +42,6 @@ def predict_event():
     except Exception as e:
         common.event_log('[Predict-Event] Error: ' + str(e) + ' for burst: ' + str(burst) + '\n' + traceback.format_exc())
 
-
-# cols_feat = [ "meanBytes", "minBytes", "maxBytes", "medAbsDev",
-            #  "skewLength", "kurtosisLength", "meanTBP", "varTBP",
-            #  "medianTBP", "kurtosisTBP", "skewTBP", "network_total",
-            #  "network_in", "network_out", "network_external", "network_local",
-            # "network_in_local", "network_out_local", "meanBytes_out_external", "meanBytes_in_external",
-            # "meanBytes_out_local", "meanBytes_in_local",
-            # "device", "state", "event", "start_time", "protocol", "hosts"]
 
 
 def predict_event_helper(burst):

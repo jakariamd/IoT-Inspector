@@ -3,8 +3,10 @@
 Title: Burst Processor (Pre-Processor)
 Author: Md Jakaria
 Date: Jan 2025
-Description: This module processes bursts to standardize feature. This is basically done in s4. 
-Reference: This code was inspired by and adapted from the work of Tianrui Hue on https://github.com/NEU-SNS/BehavIoT/tree/main.
+Description: This module processes bursts to standardize feature.
+ This is basically done in s4. 
+Reference: This code was inspired by and adapted from the work of Tianrui Hue 
+on https://github.com/NEU-SNS/BehavIoT/tree/main.
 ===============================================================================
 """
 
