@@ -17,6 +17,7 @@ import traceback
 import matplotlib.pyplot as plt
 from scipy.fft import fft, ifft, fftfreq
 from statsmodels import api as sm
+import re
 # import core.global_state as global_state
 # from core.utils import device_name_mapping, protocol_transform, host_transform
 
@@ -57,15 +58,68 @@ def periodic_inference(device_mac_addr):
         return
     
     # Call the helper function to infer periodicity in network traffic
-    print(f'[Periodic Inference] Inferring periodicity for device: {device_mac_addr}')
+    common.log(f'[Periodic Inference] Inferring periodicity for device: {device_mac_addr}')
     periodic_inference_helper(device_mac_addr, idle_data)
-    print(f'[Periodic Inference] Done inferring periodicity for device: {device_mac_addr}')
+    common.log(f'[Periodic Inference] Done inferring periodicity for device: {device_mac_addr}')
+
+    # Call finger_print generation function to generate the fingerprint
+    common.log(f'[Fingerprint Generation] Generating fingerprint for device: {device_mac_addr}')
+    fingerprint_generation(device_mac_addr)
+    common.log(f'[Fingerprint Generation] Done generating fingerprint for device: {device_mac_addr}')
 
     
 
 
 def fingerprint_generation(device_mac_addr):
-    return
+    # get frequency period file path
+    freq_period_file_path = os.path.join(common.get_project_directory(),
+                                       'freq_period', '1s', device_mac_addr.replace(':', '_') + '.txt')
+    
+    # Check if the frequency period file exists
+    if not os.path.exists(freq_period_file_path):
+        common.log(f'[Fingerprint Generation] Frequency period file not found for device: {device_mac_addr}')
+        return
+    
+    # Read the frequency period data from the txt file
+    try:
+        with open(freq_period_file_path, 'r') as file:
+            freq_period_data = file.readlines()
+            common.log(f'[Fingerprint Generation] Successfully read frequency period data for device: {device_mac_addr}')
+    except Exception as e:
+        common.log(f'[Fingerprint Generation] Error reading frequency period data for device: {device_mac_addr}: {str(e)}')
+        return
+    
+    # Create the output directory if it does not exist
+    os.makedirs(out_dir, exist_ok=True)
+
+    # Open the output file for writing using a with statement
+    output_file_path = os.path.join(out_dir, device_mac_addr.replace(':', '_') + '.txt')
+    with open(output_file_path, 'w+') as out_file:
+        # Process the frequency period data
+        output_dic = {}
+
+        for line in freq_period_data:
+            if line == '\n':
+                continue
+
+            if line.startswith('No'): # No period detected  
+                continue
+            elif line != '\n': # Period detected
+                protocol = line.split()[0]
+                domain_name = line.split()[1]
+                tmp_period = [int(x) for x in re.findall(r'best: (\d+(?:, \d+)*)', line)[0].split(', ')]
+
+                output_dic[(protocol, domain_name)] = tmp_period
+        
+        for key in output_dic.keys():
+            # Store key and value in the output file
+            out_file.write('%s %s %s \n' % (key[0], key[1], ' '.join(map(str, output_dic[key]))))
+
+  
+        # Remove last new line at the end of the file
+        out_file.seek(0, os.SEEK_END) 
+        out_file.seek(out_file.tell() - 1, os.SEEK_SET)
+        out_file.truncate()
 
 def periodic_inference_helper(device_mac_addr, data):
     """
@@ -124,7 +178,9 @@ def periodic_inference_helper(device_mac_addr, data):
     min_time = np.min(times)
     print(f'[Peridicity Inference] Max Time: {max_time}, Min Time: {min_time}')
 
-
+    # create a folder for storing the periodicity inference result
+    os.makedirs('%s' % (file_path), exist_ok=True)
+    
     """
     Iterate each protocol and domain pair 
     """
@@ -157,7 +213,6 @@ def periodic_inference_helper(device_mac_addr, data):
         for cur_domain in cur_domain_set:
             domain_count = {}
             count_dic ={}
-            cur_feature = []
             filter_feature = []
             for i in range(len(times)):
                 if cur_domain.startswith('*'):
@@ -186,7 +241,6 @@ def periodic_inference_helper(device_mac_addr, data):
                     filter_feature.append(True)
                 else:
                     filter_feature.append(False)
-            cur_feature = X_feature[filter_feature]
             
             domain_count2 = len(count_dic.keys())
 
@@ -208,9 +262,6 @@ def periodic_inference_helper(device_mac_addr, data):
             x_min_tmp = x[0]
             x = list(map(lambda x:x-x_min_tmp,x))
             y = list(requestOrdered.values())
-
-            # create a folder for storing the periodicity inference result
-            os.makedirs('%s' % (file_path), exist_ok=True)
 
             count=0
             time_list =  []
@@ -312,9 +363,5 @@ def periodic_inference_helper(device_mac_addr, data):
                         
                 
                     else:
-                        file.write('\nNo period detected %s %s # %d ' %(cur_protocol,cur_domain, domain_count[cur_domain])) 
-    
-
-
-
+                        file.write('\nNo period detected %s %s # %d ' %(cur_protocol,cur_domain, domain_count[cur_domain]))
 
