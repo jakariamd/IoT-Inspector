@@ -9,5 +9,5 @@ on https://github.com/NEU-SNS/BehavIoT/tree/main.
 '''
 
 def preprocess_feature():
-    
+    # Preprocess the feature of idle device
     pass
