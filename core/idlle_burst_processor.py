@@ -55,9 +55,7 @@ def process_idle_burst_helper(burst):
             print('Creating new idle file for device: ', burst[-6])
             f.write(','.join(cols_feat) + '\n')
     
-    # # write the burst data in the file
-    # with open(file_path, 'a') as f:
-    #     f.write(','.join(map(str, burst)) + '\n')
+
     # Write the burst data in the file
     with open(file_path, 'a', newline='') as f:
         print('Writing idle burst for device: ', burst[-6])
