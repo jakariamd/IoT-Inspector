@@ -62,7 +62,7 @@ def preprocess_feature(device_mac_addr):
     test_idle_data = idle_data.iloc[split_index:]  # 20% of the data
 
     if len(train_idle_data) == 0 or len(test_idle_data) == 0:
-        print('Not enough idle data points for: ', device_mac_addr, len(train_idle_data), len(test_idle_data))
+        print('[Pre-process Feature] Not enough idle data points for: ', device_mac_addr, len(train_idle_data), len(test_idle_data))
         return
 
     # Drop the unnecessary columns
@@ -72,22 +72,23 @@ def preprocess_feature(device_mac_addr):
         ['device', 'state', 'event', 'start_time', 'protocol', 'hosts'], axis=1).fillna(-1)
 
 
-    print('train test idle: ', device_mac_addr, len(train_idle_data), len(test_idle_data))
+    print('[Pre-process Feature] train test idle: ', device_mac_addr, len(train_idle_data), len(test_idle_data))
     
     # Convert the data to numpy array
     X_feature = np.array(train_idle_feature)
+    test_idle_feature = np.array(test_idle_feature)  # Convert test_idle_feature to a NumPy array
 
     # Standardize the feature
     ss = StandardScaler()
     train_idle_std = ss.fit_transform(X_feature)
-    test_idle_std = ss.transform(test_idle_feature)
+    test_idle_std = ss.transform(test_idle_feature)  # Apply transformation to the NumPy array
 
 
     # Save ss and pca
     saved_dictionary = dict({'ss': ss})  # ,'pca':pca
     if not os.path.exists(model_path):
         os.makedirs(model_path)
-        print('Creating model directory: ', model_path)
+        print('[Pre-process Feature] Creating model directory: ', model_path)
     pickle.dump(saved_dictionary, open("%s/%s.pkl" % (model_path, device_mac_addr), "wb"))
 
     # Save the standardized data
@@ -112,7 +113,7 @@ def preprocess_feature(device_mac_addr):
     test_idle_std_file = os.path.join(data_path, device_mac_addr + '_test.csv')
     if not os.path.exists(data_path):
         os.makedirs(data_path)
-        print('Creating data directory: ', data_path)
+        print('[Pre-process Feature] Creating data directory: ', data_path)
     
     X_idle_std.to_csv(train_idle_std_file, index=False)
     test_idle_std.to_csv(test_idle_std_file, index=False)
