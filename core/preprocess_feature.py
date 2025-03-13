@@ -55,6 +55,7 @@ def preprocess_feature(device_mac_addr):
     # test_idle_data = idle_data.loc[(idle_data['start_time'] >= split_time)]
 
     # Split the data into training and testing data based on number of rows 80-20%
+    # in original code, the split is based on time
     split_index = int(len(idle_data) * 0.8)
     
     train_idle_data = idle_data.iloc[:split_index]  # 80% of the data
