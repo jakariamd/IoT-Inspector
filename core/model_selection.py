@@ -1,3 +1,5 @@
+from difflib import SequenceMatcher
+
 # This files aims to provide a set of functions to 
 # perform model selection for a device based on the
 # data available in the database.
@@ -6,3 +8,42 @@ def import_models():
     # Import all models from the models directory
     # and return them as a list of models
     pass
+
+
+def is_close_match(str1, str2, threshold=0.75):
+    match_score = SequenceMatcher(None, str1.lower(), str2.lower()).ratio()
+    return 1 if match_score > threshold else 0
+
+def find_best_match(device_name, model_names, threshold=0.75):
+    best_match = None
+    highest_score = 0
+
+    for model_name in model_names:
+        match_score = SequenceMatcher(None, device_name.lower(), model_name.lower()).ratio()
+        if match_score > highest_score:
+            highest_score = match_score
+            best_match = model_name
+
+    if highest_score > threshold:
+        return device_name, best_match
+    else:
+        return device_name, "unknown model_name"
+    
+ 
+
+def main():
+    test_cases = [
+        ("Hello World", "hello_world", 0.8),
+        ("Hello", "H3llo", 0.6),
+        ("Python", "Java", 0.5),
+        ("GitHub", "GitLab", 0.7)
+    ]
+
+    for str1, str2, threshold in test_cases:
+        result = is_close_match(str1, str2, threshold)
+        print(f"Comparing '{str1}' with '{str2}' at threshold {threshold}: {result}")
+
+    
+
+if __name__ == "__main__":
+    main()
