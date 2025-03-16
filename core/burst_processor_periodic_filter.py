@@ -22,6 +22,7 @@ import pickle
 import numpy as np
 import scipy as sp
 
+from core.model_selection import find_best_match
 from core.utils import device_name_mapping, protocol_transform, host_transform
 
 
@@ -52,13 +53,14 @@ def get_mac_address_list():
 
 
 @ttl_lru_cache(ttl_seconds=300, maxsize=128)
-def get_periods(device_name):
+def get_periods(model_name):
     # get device name from MAC address
     # device_name = get_product_name_by_mac(mac_address)
 
-    device_name = device_name_mapping(device_name)
+    # device_name = device_name_mapping(device_name)
 
-    if device_name == 'unknown':
+    if model_name == 'unknown model_name':
+        common.event_log('[Periodic Filter] device not found: ' + str(model_name))
         return ('unknown', 'unknown')
     
     # todo: write a function to map the device name to model file name 
@@ -127,8 +129,15 @@ def periodic_filter_burst_helper(burst):
     # get device name from MAC address
     device_name = get_product_name_by_mac(burst[-6])
 
+    # get moddel name from device name
+    _, model_name = find_best_match(device_name)
+    if model_name == 'unknown model_name':
+        common.event_log('[Periodic Filter] device not found: ' + str(device_name))
+        return ('', '')
+    print('[Periodic Filter] device: ' + str(device_name) + ' model: ' + str(model_name))
+
     # Get periods from fingerprinting files
-    periodic_tuple, host_set = get_periods(device_name) 
+    periodic_tuple, host_set = get_periods(model_name) 
 
     if periodic_tuple == 'unknown':
         common.event_log('[Burst Periodic-filter] Failed loading periodic events: ' + ' for device: ' + str(device_name) + " " + str(burst))
@@ -217,10 +226,11 @@ def periodic_filter_burst_helper(burst):
             continue
 
         # Note: update momel names perodically
-        dname = device_name_mapping(device_name)
+        # dname = device_name_mapping(device_name)
+        
 
         model_file = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'filter_apr20', 'filter', dname + tmp_host_model + tmp_proto + '.model'
+        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'filter_apr20', 'filter', model_name + tmp_host_model + tmp_proto + '.model'
         )
 
         # common.event_log('[Burst Periodic-filter] Condition matched ' + test_hosts + ' ' + test_protocols + ' ' + tmp_host + ' ' + tmp_proto)

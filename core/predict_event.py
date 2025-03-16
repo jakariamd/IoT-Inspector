@@ -17,8 +17,9 @@ import traceback
 import os
 import pickle
 import numpy as np
+from core.model_selection import find_best_match
 
-from core.utils import device_name_mapping, protocol_transform
+from core.utils import protocol_transform
 
 
 
@@ -57,14 +58,16 @@ def predict_event_helper(burst):
     test_timestamp = burst[-3]
     test_protocol = protocol_transform(test_protocol)
 
-    # todo: remove hard coding 
-    if test_hosts == 'n-devs.tplinkcloud.com':
-        test_hosts = 'devs.tplinkcloud.com'
+    # # Jakaria: removed hard coding 
+    # if test_hosts == 'n-devs.tplinkcloud.com':
+    #     test_hosts = 'devs.tplinkcloud.com'
 
-    dname = device_name_mapping(dname) # todo: will be needed future 
-    # todo: remove hard-coding
-    if dname=='echodot4b':
-        dname = 'echospot'
+    # Jakaria: mapping not needed
+    # dname = device_name_mapping(dname) 
+    
+    # Jakaria: removed hard-coding
+    # if dname=='echodot4b':
+    #     dname = 'echospot'
     """
     Predict
     """
@@ -117,10 +120,15 @@ def get_list_of_models(device_name):
         common.event_log('[Predict Event] device not found: ' + str(device_name))
         return ('', '')
     
+    _, model_name = find_best_match(device_name)
+    if model_name == 'unknown model_name':
+        common.event_log('[Predict Event] device not found: ' + str(device_name))
+        return ('', '')
+    print('[Predict Event] device: ' + str(device_name) + ' model: ' + str(model_name))
     
     # Load event models
     model_dir = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'binary', 'rf', device_name
+        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'binary', 'rf', model_name
         )
     
     if not os.path.exists(model_dir):

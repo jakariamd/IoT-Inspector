@@ -21,7 +21,7 @@ import pickle
 import pandas as pd
 import numpy as np
 
-from core.utils import device_name_mapping
+from core.model_selection import find_best_match
 
 
 # define the expected features of a burst 
@@ -112,11 +112,18 @@ def get_ss_pca_model(mac_address):
     # elif device_name == 'Ring Camera':
     #     device_name = 'ring-camera'
 
-    device_name = device_name_mapping(device_name)
+    # device_name = device_name_mapping(device_name)
+    # Jakaria: removed hard coding
+    _, model_name = find_best_match(device_name)
+    if model_name == 'unknown model_name':
+        common.event_log('[Burst Processor] Model not found: ' + str(device_name))
+        return "Model Unknown"
+    
+    print('[Burst Pre-Processor] device: ' + str(device_name) + ' model: ' + str(model_name))
 
     # Load ss and pca file
     model_dir = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'SS_PCA', device_name + '.pkl'
+        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'SS_PCA', model_name + '.pkl'
         )
     
     # common.event_log('[Burst Pre-Processor] model file location: ' + str(model_dir))
