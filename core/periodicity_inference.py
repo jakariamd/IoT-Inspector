@@ -18,6 +18,7 @@ import matplotlib.pyplot as plt
 from scipy.fft import fft, ifft, fftfreq
 from statsmodels import api as sm
 import re
+from core.burst_processor import get_product_name_by_mac
 # import core.global_state as global_state
 # from core.utils import device_name_mapping, protocol_transform, host_transform
 
@@ -33,11 +34,11 @@ cols_feat = [ "meanBytes", "minBytes", "maxBytes", "medAbsDev",
 
 
 # output the periodicity inference result to the periodicity-inference folder
-file_path = os.path.join(common.get_project_directory(), 'freq_period', '1s')
+file_path = os.path.join(common.get_project_directory(), 'models', 'freq_period', '1s')
 
 # output directory for the fingerprint generation
-out_dir = os.path.join(common.get_project_directory(), 'freq_period', 'fingerprints')
-non_dir = os.path.join(common.get_project_directory(), 'freq_period', 'nonperiod')
+out_dir = os.path.join(common.get_project_directory(), 'models', 'freq_period', 'fingerprints')
+non_dir = os.path.join(common.get_project_directory(), 'models', 'freq_period', 'nonperiod')
 
 def periodic_inference(device_mac_addr):
     # get the idle data 
@@ -92,8 +93,14 @@ def fingerprint_generation(device_mac_addr):
     # Create the output directory if it does not exist
     os.makedirs(out_dir, exist_ok=True)
 
+    # find product name from mac address
+    device_name = get_product_name_by_mac(device_mac_addr)
+    if device_name == 'Unknown Device':
+        device_name = 'unknown-device'
+    device_name = device_name.lower().replace(' ', '-')
+
     # Open the output file for writing using a with statement
-    output_file_path = os.path.join(out_dir, device_mac_addr.replace(':', '_') + '.txt')
+    output_file_path = os.path.join(out_dir, device_name + '.txt')
     with open(output_file_path, 'w+') as out_file:
         # Process the frequency period data
         output_dic = {}

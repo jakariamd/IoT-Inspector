@@ -16,7 +16,8 @@ def import_models():
 
     # Note: The models are stored in the following directory
     # <project_dir>/models/binary/rf/<model_name>
-    models_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'binary', 'rf')
+    # models_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'binary', 'rf')
+    models_dir = os.path.join(common.get_project_directory(), 'models', 'binary', 'rf')
     model_folders = [name for name in os.listdir(models_dir) if os.path.isdir(os.path.join(models_dir, name))]
     
     return model_folders

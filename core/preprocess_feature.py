@@ -14,9 +14,12 @@ import core.common as common
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 import pickle
+from core.burst_processor import get_product_name_by_mac
 
 # define the path to save the model
 model_path = os.path.join(common.get_project_directory(), 'models', 'SS_PCA')
+rf_path = os.path.join(common.get_project_directory(), 'models', 'binary', 'rf')
+# define the path to save the preprocessed data
 data_path = os.path.join(common.get_project_directory(), 'idle-data-std')
 
 # define the expected features of a burst
@@ -83,13 +86,27 @@ def preprocess_feature(device_mac_addr):
     train_idle_std = ss.fit_transform(X_feature)
     test_idle_std = ss.transform(test_idle_feature)  # Apply transformation to the NumPy array
 
+    # get device name from MAC address
+    device_name = get_product_name_by_mac(device_mac_addr)
+    device_name = device_name.lower().replace(' ', '-')
+
+    if not device_name:
+        print('[Pre-process Feature] Device name unknown for MAC address: ', device_mac_addr)
+        device_name = 'unknown-device'
+
+    print('[Pre-process Feature] Device name: ', device_name)
 
     # Save ss and pca
     saved_dictionary = dict({'ss': ss})  # ,'pca':pca
     if not os.path.exists(model_path):
         os.makedirs(model_path)
         print('[Pre-process Feature] Creating model directory: ', model_path)
-    pickle.dump(saved_dictionary, open("%s/%s.pkl" % (model_path, device_mac_addr), "wb"))
+    pickle.dump(saved_dictionary, open("%s/%s.pkl" % (model_path, device_name), "wb"))
+
+    # Create a folder with device name at rf_path
+    device_rf_path = os.path.join(rf_path, device_name)
+    if not os.path.exists(device_rf_path):
+        os.makedirs(device_rf_path)
 
     # Save the standardized data
     X_idle_std = pd.DataFrame(train_idle_std, columns=cols_feat[:-6])

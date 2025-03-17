@@ -2,7 +2,7 @@ import logging
 
 import core.burst_processor
 import core.burst_processor_periodic_filter
-import core.idlle_burst_processor
+import core.idle_burst_processor
 import core.predict_event
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
@@ -53,7 +53,7 @@ def start_threads():
     core.common.SafeLoopThread(core.burst_processor.process_burst, sleep_time=0)
     core.common.SafeLoopThread(core.burst_processor_periodic_filter.periodic_filter_burst, sleep_time=0)
     core.common.SafeLoopThread(core.predict_event.predict_event, sleep_time=0)
-    core.common.SafeLoopThread(core.idlle_burst_processor.process_idle_burst, sleep_time=0)
+    core.common.SafeLoopThread(core.idle_burst_processor.process_idle_burst, sleep_time=0)
 
 
     core.common.log('Inspector started')

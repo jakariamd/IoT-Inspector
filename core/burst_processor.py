@@ -99,31 +99,23 @@ def get_product_name_by_mac(mac_address):
 # todo: write a function to map the device name to model file name 
 # todo: update every 10 mins, or clean memory every 10 mis 
 @ttl_lru_cache(ttl_seconds=300, maxsize=128)
-def get_ss_pca_model(mac_address):
-    device_name = get_product_name_by_mac(mac_address)
+def get_ss_pca_model(device_name):
+    # device_name = get_product_name_by_mac(mac_address)
     if device_name == 'Unknown Device':
         return "Model Unknown"
-    
-    # # todo: write a function to map the device name to model file name 
-    # if device_name == 'Amazon Plug':
-    #     device_name = 'amazon-plug'
-    # elif device_name == 'Amazon Echo':
-    #     device_name = 'echodot4b'
-    # elif device_name == 'Ring Camera':
-    #     device_name = 'ring-camera'
 
     # device_name = device_name_mapping(device_name)
     # Jakaria: removed hard coding
     _, model_name = find_best_match(device_name)
+    print('[Burst Pre-Processor] device: ' + str(device_name) + ' model: ' + str(model_name))
+
     if model_name == 'unknown model_name':
         common.event_log('[Burst Processor] Model not found: ' + str(device_name))
         return "Model Unknown"
-    
-    print('[Burst Pre-Processor] device: ' + str(device_name) + ' model: ' + str(model_name))
 
     # Load ss and pca file
     model_dir = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'SS_PCA', model_name + '.pkl'
+        common.get_project_directory(), 'models', 'SS_PCA', model_name + '.pkl'
         )
     
     # common.event_log('[Burst Pre-Processor] model file location: ' + str(model_dir))
@@ -152,8 +144,7 @@ def process_burst_helper(burst):
     X_feature = X_feature.drop(['device', 'state', 'event' ,'start_time', 'protocol', 'hosts'], axis=1).fillna(-1)
     X_feature = np.array(X_feature)
 
-
-    ss_pca_model = get_ss_pca_model(burst[-6])
+    ss_pca_model = get_ss_pca_model(device_name)
 
     if ss_pca_model == "Model Unknown":
         common.event_log('[Burst Pre-Processor] Process unsuccessful: ' + str(device_name) + ' SS PCA not exist')

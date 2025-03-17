@@ -63,17 +63,10 @@ def get_periods(model_name):
         common.event_log('[Periodic Filter] device not found: ' + str(model_name))
         return ('unknown', 'unknown')
     
-    # todo: write a function to map the device name to model file name 
-    # if device_name == 'Amazon Plug':
-    #     device_name = 'amazon-plug'
-    # elif device_name == 'Amazon Echo':
-    #     device_name = 'echodot4b'
-    # elif device_name == 'Ring Camera':
-    #     device_name = 'ring-camera'
 
     # Load periodic fingerprints
     model_dir = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'freq_period', 'fingerprints', model_name + '.txt'
+        common.get_project_directory(), 'models', 'freq_period', 'fingerprints', model_name + '.txt'
         )
     
     if os.path.exists(model_dir):
