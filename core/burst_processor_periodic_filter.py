@@ -73,7 +73,7 @@ def get_periods(model_name):
 
     # Load periodic fingerprints
     model_dir = os.path.join(
-        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'freq_period', 'fingerprints', device_name + '.txt'
+        os.path.dirname(os.path.realpath(__file__)), '..', 'models', 'freq_period', 'fingerprints', model_name + '.txt'
         )
     
     if os.path.exists(model_dir):

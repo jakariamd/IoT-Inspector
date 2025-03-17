@@ -1,5 +1,6 @@
 import os
 import core.common as common
+from functools import lru_cache
 
 # This file aims to provide a set of functions to 
 from difflib import SequenceMatcher
@@ -8,6 +9,7 @@ from difflib import SequenceMatcher
 # perform model selection for a device based on the
 # data available in the database.
 
+@lru_cache(maxsize=128)
 def import_models():
     # Import all models from the models directory
     # and return them as a list of models
