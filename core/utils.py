@@ -3,6 +3,9 @@ from functools import lru_cache
 from core.common import get_project_directory
 import os
 import json
+from difflib import SequenceMatcher
+
+from core.model_selection import find_best_match
 
 def validate_ip_address(address):
     """ check if it's a valid ip address
@@ -61,6 +64,22 @@ def protocol_transform(test_protocols):
     if ';' in test_protocols:
         tmp = test_protocols.split(';')
         test_protocols = ' & '.join(tmp)
+    return test_protocols
+
+@lru_cache(maxsize=128)
+def protocol_transform_list(test_protocols):
+    for i in range(len(test_protocols)):
+        if 'TCP' in test_protocols[i]:
+            test_protocols[i] = 'TCP'
+        elif 'MQTT' in test_protocols[i]:
+            test_protocols[i] = 'TCP'
+        elif 'UDP' in test_protocols[i]:
+            test_protocols[i] = 'UDP'
+        elif 'TLS' in test_protocols[i]:
+            test_protocols[i] = 'TCP'
+        if ';' in test_protocols[i]:
+            tmp = test_protocols[i].split(';')
+            test_protocols[i] = ' & '.join(tmp)
     return test_protocols
 
 # transform multiple hosts to single host
@@ -131,3 +150,28 @@ def is_device_idle(mac_address):
     except Exception as e:
         print('Error reading device info from database: ' + str(e))
         return False
+    
+
+def get_eps_by_device(device_name):
+    """
+    Get the EPS (events per second) for a given device name.
+    
+    Args:
+        device_name (str): The name of the device.
+        
+    Returns:
+        int: The EPS value for the device, or 0 if not found.
+    """
+
+    try:
+        file_path = os.path.join(os.path.dirname(__file__), 'eps_list.json')
+        with open(file_path, 'r') as file:
+            eps_dict = json.load(file)
+        
+        # Find the most matched device name
+        model_name = find_best_match(device_name, eps_dict.keys(), 0.9)
+        return eps_dict.get(model_name, 5)
+    except Exception as e:
+        print('Error reading EPS info from file: ' + str(e))
+        return 5
+    

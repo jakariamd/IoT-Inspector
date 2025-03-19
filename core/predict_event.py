@@ -74,11 +74,10 @@ def predict_event_helper(burst):
 
     positive_label_set, list_models = get_list_of_models(dname)
 
-    print('[Predict-Event] device: ' + str(dname) + ' positive_label_set: ' + str(positive_label_set))
+    # print('[Predict-Event] device: ' + str(dname) + ' positive_label_set: ' + str(positive_label_set))
 
     if positive_label_set == '' or len(positive_label_set) == 0:
         print('[Predict-Event] unknown event detected: ' + str(dname))
-        
         return
     
     # comment if not running 
@@ -128,7 +127,7 @@ def get_list_of_models(device_name):
     if model_name == 'unknown model_name':
         common.event_log('[Predict Event] device not found: ' + str(device_name))
         return ('', '')
-    print('[Predict Event] device: ' + str(device_name) + ' model: ' + str(model_name))
+    # print('[Predict Event] device: ' + str(device_name) + ' model: ' + str(model_name))
     
     # Load event models
     model_dir = os.path.join(

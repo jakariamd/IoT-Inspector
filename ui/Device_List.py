@@ -22,7 +22,7 @@ import os
 import core.common as core_common
 from core.periodicity_inference import periodic_inference
 from core.preprocess_feature import preprocess_feature
-
+from core.periodic_filter_training import train_periodic_models
 
 
 
@@ -270,6 +270,7 @@ def show_popup(device_mac_addr):
             st.write("Analyzing idle data...")
             periodic_inference(device_mac_addr)
             preprocess_feature(device_mac_addr)
+            train_periodic_models(device_mac_addr)
 
         if st.button("No"):
             st.session_state[f'show_popup_{device_mac_addr}'] = False
