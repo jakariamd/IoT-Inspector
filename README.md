@@ -61,7 +61,7 @@ git clone https://github.com/jakariamd/IoT-Inspector.git
 cd IoT-Inspector
 python3 -m venv env
 source env/bin/activate
-pip install -r requirements-general.txt
+pip install -r requirements.txt
 ```
 
 To run, do the following
