@@ -57,7 +57,7 @@ You will need Python and Git already set up on your system. You'll also need to 
 Run the following in your terminal:
 
 ```
-git clone https://github.com/nyu-mlab/iot-inspector-client.git
+git clone https://github.com/jakariamd/IoT-Inspector.git
 cd iot-inspector-client
 python3 -m venv env
 source env/bin/activate
@@ -77,7 +77,7 @@ cd ui
 Run the following in your terminal:
 
 ```
-git clone https://github.com/nyu-mlab/iot-inspector-client.git
+git clone https://github.com/jakariamd/IoT-Inspector.git
 cd iot-inspector-client
 python.exe -m venv env
 env/Script/activate.bat
