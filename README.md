@@ -58,7 +58,7 @@ Run the following in your terminal:
 
 ```
 git clone https://github.com/jakariamd/IoT-Inspector.git
-cd iot-inspector-client
+cd IoT-Inspector
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements-general.txt
@@ -78,7 +78,7 @@ Run the following in your terminal:
 
 ```
 git clone https://github.com/jakariamd/IoT-Inspector.git
-cd iot-inspector-client
+cd IoT-Inspector
 python.exe -m venv env
 env/Script/activate.bat
 pip install -r requirements.txt
