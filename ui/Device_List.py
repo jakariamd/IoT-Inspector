@@ -6,7 +6,8 @@
 
 import time
 import streamlit as st
-import template
+import template as template
+from template import show
 import ui.common as common
 import core.model as model
 import analysis.traffic_rate as traffic_rate
@@ -25,8 +26,7 @@ from core.preprocess_feature import preprocess_feature
 from core.periodic_filter_training import train_periodic_models
 
 
-
-template.show(
+show(
     'Device List',
     'A list of Internet-connected devices on your network. \
     \nCheck Idle check-box if you \
