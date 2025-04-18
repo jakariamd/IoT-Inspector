@@ -49,7 +49,10 @@ def start_threads():
     core.common.SafeLoopThread(core.friendly_organizer.add_product_info_to_devices, sleep_time=5)
     core.common.SafeLoopThread(core.data_donation.start, sleep_time=15)
 
-    # Note: new thread added to continuously monitor activity 
+    # Note: new thread added to continuously monitor activity on the network
+    # Note: new thread added to periodically filter burst
+    # Note: new thread added to predict event
+    # Note: new thread added to process idle burst
     core.common.SafeLoopThread(core.burst_processor.process_burst, sleep_time=0)
     core.common.SafeLoopThread(core.burst_processor_periodic_filter.periodic_filter_burst, sleep_time=0)
     core.common.SafeLoopThread(core.predict_event.predict_event, sleep_time=0)
