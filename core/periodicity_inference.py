@@ -3,7 +3,7 @@
 Title: Periodicity Inference
 Author: Md Jakaria
 Date: Jan 2025
-Description: This module infers periodicity in network traffic.
+Description: This module infers periodicity and fingerprints in network traffic.
 Reference: This code was inspired by and adapted from the work of Tianrui Hue 
            on https://github.com/NEU-SNS/BehavIoT/tree/main.
 ===============================================================================

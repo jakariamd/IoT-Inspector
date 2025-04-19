@@ -22,7 +22,7 @@ from core.burst_processor import get_product_name_by_mac
 import os
 import core.common as core_common
 from core.periodicity_inference import periodic_inference
-from core.preprocess_feature import preprocess_feature
+from core.preprocess_feature_new import preprocess_feature
 from core.periodic_filter_training import train_periodic_models
 
 

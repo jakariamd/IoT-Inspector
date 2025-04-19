@@ -530,7 +530,7 @@ def process_burst(pkt):
 #             "network_in_local", "network_out_local", "meanBytes_out_external",
 #             "meanBytes_in_external", "meanBytes_out_local", "meanBytes_in_local", "device", "state", "event", "start_time", "protocol", "hosts"]
 
-# todo: check if this function needs to be runnin in a separate thread 
+# todo: check if this function needs to be running in a separate thread 
 # todo: because it will need to run in a separate thread to write the burst features to the database
 # process a burst from the queue to extract features
 def process_pending_burst(flow_key, pop_time, pop_burst):

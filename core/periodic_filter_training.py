@@ -217,7 +217,7 @@ def train_periodic_models(device_mac_addr):
             # os.system('mkdir -pv %s' % model_dir)
             os.makedirs(model_dir, exist_ok=True)
         # model_file = os.path.join(model_dir, dname + tmp_host + tmp_proto +".model")
-        # todo Jakaria edited the above line
+        #Note: Jakaria edited the above line
         model_file = os.path.join(model_dir,
                                   dname.replace('*', '') +
                                   tmp_host.replace(':', '-') +
