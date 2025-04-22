@@ -218,7 +218,7 @@ def periodic_filter_burst_helper(burst):
         if filter_test == False:
             continue
 
-        # Note: update momel names perodically
+        # Note: update model names perodically
         # dname = device_name_mapping(device_name)
         
 

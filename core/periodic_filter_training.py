@@ -238,7 +238,7 @@ def train_periodic_models(device_mac_addr):
         filter_test = []
         matched_suffix = False
         for i in range(len(test_feature)):
-            
+            # Note: hard coding
             if tmp_host.startswith('*'):
                 matched_suffix = test_hosts[i].endswith(tmp_host[2:])
                 if matched_suffix==False and tmp_host=='*.compute.amazonaws.com':

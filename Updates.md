@@ -180,7 +180,7 @@ Filter out periodic events from activity datasets for better user event classifi
 python pipeline/s5_filter_by_periodic.py -i train -o model/filter 
 python pipeline/s5_filter_by_periodic.py -i test -o model/filter
 ```
-<span style="color:red">**Implemented in core/periodic_filter_training.py**</span>
+<span style="color:red">**Implemented in core/burst_porcessor_periodic_filter.py**</span>
 
 #### routine and uncontrolled dataset
 Filters for routine and uncontrolled datasets. It uses both timing information and trained ML models for filtering
@@ -190,8 +190,9 @@ python pipeline/s5_filter_by_periodic_after_time.py -i routines -o model/filter
 # python3 pipeline/s5_filter_by_periodic_after_time.py -i uncontrolled -o model/filter_may1
 # python3 pipeline/s5_filter_by_periodic_after_time.py -i uncontrolled02 -o model/filter_may1
 ```
+<span style="color:red">**TBA**</span>
 
-### 6. Activity (user event) inference
+### 6. Activity (user event) inference 
 We've provided two options for user event inference: with and without hostnames. Based on our observations in the paper, 
 the hostnames remain unchanged for most user events. However, there could be exceptions due to behavior changes or 
 incomplete hostname-IP mappings. Therefore, we've implemented both methods. 
