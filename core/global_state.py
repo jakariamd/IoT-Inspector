@@ -81,3 +81,6 @@ devices_state = {}
 
 # A storage for the idle burst, periodically saved to a file based on the size of the storage
 idle_burst_queue = queue.Queue()
+
+# A storage for possible event types for a device
+possible_event_types = {}

@@ -10,6 +10,7 @@ import ui.common as common
 import ui.donation_box as donation_box
 import core.global_state as global_state
 from datetime import datetime
+import requests
 
 
 
@@ -218,6 +219,7 @@ def show_device_details(mac_addr):
 
     show_activities_table(
         mac_addr,
+        product_name,
         last_n_seconds=time_range,
         group_by_col=group_by_col,
         show_empty=show_empty
@@ -303,35 +305,134 @@ def show_activity_graph(mac_addr, last_n_seconds=20, group_by_col='reg_domain', 
         with column:
             st.plotly_chart(fig, use_container_width=True)
 
+def show_option_buttons(options, default_option=None, key="option_buttons"):
+    # Initialize session state for the selected option
+    if key not in st.session_state:
+        st.session_state[key] = default_option if default_option else options[0]
+
+    # Create buttons for each option
+    selected_option = st.session_state[key]
+
+    # Add custom CSS to remove gaps between buttons
+    st.markdown(
+        """
+        <style>
+        div[data-testid="stHorizontalBlock"] > div {
+            display: flex;
+            gap: 0px; /* Remove space between buttons */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    cols = st.columns(len(options))  # Create columns for side-by-side buttons
+
+    for i, option in enumerate(options):
+        # Highlight the default option
+        is_selected = option == selected_option
+        is_default = option == default_option
+
+        # Define button style
+        button_style = (
+            "background-color: lightblue; color: white; border: 2px solid blue; border-radius: 5px;"
+            if is_selected
+            else "background-color: white; color: black; border: 1px solid gray; border-radius: 5px;"
+        )
+        if is_default:
+            button_style += " font-weight: bold;"
+
+        # Use markdown to style the button
+        button_html = f"""
+        <button style="{button_style}">{option}</button>
+        """
+        if cols[i].button(option, key=f"{key}_{option}"):
+            st.session_state[key] = option  # Update the selected option in session state
+
+    return st.session_state[key]
+
+
+# def query_llm_api_for_event_types(product_name):
+#     """Process text and generate flashcards using the Gemini API."""
+#     # Define the prompt for generating flashcards
+#     prompt = (
+#         f"Create flashcards in the following (dictionary) format:\n"
+#         f"{{\"cards\": [{{\"front\": \"Question 1\", \"back\": \"Answer 1\", \"hint\": \"Hint 1\"}}, {{\"front\": \"Question 2\", \"back\": \"Answer 2\", \"hint\": \"Hint 2\"}}]}}"
+#         f"\n\nUse the following text to generate the flashcards:\n\n"
+#         f"\"{cleaned_text}\"\n\n"
+#         f"Strictly follow the the format and ensure the flashcards are relevant to the text."
+#     )
+
+#     # Define the payload for the Gemini API
+#     payload = {
+#         "contents": [
+#             {
+#                 "parts": [{"text": prompt}]
+#             }
+#         ]
+#     }
+
+#     # Make a POST request to the Gemini API
+#     headers = {
+#         "Content-Type": "application/json"
+#     }
+#     try:
+#         response = requests.post(
+#             f"{GEMINI_API_URL}?key={GEMINI_API_KEY}",
+#             headers=headers,
+#             json=payload
+#         )
+#         # Check if the request was successful
+#         if response.status_code != 200:
+#             raise Exception(f"Gemini API error: {response.status_code} - {response.text}")
+
+#         # Parse the response from the Gemini API
+#         flashcards = response.json()
+#         try:
+#             flashcards_json =  json.loads(flashcards['candidates'][0]["content"]['parts'][0]['text'][7:-4])
+#             return flashcards_json
+#         except json.JSONDecodeError as e:
+#             logging.error(f"JSON Decode Error: {str(e)}")
+#             raise
+#     except Exception as e:
+#         logging.error(f"Error communicating with Gemini API: {str(e)}")
+#         raise
+
+
 
 # todo Jakaria: implement the activity tracker table 
-def show_activities_table(mac_addr, last_n_seconds=20, group_by_col='reg_domain', show_empty=True):
-
-    # try:
-    #     data_df = deferred_action.execute(
-    #         func=traffic_rate.get_data_usage,
-    #         args=(mac_addr, last_n_seconds, group_by_col, show_empty),
-    #         ttl=5
-    #     )
-    # except deferred_action.NoResultYet as pending_job_count:
-    #     show_pending_job_count(pending_job_count)
-    #     return
-
-    # row_widths = [0.3, 0.25, 0.25, 0.2]
-
-    # # Row header
-    # cols = st.columns(row_widths)
-    # st.caption(f'Number of elements: {len(data_df)}')
+def show_activities_table(mac_addr, product_name, last_n_seconds=20, group_by_col='reg_domain', show_empty=True):
     events = get_events(mac_addr)
     if events == '':
         return
     events = events[-10:]
-    temp_time = 0
+
+    # # Create a list of unique event types
+    # if product_name in global_state.possible_event_types:
+    #     event_types = global_state.possible_event_types[product_name]
+    # else:
+    #     # Query the LLM API to get possible event types for the product_name
+    #     event_types = query_llm_api_for_event_types(product_name)
+    #     global_state.possible_event_types[product_name] = event_types
+
+    event_types = ['voice', 'volume', 'on', 'off']
+
     for event in reversed(events):
-        st.markdown(f' Time: `{datetime.fromtimestamp(float(event[0]))}` Event: `{event[1]}`')
+        event_time = datetime.fromtimestamp(float(event[0]))
+        event_name = event[1]
 
+        # Display the event time and name
+        st.markdown(f'**Time:** `{event_time}` **Event:** `{event_name}`')
 
+        # Display the button group
+        selected_event = show_option_buttons(
+            options=event_types,
+            default_option='voice',
+            key="event_buttons_" + str(event[0])
+        )
 
+        # Display the selected option
+        st.write(f"You selected: {selected_event}")
 
 def show_data_usage_table(mac_addr, last_n_seconds=20, group_by_col='reg_domain', show_empty=True):
 
