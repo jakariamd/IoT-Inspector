@@ -34,6 +34,8 @@ flow_dict = {}
 # Timestamp of the last time the flow_dict was written to db
 flow_dict_last_db_write_ts = {'_': 0}
 
+# write function to detect re-transmission and duplicate packets
+seen_packets = set()
 
 def process_packet():
 
@@ -395,6 +397,64 @@ def process_client_hello(pkt):
 
 
 
+
+def process_retransmission(pkt):
+    global seen_packets
+    # common.log(f"[Packet Processor] Processing packet for retransmission check SRC: \
+    #            {pkt[sc.IP].src} DST: {pkt[sc.IP].dst} \
+    #             SEQ: {pkt[sc.TCP].seq} ACK: {pkt[sc.TCP].ack}")
+    if len(seen_packets) > 2000:
+        # Keep the last 10% packets
+        seen_packets = set(list(seen_packets)[-200:])  
+
+    try:
+        packet_hash = hash((pkt[sc.IP].src, pkt[sc.IP].dst, pkt[sc.TCP].seq, pkt[sc.TCP].ack))
+    except AttributeError:
+        # If the packet is not TCP, we don't need to check for retransmission
+        common.log(f"[Packet Processor] Not a TCP packet - retransmission check skipped")
+        return False
+    
+    if packet_hash in seen_packets:
+        # common.log(f"[Packet Processor] Re-transmission detected SRC: \
+        #            {pkt[sc.IP].src} DST: {pkt[sc.IP].dst} \
+        #             SEQ: {pkt[sc.TCP].seq} ACK: {pkt[sc.TCP].ack}")
+        return True
+    else:
+        seen_packets.add(packet_hash)
+        return False
+    
+
+def is_duplicate_udp(pkt):
+    global seen_packets
+    # common.log(f"[Packet Processor] Processing packet for duplicate UDP check {len(seen_packets)}")
+    if len(seen_packets) > 2000:
+        # Keep the last 10% packets
+        seen_packets = set(list(seen_packets)[-200:])  
+
+    try:
+        if sc.UDP in pkt:
+            packet_hash = hash(
+                (pkt[sc.IP].src,
+                pkt[sc.IP].dst,
+                pkt[sc.UDP].sport, 
+                pkt[sc.UDP].dport, 
+                pkt.payload)
+            )
+    except AttributeError:
+        # If the packet is not TCP or UDP, we don't need to check for retransmission
+        common.log(f"[Packet Processor] Not a TCP or UDP packet - retransmission check skipped")
+        return False
+
+    if packet_hash in seen_packets:
+        # common.log(f"[Packet Processor] Duplicate UDP packet detected SRC: \
+        #            {pkt[sc.IP].src} DST: {pkt[sc.IP].dst} ")
+        return True
+    else:
+        seen_packets.add(packet_hash)
+        return False
+
+
+
 # Note: This fiunction proess packet for activity detection
 # ==========================================================================================
 # Process packet to burst; Input: packet; Output: none
@@ -432,8 +492,17 @@ def process_burst(pkt):
         _ws_protocol = protocol
     
     # todo: set empty for now; useful for removing re/duplicate transmission
-    _ws_expert = ""                 
+    _ws_expert = ""
 
+
+    if protocol == 'TCP':
+        # Check for retransmission
+        if process_retransmission(pkt):
+            _ws_expert = "re-transmission"   
+    # Check for duplicate UDP packets
+    elif protocol == 'UDP':
+        if is_duplicate_udp(pkt):
+            _ws_expert = "duplicate packet"            
 
     # Get MAC, IP addresses, port numbers 
     src_mac_addr = pkt[sc.Ether].src
