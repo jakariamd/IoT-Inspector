@@ -117,3 +117,6 @@ config.json
 uv.lock
 models/
 logs/
+data/
+model_fine_tuning/
+privacy_agent/rag_iot_data/

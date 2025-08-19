@@ -1,5 +1,8 @@
 import functools
 import libinspector
+import requests
+import json
+import hashlib
 
 
 def get_hostnames(mac_address):
@@ -30,3 +33,49 @@ def get_hostnames(mac_address):
         # print(f"Hostnames for MAC {mac_address}: {hostnames}")
         return hostnames if hostnames else None
 
+
+@functools.lru_cache(maxsize=256)
+def predict_vendor(payload):
+    """
+    Predict vendor name using the API with caching.
+    
+    Args:
+        user_agent (str): User agent string
+        oui (str): OUI information
+        netdisco_info (str): Network discovery information
+        remote_hostnames (str): Remote hostnames (comma-separated if multiple)
+        user_label (str): User-provided label
+        talks_to_ads (bool): Whether device communicates with ad servers
+        
+    Returns:
+        str: Predicted vendor name or None if API call fails
+    """
+    print(f'input: {payload}')
+    try:
+        # API endpoint and headers
+        url = "https://instance-20250625-161432.tailcedbd.ts.net/predict"
+        headers = {
+            "Content-Type": "application/json",
+            "x-api-key": "momo"
+        }
+        
+        
+        # Make API call with timeout
+        response = requests.post(url, headers=headers, json=json.loads(payload), timeout=30)
+        response.raise_for_status()
+        
+        # Parse response and extract vendor prediction
+        # result = response.json()
+        # return result.get("predicted_vendor", None)
+        print(f'input: {payload} response.status_code: {response.status_code} response.json(): {response.json()}')
+        return response.json()
+
+    except requests.exceptions.RequestException as e:
+        print(f"API request failed: {e}")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"Failed to parse API response: {e}")
+        return None
+    except Exception as e:
+        print(f"Unexpected error in predict_vendor: {e}")
+        return None

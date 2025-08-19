@@ -2,7 +2,7 @@ import streamlit as st
 import libinspector.global_state
 import pandas as pd
 import datetime
-
+import common
 
 
 def show():
@@ -24,7 +24,11 @@ def activity_inference(mac_address):
 @st.fragment(run_every=1)
 def show_device_details(mac_address):
 
-    st.markdown(f"### {mac_address}")
+    # Get custom device name from config
+    device_name_config_key = f'device_name_{mac_address}'
+    device_display_name = common.config_get(device_name_config_key, "Unnamed Device")
+
+    st.markdown(f"### {device_display_name}")
 
     sql = """
         SELECT

@@ -1,0 +1,3632 @@
+[
+  {
+    "device": "Honeywell Home Assistant",
+    "brand": "Honeywell",
+    "policy_urls": [
+      "https://www.honeywell.com/us/en/privacy-statement",
+      "https://thehomeassistantblog.com/privacy-policy/",
+      "https://www.honeywellbuildings.in/privacy-policy",
+      "https://www.onity.com/en/us/legal/privacy-notice/",
+      "https://tech.yahoo.com/home/articles/smart-thermostats-privacy-heres-data-133100108.html"
+    ],
+    "product_urls": [
+      "https://automation.honeywell.com/us/en/services/warehouse-automation/digital-services/maintenance-assist",
+      "https://www.honeywellhome.com/us/en/support/",
+      "https://automation.honeywell.com/us/en/support/software-downloads",
+      "https://www.lowes.com/pl/smart-home/smart-devices/smart-wi-fi-thermostats/honeywell-home/google-assistant/37721669146466-1120275607174-4023429307?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.ebay.com/b/Honeywell-Google-Home-Assistant-Home-Programmable-Thermostats/115949/bn_114572146?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.honeywellhome.com/us/en/support/air/thermostats/product-selector/manuals/",
+      "https://sps-support.honeywell.com/s/article/How-to-obtain-service-manuals-spare-parts-manuals-or-service-software-tools-from-Honeywell",
+      "https://www.manualslib.com/brand/honeywell/",
+      "https://www.honeywellhome.com/us/en/support/air/thermostats/product-selector/installation/",
+      "https://www.smarthomeperfected.com/honeywell-thermostat-manuals/"
+    ]
+  },
+  {
+    "device": "Honeywell Smart Thermostat",
+    "brand": "Honeywell",
+    "policy_urls": [
+      "https://www.honeywell.com/us/en/privacy-statement",
+      "https://wonchecd.com/smart-thermostats-and-your-privacy-heres-what-data-theyre-collecting-around-your-home/",
+      "https://www.honeywellbuildings.in/privacy-policy",
+      "https://www.onity.com/en/us/legal/privacy-notice/",
+      "https://tech.yahoo.com/home/articles/smart-thermostats-privacy-heres-data-133100108.html"
+    ],
+    "product_urls": [
+      "https://www.honeywellstore.com/store/categories/home-thermostats.htm",
+      "https://automation.honeywell.com/us/en/products/sensing-solutions/sensors/temperature-and-humidity-sensors/thermostats",
+      "https://www.honeywellhome.com/us/en/",
+      "https://www.honeywellhome.com/us/en/products/air/thermostats/",
+      "https://www.talkofthevillages.com/forums/villages-florida-general-discussion-73/thermostat-replacement-wifi-thermostat-95825/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/honeywell/thermostat.html",
+      "https://www.smarthomeperfected.com/honeywell-thermostat-manuals/",
+      "https://www.manuals.ca/thermostats/honeywell",
+      "https://thermostat.guide/honeywell/honeywell-home-th6320wf1005-focuspro-wifi-programmable-thermostat-installation-guide/",
+      "https://www.honeywellhome.com/us/en/support/air/thermostats/programmable-thermostats/t4-pro-programmable-thermostat-1-heat-1-cool-th4110u2005-u/"
+    ]
+  },
+  {
+    "device": "ADB Set Top Box",
+    "brand": "ADB",
+    "policy_urls": [
+      "https://www.adb.org/documents/access-information-policy",
+      "https://www.adb.org/terms-use",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control"
+    ],
+    "product_urls": [
+      "https://www.manualslib.com/brand/adb/set-top-boxes.html",
+      "https://www.adbglobal.com/",
+      "https://www.ebay.com/itm/405446559051?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.ebay.com/itm/305773278608?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.borderstates.com/All-Products/Communications-DataComm/Networking/TV-Set-Top-Boxes/ADB-1761-Series-Set-Top-Boxes/ADB-1761-Series-Set-Top-Boxes/p/3224024"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/adb/set-top-boxes.html",
+      "https://manualzz.com/doc/html/55934954/adb-3721wn-manual",
+      "https://www.manualslib.com/manual/1252495/United-Communications-Adb-3721.html",
+      "https://manualzz.com/doc/22433963/adb-set-top-box-user-manual"
+    ]
+  },
+  {
+    "device": "Amazon Fire TV Edition",
+    "brand": "Amazon",
+    "policy_urls": [
+      "https://www.amazonforum.com/s/question/0D56Q0000A7NjN5SQK/privacy-policy",
+      "https://www.amazon.com/fetch/kiosk/legal/privacyNotice",
+      "https://www.consumerreports.org/electronics/privacy/how-to-turn-off-smart-tv-snooping-features-a4840102036/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://techculture.biz/amazon-alexa-in-smart-homes-balancing-convenience-privacy-and-ethical-challenges/",
+      "https://docs.aws.amazon.com/iot/latest/developerguide/data-protection.html"
+    ],
+    "product_urls": [
+      "https://www.bestbuy.com/site/amazon/amazon-fire-tv/pcmcat1523978687076.c?id=pcmcat1523978687076",
+      "https://www.amazon.com/gp/video/offers",
+      "https://www.amazon.com/Fire-Tablets-New-Amazon-Devices/s?rh=n:6669703011,p_n_condition-type:2224371011",
+      "https://www.amazon.com/Amazon-Fire-TV-Family/b?node=8521791011",
+      "https://www.target.com/p/amazon-fire-tv-stick-hd-2024/-/A-91651393"
+    ],
+    "manual_urls": [
+      "https://www.cdn.amazon.ca/gp/help/customer/display.html?nodeId=201348270",
+      "https://manualsnet.com/amazon/fire-tv",
+      "https://www.manuals.ca/amazon/fire-tv/manual",
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=TN4jsBbZr7ggBB7kR9",
+      "https://www.izoate.com/blog/how-to-pair-your-firestick-remote-to-tv-2025-complete-amazon-fire-tv-setup-guide/"
+    ]
+  },
+  {
+    "device": "Amazon Fire TV Stick",
+    "brand": "Amazon",
+    "policy_urls": [
+      "https://www.msn.com/en-us/news/technology/how-i-protect-my-privacy-even-while-using-amazon-s-fire-tv-stick/ar-AA1HFBRN",
+      "https://www.amazon.com/fetch/kiosk/legal/privacyNotice",
+      "https://hobsoft.com/resources/privacy-settings-on-firestick/",
+      "https://www.globenewswire.com/news-release/2024/07/16/2913783/0/en/Study-reveals-smart-home-privacy-risks-with-Amazon-Alexa-the-most-hungry-for-user-data.html",
+      "https://docs.aws.amazon.com/iot/latest/developerguide/data-protection.html"
+    ],
+    "product_urls": [
+      "https://www.amazon.com/Amazon-Fire-TV-Family/b?node=8521791011",
+      "https://www.amazon.com/amazon-fire-tv-stick-hd/dp/B0CQMRKRV5",
+      "https://www.amazon.com/stores/SmartStick/node/9485381011",
+      "https://www.bestbuy.com/site/streaming-media-devices/amazon-fire-tv-sticks-streaming-devices/pcmcat337700050006.c?id=pcmcat337700050006",
+      "https://www.target.com/p/amazon-fire-tv-stick-hd-2024/-/A-91651393"
+    ],
+    "manual_urls": [
+      "https://www.amazonforum.com/s/question/0D56Q0000B00oJ0SQI/where-can-i-download-the-full-pdf-manual-for-the-fire-tv-stick-4k-max",
+      "https://www.cdn.amazon.ca/gp/help/customer/display.html?nodeId=201348270",
+      "https://www.amazon.com/fire-stick-user-manual/s?k=fire+stick+user+manual",
+      "https://www.amazon.com/gp/help/customer/display.html?nodeId=TN4jsBbZr7ggBB7kR9",
+      "https://www.solveyourtech.com/how-to-set-up-a-firestick-a-step-by-step-guide/"
+    ]
+  },
+  {
+    "device": "Amcrest Security Camera",
+    "brand": "Amcrest",
+    "policy_urls": [
+      "https://amcrest.com/privacy-policy",
+      "https://amcrest.com/privacy",
+      "https://amcrest.com/avp-privacy-policy",
+      "https://support.amcrest.com/hc/en-us/articles/360038606791-How-To-Enable-Disable-Privacy-Mode-ASH21",
+      "https://amcrest.knoji.com/questions/amcrest-website-security-privacy/"
+    ],
+    "product_urls": [
+      "https://amcrest.com/security-cameras-home.html",
+      "https://amcrest.com/ip-cameras.html",
+      "https://amcrest.com/security-cameras-for-home-and-business/hd-security-cameras.html",
+      "https://www.amazon.com/amcrest-security-camera/s?k=amcrest+security+camera",
+      "https://amcrest.com/where-to-buy"
+    ],
+    "manual_urls": [
+      "https://support.amcrest.com/hc/en-us/sections/203739868-Documentation-Manuals-Guides",
+      "https://www.manualslib.com/brand/amcrest/security-camera.html",
+      "https://support.amcrest.com/hc/en-us/articles/360001554112-User-Manual-IP8M-2496E",
+      "https://surveillanceguides.com/amcrest-how-to-use/",
+      "https://blinksandbuttons.net/how-to-setup-amcrest-ip-camera/"
+    ]
+  },
+  {
+    "device": "Foscam Home Security",
+    "brand": "Foscam",
+    "policy_urls": [
+      "https://www.foscam.com/company/Privacy-Notice.html",
+      "https://www.myfoscam.com/html/privacy-notices.html",
+      "https://www.foscam.com/company/Privacy-Policy.html",
+      "https://community.homey.app/t/foscam-privacy-problems/68673"
+    ],
+    "product_urls": [
+      "https://www.foscammall.com/collections/security-camera-system",
+      "https://www.foscammall.com/",
+      "https://www.foscam.com/?catid=1",
+      "https://www.amazon.com/stores/page/0E25B5F5-2008-4ECC-B7DE-5D694260D358/",
+      "https://www.amazon.com/Wireless-Security-Surveillance-Detection-360°Viewing/dp/B07RW78FTH"
+    ],
+    "manual_urls": [
+      "https://www.foscam.com/downloads/user_manual.html",
+      "https://www.manualslib.com/brand/foscam/",
+      "https://www.manua.ls/foscam/r8m/manual",
+      "https://blinksandbuttons.net/how-to-setup-foscam-ip-camera/",
+      "https://blinksandbuttons.net/how-to-install-foscam-ip-camera/"
+    ]
+  },
+  {
+    "device": "Apple TV 4K",
+    "brand": "Apple",
+    "policy_urls": [
+      "https://www.apple.com/legal/privacy/data/en/apple-tv-app/",
+      "https://www.archyde.com/apple-tv-data-protection-streaming-privacy-guide/",
+      "https://webcraftingcode.com/news/apple-tv-the-best-choice-for-privacy-conscious-streamers/",
+      "https://www.apple.com/legal/privacy/data/",
+      "https://privacy.apple.com/"
+    ],
+    "product_urls": [
+      "https://www.apple.com/tv/index.html",
+      "https://www.apple.com/shop/buy-tv/apple-tv-4k",
+      "https://www.apple.com/apple-tv-plus/",
+      "https://www.bestbuy.com/site/apple/apple-tv/pcmcat378600050024.c?id=pcmcat378600050024",
+      "https://apps.apple.com/us/app/apple-tv/id1174078549"
+    ],
+    "manual_urls": [
+      "https://support.apple.com/en-us/docs/apple-tv",
+      "https://www.manualshelf.com/manual/apple/mxgy2ll-a/owner-s-manual-english.html",
+      "https://www.manualsdir.com/manuals/45631/apple-tv.html",
+      "https://www.techsolutions.support.com/how-to/how-to-set-up-an-apple-tv-11331",
+      "https://support.apple.com/guide/tv/welcome/tvos"
+    ]
+  },
+  {
+    "device": "Apple TV HD 4",
+    "brand": "Apple",
+    "policy_urls": [
+      "https://www.apple.com/legal/privacy/data/en/apple-tv-app/",
+      "https://www.archyde.com/apple-tv-data-protection-streaming-privacy-guide/",
+      "https://www.apple.com/legal/privacy/data/",
+      "https://privacy.apple.com/",
+      "https://www.tuaw.com/2025/01/03/apples-next-smart-home-wave-privacy-at-the-core/"
+    ],
+    "product_urls": [
+      "https://www.apple.com/tv/index.html",
+      "https://www.walmart.com/ip/Apple-TV-4th-Gen-4K-64GB/847557984",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=apple+tv+4",
+      "https://www.amazon.com/apple-tv-4/s?k=apple+tv+4",
+      "https://www.apple.com/shop/buy-tv/apple-tv-4k"
+    ],
+    "manual_urls": [
+      "https://www.manualshelf.com/manual/apple/mxgy2ll-a/owner-s-manual-english.html",
+      "https://www.manualsdir.com/manuals/45631/apple-tv.html",
+      "https://support.apple.com/guide/tv/welcome/tvos",
+      "https://support.apple.com/en-us/docs/apple-tv",
+      "https://support.apple.com/en-us/102451"
+    ]
+  },
+  {
+    "device": "LG TV",
+    "brand": "LG",
+    "policy_urls": [
+      "https://www.consumerreports.org/electronics/privacy/how-to-turn-off-smart-tv-snooping-features-a4840102036/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://privacy.us.lg.com/",
+      "https://www.lg.com/global/privacy/",
+      "https://us.lgemembers.com/lgacc/front/v1/footer/terms/retrieveTerms?menFootId=3&svcId=SVC955&country=US&language=en-US&title=Privacy+Policy",
+      "https://sokodirectory.com/2025/02/elevating-data-privacy-and-security-in-smart-homes/"
+    ],
+    "product_urls": [
+      "https://www.bestbuy.com/site/lg-tv-and-home-theater/lg-tvs/pcmcat388400050004.c?id=pcmcat388400050004",
+      "https://www.lg.com/us/support/help-library/lg-tv-check-out-the-lg-content-store-to-see-what-apps-are-available-for-your-smart-tv--20154548998527",
+      "https://us.lgappstv.com/main/tvapp/detail?appId=1268814",
+      "https://www.lg.com/us/tvs",
+      "https://www.costco.com/televisions.html?brand=lg&refine=||Brand_attr-LG"
+    ],
+    "manual_urls": [
+      "https://gscs-manual.lge.com/DGZ/MFL69491102/en-us/main.html",
+      "https://www.lg.com/us/support/help-library",
+      "https://www.lg.com/us/support/tvs/getting-started",
+      "https://www.tomsguide.com/how-to/set-up-your-lg-tv",
+      "https://www.lg.com/us/support/help-library/lg-oled-where-can-i-find-the-user-manual--20154629490812"
+    ]
+  },
+  {
+    "device": "Arcadyan HMB2260",
+    "brand": "LG",
+    "policy_urls": [
+      "https://privacy.us.lg.com/policies",
+      "https://privacy.us.lg.com/static/privacy.us.lg.com/privacyCenterPolicies-en.json",
+      "https://www.lg.com/global/privacy/",
+      "https://us.lgemembers.com/lgacc/front/v1/footer/terms/retrieveTerms?menFootId=3&svcId=SVC955&country=US&language=en-US&title=Privacy+Policy",
+      "https://www.consumerreports.org/electronics/privacy/how-to-turn-off-smart-tv-snooping-features-a4840102036/?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "product_urls": [
+      "https://www.bkmanuals.com/manual/arcadyan/hmb2260-kpn-interactieve-tv",
+      "https://robotpoweredhome.com/arcadyan-technology-corporation-device-on-my-network/",
+      "https://stores.bestbuy.com/nc/raleigh/6280-capital-blvd-821.html",
+      "https://www.lg.com/us/support/find-service-center",
+      "https://manualsplanet.com/arcadyan/arcadyan-hmb2260-kpn-interactieve-tv/"
+    ],
+    "manual_urls": [
+      "https://manualsplanet.com/arcadyan/arcadyan-hmb2260-kpn-interactieve-tv/",
+      "https://www.bkmanuals.com/manual/arcadyan/hmb2260-kpn-interactieve-tv",
+      "https://www.lg.com/us/support?popup=manual",
+      "https://www.lg.com/us/support/tvs/getting-started",
+      "https://forum.netduma.com/forum/136-telstra-internet-optimiser-support/"
+    ]
+  },
+  {
+    "device": "Bouygues Telecom Bbox Miami",
+    "brand": "Bouygues",
+    "policy_urls": [
+      "https://www.bouygues.com/en/personal-data-policy/",
+      "https://www.bbox.com/pages/privacy-policy",
+      "https://www.bouygues-es.com/privacy-policy",
+      "https://www.bouygues-uk.com/legal/privacy-policy/",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control"
+    ],
+    "product_urls": [
+      "https://bbox-actus.com/dossiers/internet/decodeur/miami",
+      "https://www.echosdunet.net/bouygues/equipement/bbox-miami",
+      "https://www.boutique-box-internet.fr/bouygues-telecom/box/bbox-miami/",
+      "https://lemon.fr/operateur/bouygues-telecom/bouygues-bbox/bbox-miami/",
+      "https://www.ariase.com/box/actualite/bbox-miami-fibre-zone-moyennement-dense"
+    ],
+    "manual_urls": [
+      "https://manualzz.com/doc/5149352/bouygues-telecom-bbox-boîte-adsl--bbox-tv-décodeur-tv-gui...",
+      "https://umvie.com/guide-de-branchement-bbox-miami-etapes-faciles-pour-une-installation-reussie/"
+    ]
+  },
+  {
+    "device": "Arcadyan HMB2260",
+    "brand": "Arcadyan",
+    "policy_urls": [
+      "https://www.arcadyan.com/en-us/terms-and-condition/",
+      "https://arcadyan.gopomo.com/en-us/terms-and-condition/"
+    ],
+    "product_urls": [
+      "https://www.bkmanuals.com/manual/arcadyan/hmb2260-kpn-interactieve-tv",
+      "https://manualsplanet.com/arcadyan/arcadyan-hmb2260-kpn-interactieve-tv/",
+      "https://www.manualscat.com/en/arcadyan-hmb2260-kpn-manual",
+      "https://www.ebay.com/itm/174925277225?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://robotpoweredhome.com/arcadyan-technology-corporation-device-on-my-network/"
+    ],
+    "manual_urls": [
+      "https://manualsplanet.com/arcadyan/arcadyan-hmb2260-kpn-interactieve-tv/",
+      "https://www.bkmanuals.com/manual/arcadyan/hmb2260-kpn-interactieve-tv",
+      "https://www.manualscat.com/en/arcadyan-hmb2260-kpn-manual",
+      "https://forum.netduma.com/forum/136-telstra-internet-optimiser-support/"
+    ]
+  },
+  {
+    "device": "Arcadyan HMB2260",
+    "brand": "Sagemcom",
+    "policy_urls": [
+      "https://www.sagemcom.com/en/data-protection-and-cookies?language_content_entity=en",
+      "https://www.sagecominc.com/privacy-policy/",
+      "https://www.sagecom.net/privacy-policy/",
+      "https://thegoodhome.org/best-practices-for-smart-home-privacy/",
+      "https://barriermagz.com/technology/smart-home-privacy/"
+    ],
+    "product_urls": [
+      "https://support.sagemcom.com/en",
+      "https://www.sagemcom.com/en",
+      "https://www.bkmanuals.com/manual/arcadyan/hmb2260-kpn-interactieve-tv",
+      "https://www.ebay.com/b/Sagemcom/bn_21834591?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://stores.bestbuy.com/nc/raleigh/4325-glenwood-ave-299.html"
+    ],
+    "manual_urls": [
+      "https://support.sagemcom.com/en",
+      "https://manualsplanet.com/arcadyan/arcadyan-hmb2260-kpn-interactieve-tv/",
+      "https://www.manualscat.com/en/arcadyan-hmb2260-kpn-manual",
+      "https://www.manualslib.com/brand/sagemcom/",
+      "https://forum.netduma.com/forum/136-telstra-internet-optimiser-support/"
+    ]
+  },
+  {
+    "device": "Arcadyan HMB2260",
+    "brand": "Swisscom",
+    "policy_urls": [
+      "https://www.swisscom.ch/en/residential/legal-information/privacy.html",
+      "https://www.swisscom.ch/en/residential/legal-information.html",
+      "https://trustservices.swisscom.com/en/privacypolicy",
+      "https://trustservices.swisscom.com/en/support/help-center/data-privacy",
+      "https://ventures.swisscom.com/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://manualsplanet.com/arcadyan/arcadyan-hmb2260-kpn-interactieve-tv/",
+      "https://www.bkmanuals.com/manual/arcadyan/hmb2260-kpn-interactieve-tv",
+      "https://www.budgetthuis.nl/internet/tv/tv-ontvanger/arcadyan",
+      "https://www.amazon.co.uk/Re-Flix-Superior-Control-Arcadyan-HMB2260/dp/B0C9RQWT1N",
+      "https://www.marktplaats.nl/q/hmb2260+v2/?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://manualsplanet.com/arcadyan/arcadyan-hmb2260-kpn-interactieve-tv/",
+      "https://www.manualscat.com/en/arcadyan-hmb2260-kpn-manual",
+      "https://www.bkmanuals.com/manual/arcadyan/hmb2260-kpn-interactieve-tv",
+      "https://forum.netduma.com/forum/136-telstra-internet-optimiser-support/"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Philips",
+    "policy_urls": [
+      "https://www.philips.com/a-w/privacy.html",
+      "https://www.philipsphilips.com/privacy-policy/",
+      "https://www.philips.am/a-w/privacy-notice.html",
+      "https://www.philips-hue.com/en-us/support/legal/privacy-policy",
+      "https://www.usa.philips.com/a-w/privacy-notice.html"
+    ],
+    "product_urls": [
+      "https://www.frontiersmart.com/",
+      "https://www.frontiersmart.com/products/",
+      "https://www.electronicspecifier.com/companies/frontier-silicon/",
+      "https://www.electronicsdatasheets.com/manufacturers/frontier-silicon/parts/",
+      "https://www.usa.philips.com/c-w/dealer-locator.html"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/philips/",
+      "https://fccid.io/YYX-HA-FS2028-F/User-Manual/Venice8-DS-1407542",
+      "https://www.philips.co.uk/c-f/XC000007333/how-to-setup-favorite-stations-in-my-philips-radio-clock",
+      "https://manualsbrain.com/en/manuals/1978029/",
+      "https://www.usa.philips.com/healthcare/support/incenter"
+    ]
+  },
+  {
+    "device": "Philips Hue Bridge",
+    "brand": "Philips",
+    "policy_urls": [
+      "https://www.philips-hue.com/en-us/support/legal/privacy-policy",
+      "https://www.philips-hue.com/en-us/explore-hue/propositions/smart-home-security/home-security-ecosystem/privacy-policy",
+      "https://www.philips-hue.com/en-us/support/legal/privacy-choices-and-opt-out",
+      "https://www.philips.com/a-w/privacy.html",
+      "https://www.philipsphilips.com/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://www.philips-hue.com/en-us/p/hue-bridge/046677458478",
+      "https://hueblog.com/2025/08/14/hue-bridge-pro-and-other-new-products-appear-on-the-hue-website/",
+      "https://www.usa.philips.com/c-f/XC000008645/how-far-i-can-place-the-devices-from-the-hue-bridge",
+      "https://www.bestbuy.com/site/philips-hue-bridge-white/4684500.p",
+      "https://www.amazon.com/Philips-Hue-Smart-Google-Assistant/dp/B016H0QZ7I"
+    ],
+    "manual_urls": [
+      "https://www.manuals.ca/philips/hue-bridge/manual",
+      "https://www.manualslib.com/products/Philips-Hue-Bridge-2-0-8899203.html",
+      "https://www.manualslib.com/download/1361361/Philips-Hue-Bridge-2-0.html",
+      "https://www.philips-hue.com/en-us/support/connect-hue-product/accessories/hue-bridge",
+      "https://www.techsolutions.support.com/how-to/basic-setup-for-your-philips-hue-light-10110"
+    ]
+  },
+  {
+    "device": "Axis Communications",
+    "brand": "Axis",
+    "policy_urls": [
+      "https://www.axis-worldwide.com/privacy/",
+      "https://www.axisgroup.com/legal/privacy",
+      "https://www.axis.co.uk/privacy-policy/",
+      "https://www.axis.com/privacy/privacy-policy",
+      "https://www.axisbank.com/privacy-policy"
+    ],
+    "product_urls": [
+      "https://www.axis.com/",
+      "https://www.axis.com/products/new-products",
+      "https://newsroom.axis.com/en-us/category/products-and-technologies",
+      "https://www.axis.com/where-to-buy",
+      "https://www.amazon.com/axis-ip-camera-Electronics/s?k=axis+ip+camera&rh=n:172282"
+    ],
+    "manual_urls": [
+      "https://www.camerausermanuals.com/Axis+Communications",
+      "https://www.manualowl.com/Axis+Communications/Manuals",
+      "https://www.manualsdir.com/brands/axis-communications.html",
+      "https://www.manualowl.com/m/Axis+Communications/Q1755/Manual/440737",
+      "https://help.axis.com/en-us/axis-s3008-mk-ii"
+    ]
+  },
+  {
+    "device": "iRobot Roomba",
+    "brand": "iRobot",
+    "policy_urls": [
+      "https://about.irobot.com/legal/privacy-principles",
+      "https://about.irobot.com/legal/privacy-policy-document",
+      "https://www.irobot.com/en_US/legal/privacy-policy.html",
+      "https://www.mozillafoundation.org/en/privacynotincluded/irobot-roombas/",
+      "https://iot-content.irobot.com/legal/legal-privacy-policy"
+    ],
+    "product_urls": [
+      "https://www.irobot.com/en_US/roomba.html",
+      "https://www.irobot.com/en_US/us/roomba",
+      "https://www.irobot.com/en_US/roomba-robot-vacuums",
+      "https://www.bestbuy.com/site/irobot/irobot-vacuum-cleaning-robots/pcmcat269700050003.c?id=pcmcat269700050003",
+      "https://www.irobot.com/"
+    ],
+    "manual_urls": [
+      "https://support.irobot.ca/s/product-manuals",
+      "https://homesupport.irobot.com/s/article/845",
+      "https://homesupport.irobot.com/s/article/19919",
+      "https://support.irobot.ca/s/article/10005",
+      "https://homesupport.irobot.com/s/product-manuals"
+    ]
+  },
+  {
+    "device": "Sony TV",
+    "brand": "Sony",
+    "policy_urls": [
+      "https://www.sony.com/en_us/SCA/SCA-privacy.html",
+      "https://www.consumerreports.org/electronics/privacy/how-to-turn-off-smart-tv-snooping-features-a4840102036/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.sony.net/Products/iotapp/privacy/en-us/",
+      "https://ai.sony/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://www.sonypremiumhome.com/premium-television/",
+      "https://www.bestbuy.com/site/sony-tvs-and-home-theater/sony-tvs/pcmcat302400050002.c?id=pcmcat302400050002/",
+      "https://www.sony.ca/en/bravia",
+      "https://www.lowes.com/pl/electronics/tv-home-theater/tvs/sony/2511177665352-621172259989?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.bestbuy.com/site/sony-store/sony-tvs-and-home-theater/pcmcat748300651766.c?id=pcmcat748300651766"
+    ],
+    "manual_urls": [
+      "https://www.televisionusermanuals.com/Sony",
+      "https://www.sony.com.my/electronics/support/televisions-projectors/manuals",
+      "https://www.sony.com/electronics/support/articles/00203234",
+      "https://helpguide.sony.net/tv/gusltnr1/v1/en-us/07-02.html",
+      "https://nestingnicely.com/how-to-setup-sony-tv/"
+    ]
+  },
+  {
+    "device": "Sony Gaming Console",
+    "brand": "Sony",
+    "policy_urls": [
+      "https://legaldoc.dl.playstation.net/ps3-eula/psn/us_privacy_en.html",
+      "http://sony-usa.com/legal/privacy-policy/",
+      "https://www.sony.com/en_us/SCA/SCA-privacy.html",
+      "https://legaldoc.dl.playstation.net/ps3-eula/psn/h/id_privacy_en.html",
+      "https://www.consumerreports.org/electronics/privacy/how-to-turn-off-smart-tv-snooping-features-a4840102036/?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "product_urls": [
+      "https://sonyinteractive.com/en/press-releases/2024/sony-interactive-entertainment-launches-playstation-5-pro/",
+      "https://www.sony.com/en-us",
+      "https://www.playstation.com/en-us/",
+      "https://www.amazon.com/Consoles-PlayStation-Hardware/b?node=294915",
+      "https://store.playstation.com/en-us/"
+    ],
+    "manual_urls": [
+      "https://www.playstation.com/en-us/support/hardware/manuals/",
+      "https://www.sony.com/electronics/support/manuals",
+      "https://www.manualslib.com/brand/sony/game-console.html",
+      "https://www.playstationspace.com/playstation-for-beginners-a-simple-guide-to-get-started/",
+      "https://www.thegamer.com/console-set-up-guide-faqs-switch-xbox-playstation/"
+    ]
+  },
+  {
+    "device": "iHome SmartPlug",
+    "brand": "iHome",
+    "policy_urls": [
+      "https://ihome.com/policies/privacy-policy",
+      "https://www.ihomegroup.com/privacy-policy/",
+      "https://www.ihommes.com/privacy-and-policies",
+      "https://iexor.com/smart-home-privacy/",
+      "https://support.ihomeaudio.com/privacy_policy/"
+    ],
+    "product_urls": [
+      "https://www.amazon.com/iHome-control-connected-Assistant-speakers/dp/B01HCVG9NG",
+      "https://smarthomeace.com/how-to-set-up-ihome-smart-plug/",
+      "https://support.ihomeaudio.com/support/",
+      "https://www.bestbuy.com/site/ihome-smart-plug-white/4797300.p",
+      "https://www.ebay.com/p/2083240326?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manualshelf.com/manual/ihome/isp6xwc4/user-manual-english.html",
+      "https://manualsfile.com/product/k1mnuypl6fl.html",
+      "https://www.manualslib.com/products/Ihome-Smartplug-8777410.html",
+      "https://support.ihome.com/hc/en-us/articles/31092801629844-iSP100",
+      "https://www.manualslib.com/manual/1301720/Ihome-Smartplug.html"
+    ]
+  },
+  {
+    "device": "Belkin Wireless Router",
+    "brand": "Belkin",
+    "policy_urls": [
+      "https://belkins.io/legal/privacy-policy",
+      "https://www.belkinsolutions.com/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://www.findthisbest.com/best-wifi-routers/belkin",
+      "https://toptenreviewed.com/best-belkin-wifi-routers/",
+      "https://www.amazon.com/belkin-wireless-router/s?k=belkin+wireless+router",
+      "https://www.staples.com/Belkin-Routers/cat_CL165749/005kt?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.bestbuy.com/site/shop/belkin-wireless-router"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/belkin/wireless-router.html",
+      "https://belkin.manymanuals.com/routers",
+      "https://www.manualslib.com/manual/640582/Belkin-Wireless-G-Router.html",
+      "https://forums.macrumors.com/threads/belkin-ending-support-for-most-wemo-devices.2461341/",
+      "https://www.manualslib.com/brand/belkin/"
+    ]
+  },
+  {
+    "device": "Belkin WeMo",
+    "brand": "Belkin",
+    "policy_urls": [
+      "https://belkins.io/legal/privacy-policy",
+      "https://www.belkinsolutions.com/privacy-policy/",
+      "https://www.wemo.com/cookie-policy/"
+    ],
+    "product_urls": [
+      "https://www.belkin.com/uk/support-article/?articleNum=335419",
+      "https://www.pcworld.com/article/2846584/your-belkin-wemo-smart-home-devices-will-die-soon-here-are-great-alternatives.html",
+      "https://undercodenews.com/belkin-shuts-down-wemo-what-it-means-for-smart-home-users/",
+      "https://www.amazon.com/belkin-wemo/s?k=belkin+wemo",
+      "https://forums.macrumors.com/threads/belkin-ultraglass-2-owners.2437548/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/1412066/Belkin-Wemo.html",
+      "https://www.manua.ls/belkin/wemo-wifi-smart-plug/manual",
+      "https://manualzz.com/doc/html/54084990/belkin-wemo-wi-fi-smart-light-switch-user-manual",
+      "https://www.scribd.com/document/372735521/Belkin-Wemo-User-Guide",
+      "https://www.t3.com/home-living/smart-home/belkin-ends-support-for-wemo-smart-home-devices-heres-how-to-claim-a-refund"
+    ]
+  },
+  {
+    "device": "Google Chromecast",
+    "brand": "Google",
+    "policy_urls": [
+      "https://policies.google.com/privacy?hl=en-US",
+      "https://policies.google.com/privacy/key-terms?hl=en-US",
+      "https://cloud.google.com/terms/cloud-privacy-notice",
+      "https://policies.google.com/terms?hl=en"
+    ],
+    "product_urls": [
+      "https://www.google.com/cast/chromecast/home",
+      "https://www.google.com/cast/setup/",
+      "https://www.support.google.com/chromecast/chromecast/?hl=en",
+      "https://www.amazon.com/Google-Nest-GA01919-GA01919-US-Chromecast/dp/B08KRV7S22",
+      "https://www.bestbuy.com/site/streaming-media-devices/google-chromecast/pcmcat748301684651.c?id=pcmcat748301684651"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/2036969/Google-Chromecast.html",
+      "https://www.support.google.com/chromecast/chromecast/?hl=en",
+      "https://www.manuals.ca/google/chromecast/manual",
+      "https://www.solveyourtech.com/how-to-set-up-chromecast-a-step-by-step-guide/",
+      "https://www.tomsguide.com/us/chromecast-how-to,review-1811.html"
+    ]
+  },
+  {
+    "device": "Google Home",
+    "brand": "Google",
+    "policy_urls": [
+      "https://policies.google.com/privacy?hl=en-US",
+      "https://policies.google.com/privacy/key-terms?hl=en-US",
+      "https://cloud.google.com/terms/cloud-privacy-notice",
+      "https://policies.google.com/terms?hl=en"
+    ],
+    "product_urls": [
+      "https://about.google/products/",
+      "https://store.google.com/?hl=en-US",
+      "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform=Desktop",
+      "https://finance.yahoo.com/news/alphabet-stock-googl-gets-buy-221514954.html",
+      "https://stockchase.com/GOOG-Q"
+    ],
+    "manual_urls": [
+      "https://guidebooks.google.com/pixel?hl=en-GB",
+      "https://www.manuals.co.uk/google",
+      "https://www.geeksforgeeks.org/installation-guide/how-to-install-google-chrome-on-windows/",
+      "https://www.wikihow.com/Download-and-Install-Google-Chrome",
+      "https://www.consumersearch.com/technology/step-step-guide-chrome-browser-setup-beginners"
+    ]
+  },
+  {
+    "device": "Roku TV",
+    "brand": "Roku",
+    "policy_urls": [
+      "https://docs.roku.com/published/userprivacypolicy/en/US",
+      "https://www.roku.com/about/privacy",
+      "https://privacy.roku.com/ccpa",
+      "https://www.privacyparent.com/service-in-exchange-for-information/",
+      "https://ushonline.com/blog/how-to-use-the-roku-privacy-settings/"
+    ],
+    "product_urls": [
+      "https://support.roku.com/article/10625174337047",
+      "https://www.bestbuy.com/site/roku/roku-tvs/pcmcat1536252570545.c?id=pcmcat1536252570545",
+      "https://www.target.com/c/tvs-home-theater-electronics/roku/-/N-5xtdjZaznwrgbavnk",
+      "https://channelstore.beta.roku.com/browse",
+      "https://community.roku.com/discussions/apps-and-viewing/roku-channel-livetv-channels-list-print/1041445"
+    ],
+    "manual_urls": [
+      "https://manualmachine.com/roku/tv/17891077-user-manual/",
+      "https://www.manualslib.com/products/Roku-Roku-Tv-8766056.html",
+      "https://smarttvclub.com/how-to-set-up-roku-tv-ultimate-guide-for-beginners/",
+      "https://www.solveyourtech.com/how-to-set-up-roku-a-step-by-step-guide-for-beginners/",
+      "https://support.roku.com/"
+    ]
+  },
+  {
+    "device": "Belkin Wireless Router",
+    "brand": "Roku",
+    "policy_urls": [
+      "https://docs.roku.com/published/userprivacypolicy/en/US",
+      "https://www.roku.com/about/privacy",
+      "https://privacy.roku.com/ccpa",
+      "https://ushonline.com/blog/how-to-use-the-roku-privacy-settings/"
+    ],
+    "product_urls": [
+      "https://support.roku.com/category/4403789349655",
+      "https://easytopten.com/best-routers-for-roku/",
+      "https://www.amazon.com/roku-router/s?k=roku+router",
+      "https://www.target.com/s/roku+router",
+      "https://www.bestbuy.com/site/shop/belkin-wireless-router"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/belkin/wireless-router.html",
+      "https://support.roku.com/article/115015760328",
+      "https://www.belkin.com/uk/support-article/?articleNum=159483",
+      "https://www.manualowl.com/Belkin/Manuals",
+      "https://forums.macrumors.com/threads/belkin-ending-support-for-most-wemo-devices.2461341/"
+    ]
+  },
+  {
+    "device": "Bose",
+    "brand": "Bose",
+    "policy_urls": [
+      "https://boseprofessional.com/legal/privacy-policy",
+      "https://www.bose.ie/en_ie/legal/sms_terms_of_use.html",
+      "https://www.mozillafoundation.org/en/privacynotincluded/bose-smart-speakers/"
+    ],
+    "product_urls": [
+      "https://www.bose.ca/en/c/products",
+      "https://www.bestbuy.com/site/brands/bose/pcmcat168900050013.c?id=pcmcat168900050013",
+      "https://www.amazon.com/bose-sale/s?k=bose+on+sale",
+      "https://www.outletnote.com/brand/bose-outlet/north-carolina.html",
+      "https://storestip.com/store-locator/bose"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/bose/",
+      "https://support.bose.com/s/?language=en_US&query=product+user+manuals",
+      "https://support.bose.com/s/article/qc-headphonearn-setting-up-your-product---ka08c000001brexaai?language=en_US",
+      "https://www.bose.fr/fr_fr/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-tv-speaker/manuals_downloads.html",
+      "https://support.bose.com/s/article/soloii-soundbar-setting-up-your-product---ka08c000001brexaai?language=en_US"
+    ]
+  },
+  {
+    "device": "Bose SoundTouch",
+    "brand": "Bose",
+    "policy_urls": [
+      "https://www.boselatam.com/en_ar/landing_pages/soundtouch_privacy_policy.html",
+      "https://boseprofessional.com/legal/privacy-policy",
+      "https://www.bose.ie/en_ie/landing_pages/soundtouch_privacy_policy.html",
+      "https://www.mozillafoundation.org/en/privacynotincluded/bose-smart-speakers/"
+    ],
+    "product_urls": [
+      "https://www.bose.ie/en_ie/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-10-wireless-system/manuals_downloads.html",
+      "https://www.amazon.com/bose-soundtouch/s?k=bose+soundtouch",
+      "https://www.ebay.com/sch/i.html?_nkw=bose+soundtouch&_sop=12&msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.bestbuy.com/site/shop/bose-soundtouch-systems",
+      "https://www.amazon.com/bose-sound-touch/s?k=bose+sound+touch"
+    ],
+    "manual_urls": [
+      "https://manualsnet.com/bose/soundtouch",
+      "https://support.bose.com/s/product/soundtouch-10-wireless-speaker/01t8c00000OydOMAAZ?language=en_US",
+      "https://www.manua.ls/bose/soundtouch/manual",
+      "https://www.manualslib.com/manual/3660058/Bose-Soundtouch.html",
+      "https://support.bose.com/s/product/soundtouch-20-wifi-music-system/01t8c00000OydOQAAZ?language=en_US"
+    ]
+  },
+  {
+    "device": "Brilliant Smart Lighting",
+    "brand": "Brilliant",
+    "policy_urls": [
+      "https://brilliantlighting.com.au/pages/terms-conditions",
+      "https://brilliantlighting.com.au/pages/privacy",
+      "https://support.brilliant.tech/hc/en-us/articles/360021405971-Privacy-Settings-in-your-Brilliant-Smart-Home",
+      "https://brilliant.org/privacy/",
+      "https://www.brilliantdirectories.com/privacy-policy"
+    ],
+    "product_urls": [
+      "https://www.brilliant.tech/?tab=control",
+      "https://www.brilliant.tech/collections",
+      "https://brilliantlighting.com.au/collections/smart-home",
+      "https://www.amazon.com/brilliant-switch/s?k=brilliant+switch",
+      "https://brilliantelec.com/"
+    ],
+    "manual_urls": [
+      "https://brilliant.manymanuals.com/",
+      "https://support.brilliant.tech/hc/en-us/sections/360009158071-Installation-and-Setup",
+      "https://smarthome.help-repair.info/setup_automation/smart_lighting/209-brilliant_smart_lighting_setup_expert_guide",
+      "https://support.brilliant.tech/hc/en-us",
+      "https://support.brilliant.tech/hc/en-us/articles/360015640511-Installation-Guides"
+    ]
+  },
+  {
+    "device": "Brother Printer",
+    "brand": "Brother",
+    "policy_urls": [
+      "http://www.brother.com/privacy/",
+      "https://web.global.brother/be/device-research/privacy/html/enus.html",
+      "https://www.brother.com/privacy/",
+      "https://web.global.brother/aa/privacy-us-en.html?/sds/en/privacy/",
+      "https://sds.brother.co.jp/sds/hr/privacy/"
+    ],
+    "product_urls": [
+      "https://www.brother.ie/printers",
+      "http://www.brother.com/apps/ps/en/",
+      "https://www.bestbuy.com/site/brother/brother-printers/pcmcat230000050017.c?id=pcmcat230000050017",
+      "https://www.amazon.com/brother-printer/s?k=brother+printer",
+      "https://www.bestbuy.com/site/brother/brother-printers/pcmcat230000050017.c?cp=2&id=pcmcat230000050017"
+    ],
+    "manual_urls": [
+      "https://support.brother.com/g/b/manualtop.aspx?c=us&lang=en&prod=group2",
+      "https://www.brother.ie/support/manuals",
+      "https://support.brother.com/g/s/id/setup/en/index.html",
+      "https://help.brother-usa.com/app/answers/detail/a_id/140829/~/wireless-setup---windows-(recommended)",
+      "https://help.brother-usa.com/app/answers/detail/a_id/186363/~/download-the-users-manual"
+    ]
+  },
+  {
+    "device": "C2 Development Lighting",
+    "brand": "C2 Development",
+    "policy_urls": [
+      "https://www.c2educate.com/privacy/",
+      "https://www.informatik.tu-darmstadt.de/privacy-trust/research_privacy_trust/research_area_c/c2_1/index.en.jsp"
+    ],
+    "product_urls": [
+      "https://www.diodedynamics.com/blog/introducing-the-stage-series-C2-2-0-led-pod",
+      "https://www.chamberofcommerce.com/business-directory/iowa/ames/lighting-store/36858379-c2-development-inc",
+      "https://www.mapquest.com/us/iowa/c2-development-388060881",
+      "https://www.amazon.com/AQUA-ILLUMINATION-C2-DEVELOPMENT-Hanging/dp/B06ZXRWGMT",
+      "https://www.bigdogpetsupply.com/products/aqua-illumination-c2-development-aqi-mount-hydra-rail"
+    ],
+    "manual_urls": [
+      "https://usermanual.wiki/C2-Development/90000066/html",
+      "https://www.manualshelf.com/manual/clavia/nord-c2/user-manual-english.html",
+      "https://usermanual.wiki/C2-Development/30000003/pdf",
+      "https://dominicbreuker.com/post/learning_sliver_c2_01_installation/",
+      "https://www.clearc2.com/c2crm/support/"
+    ]
+  },
+  {
+    "device": "Canary All-in-One",
+    "brand": "Canary",
+    "policy_urls": [
+      "https://www.canarytechnologies.com/privacy",
+      "https://canarycure.com/privacy-policy/",
+      "https://workwithcanary.com/privacy-policy/",
+      "https://info.canarylabs.com/privacy-policy.html",
+      "https://legal.canarymarketing.com/"
+    ],
+    "product_urls": [
+      "https://www.amazon.com/Canary-All-One-Security-Device/dp/B00NW31YOS",
+      "https://www.reviews.org/home-security/canary-camera-review/",
+      "https://www.amazon.com/Canary-All-One-Security-Device/dp/B014KWCCQI",
+      "https://www.canarytechnologies.com/login/"
+    ],
+    "manual_urls": [
+      "https://canariasacross.com/blog/canary-user-guide-a-comprehensive-manual-for-getting-the-most-out-of-your-canary-smart-home-security-system",
+      "https://www.manualslib.com/brand/canary/",
+      "https://help.canary.is/hc/en-us/articles/204374207-How-do-I-set-up-my-Canary-Pro",
+      "https://helpcenter.canarylabs.com/category/kb",
+      "https://help.canary.is/hc/en-us/categories/203325847-Get-Started"
+    ]
+  },
+  {
+    "device": "Canon Printer",
+    "brand": "Canon",
+    "policy_urls": [
+      "https://www.usa.canon.com/privacy-statement",
+      "https://global.canon/en/privacy/",
+      "https://www.usa.canon.com/terms-of-use",
+      "https://www.canon-europe.com/privacy/",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control"
+    ],
+    "product_urls": [
+      "https://www.canon-europe.com/support/consumer/products/printers/pixma/",
+      "https://www.canon.co.uk/support/",
+      "https://www.usa.canon.com/shop/printers",
+      "https://www.usa.canon.com/printers",
+      "https://www.amazon.com/canon-printer/s?k=canon+printer"
+    ],
+    "manual_urls": [
+      "https://ij.manual.canon/ij/webmanual/WebPortal/PTL/ptl-top.html?lng=en",
+      "https://www.manualslib.com/brand/canon/printer.html",
+      "https://www.manuals.ca/printers/canon",
+      "https://support.usa.canon.com/kb/s/article/ART180182",
+      "https://www.usa.canon.com/support/p/canon-print"
+    ]
+  },
+  {
+    "device": "Cisco IPTV",
+    "brand": "Cisco",
+    "policy_urls": [
+      "https://www.cisco.com/c/en/us/about/trust-center/global-privacy-policy.html",
+      "https://privacy.cisco.com/",
+      "https://trustportal.cisco.com/c/r/ctp/trust-portal.html?doctype=Privacy+Data+Sheet|Privacy+Data+Map"
+    ],
+    "product_urls": [
+      "https://www.manualslib.com/products/Cisco-Cis330-3596342.html",
+      "https://www.cisco.com/c/en/us/products/video/product-listing.html",
+      "https://www.cisco.com/en/US/docs/app_ntwk_services/waas/iptv/v35/administration/guide/about.html",
+      "https://www.ebay.com/sch/i.html?_nkw=cisco+iptv+box&_sop=12&msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://itprice.com/cisco-gpl/iptv"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/28016/Cisco-Ip-Tv-3400-Series.html",
+      "https://manualmachine.com/cisco/iptv3400/1023852-user-manual/",
+      "https://www.scribd.com/doc/45313162/Cisco-Wireline-Video-IPTV-Solution-Design-and-Implementation-Guide-Release-1-1-1",
+      "https://www.cisco.com/c/en/us/support/index.html",
+      "https://www.manualslib.com/products/Cisco-Cis330-3596342.html"
+    ]
+  },
+  {
+    "device": "Denon",
+    "brand": "Denon",
+    "policy_urls": [
+      "https://www.denon.com/en-us/support/privacy-policy.html",
+      "https://www.denondj.com/privacy-policy",
+      "https://www.denonpro.com/site/privacy_policy",
+      "https://www.denon.com/en-us/support/termsofuse.html",
+      "https://manuals.denon.com/HP_privacypolicy/ALL/EN/"
+    ],
+    "product_urls": [
+      "https://www.wave-electronics.com/our-brands/denon",
+      "https://www.amazon.com/stores/page/CA7A2470-3E9B-4802-A19E-77952A36E5B1/",
+      "https://www.denon.com/en/",
+      "https://www.denon.com/en-us/findaretailer.html",
+      "https://www.target.com/b/denon/-/N-j8y7s"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/denon/",
+      "https://manualsnet.com/denon",
+      "https://www.consumersearch.com/technology/step-step-guide-denon-receiver-setup-everything-need-know",
+      "https://solveyard.com/how-do-i-setup-my-denon-receiver-without-a-tv/",
+      "https://www.denon.com/en-us/online-manuals.html"
+    ]
+  },
+  {
+    "device": "Dreambox Multimedia",
+    "brand": "Dreambox",
+    "policy_urls": [
+      "https://www.dreambox360.com/privacy-policy/",
+      "https://www.dreambox.com/terms",
+      "https://www.dreamboxpro.com/privacy-policy/",
+      "https://protectprivacy.eu/privacy/smart-home-devices-and-privacy/",
+      "https://robertmasoncompany.com/privacy-in-smart-homes/"
+    ],
+    "product_urls": [
+      "https://dreamboxofficial.blogspot.com/",
+      "https://www.dreambox.com/family",
+      "https://www.dreambox.com/support",
+      "https://www.hm-sat-shop.de/en/dreambox/",
+      "https://www.ariasat.de/en/set-top-box/dreambox/"
+    ],
+    "manual_urls": [
+      "https://www.manualshelf.com/manual/dream-multimedia/dreambox-dm-100/user-manual-english.html",
+      "https://dream-multimedia.manymanuals.com/",
+      "https://www.manualslib.com/brand/dreambox/",
+      "https://www.manualslib.com/manual/1655298/Dream-Multimedia-Dreambox-500.html",
+      "https://manualzz.com/doc/1572314/dream-multimedia-dreambox-dm7025-user-manual"
+    ]
+  },
+  {
+    "device": "Nest Camera",
+    "brand": "Nest",
+    "policy_urls": [
+      "https://support.google.com/googlenest/yourprivacy/?hl=en",
+      "https://nest.com/legal/privacy-policy-for-nest-web-sites/",
+      "https://nest.com/legal/terms-of-service/"
+    ],
+    "product_urls": [
+      "https://home.nest.com/",
+      "https://blog.google/products/google-nest/new-google-nest-latest-cams-and-doorbells-are-here/",
+      "https://store.google.com/us/product/nest_cam_indoor?hl=en-US",
+      "https://store.google.com/us/category/nest_cams?hl=en-US",
+      "https://www.amazon.com/nest-camera/s?k=nest+camera"
+    ],
+    "manual_urls": [
+      "https://support.google.com/googlenest/answer/9372799?hl=en",
+      "https://support.google.com/googlenest/answer/9232352?hl=en",
+      "https://allusermanuals.com/nest/",
+      "https://device.report/manual/7340060",
+      "https://support.google.com/googlenest/?hl=en"
+    ]
+  },
+  {
+    "device": "Dyson",
+    "brand": "Dyson",
+    "policy_urls": [
+      "https://privacy.dyson.com/en/privacy-policy.aspx",
+      "https://www.dysoncorp.com/privacy-policy/",
+      "https://www.dyson.vn/en-VN/footer-primary-links/data-protection-policy",
+      "https://privacy.dyson.com/",
+      "https://privacy.dyson.com/group/pages/privacypolicyhome/privacy-policy.aspx"
+    ],
+    "product_urls": [
+      "https://www.dyson.com/en",
+      "https://www.bestbuy.com/site/brands/dyson/pcmcat162500050026.c?id=pcmcat162500050026",
+      "https://www.amazon.com/dyson/s?k=dyson",
+      "https://www.target.com/b/dyson/-/N-5vgwm",
+      "https://www.us-store-locator.com/dyson/dyson-store-locator.htm"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/dyson/",
+      "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/vacuumcleaners/upright-vacuums/up30/411630-01.pdf",
+      "https://www.dyson.com/support/vacuum-cleaners/cordless/v15-detect",
+      "https://device.report/manuals/dyson-purifier-hot-cool-user-manual-assembly-guide",
+      "https://www.dyson.com.au/support/support-home/guides-and-manuals"
+    ]
+  },
+  {
+    "device": "Ecobee  Thermostat",
+    "brand": "Ecobee",
+    "policy_urls": [
+      "https://www.gdpriq.com/blog/smart-thermostats-and-your-privacy-what-you-need-to-know/",
+      "https://support.ecobee.com/s/topics/0TO6S000000WXoqWAG/legal-documents"
+    ],
+    "product_urls": [
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=ecobee+smart+thermostat",
+      "https://boltonservice.com/residential/smart-home-devices-ecobee4-smart-thermostats-raleigh-cary-durham-nc/",
+      "https://www.bestbuy.com/site/brands/ecobee/pcmcat748301719536.c?id=pcmcat748301719536",
+      "https://www.amazon.com/ecobee-SmartThermostat-Voice-Control-Black/dp/B07NQT85FC",
+      "https://www.target.com/p/ecobee-smart-thermostat-enhanced/-/A-92539409"
+    ],
+    "manual_urls": [
+      "https://www.gmanuals.com/ecobee/",
+      "https://all-guidesbox.com/brand/ecobee/thermostat.html",
+      "https://www.manuals.ca/thermostats/ecobee",
+      "https://support.ecobee.com/s/articles/download-documents-included-with-your-ecobee-device",
+      "https://thermostatneed.com/how-to-install-ecobee-thermostat/"
+    ]
+  },
+  {
+    "device": "Ecobee Smart WiFi Thermostat",
+    "brand": "Ecobee",
+    "policy_urls": [
+      "https://support.ecobee.com/s/topics/0TO6S000000WXoqWAG/legal-documents",
+      "https://www.cnet.com/home/smart-home/smart-thermostats-and-your-privacy-heres-what-date-theyre-collecting/"
+    ],
+    "product_urls": [
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=ecobee+smart+thermostat",
+      "https://boltonservice.com/residential/smart-home-devices-ecobee4-smart-thermostats-raleigh-cary-durham-nc/",
+      "https://www.bestbuy.com/site/brands/ecobee/pcmcat748301719536.c?id=pcmcat748301719536",
+      "https://www.amazon.com/ecobee-SmartThermostat-Voice-Control-Black/dp/B07NQT85FC",
+      "https://www.target.com/p/ecobee-smart-thermostat-enhanced/-/A-92539409"
+    ],
+    "manual_urls": [
+      "https://www.gmanuals.com/ecobee/",
+      "https://all-guidesbox.com/brand/ecobee/thermostat.html",
+      "https://www.manuals.ca/thermostats/ecobee",
+      "https://support.ecobee.com/s/articles/download-documents-included-with-your-ecobee-device",
+      "https://thermostatneed.com/how-to-install-ecobee-thermostat/"
+    ]
+  },
+  {
+    "device": "eGauge Energy Meter",
+    "brand": "eGauge",
+    "policy_urls": [
+      "https://www.egauge.net/policy/"
+    ],
+    "product_urls": [
+      "https://kb.egauge.net/product-support-eg4015",
+      "https://kb-old.egauge.net/books/egauge-hardware-product-pages/page/meter-egauge-core",
+      "https://www.egauge.net/company/",
+      "https://www.ebay.com/itm/365435713380?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.egauge.net/eGuard/find/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/1285404/Egauge-Systems-Llc-Eg4xxx.html",
+      "https://kb-old.egauge.net/books/egauge-meter-documentation/page/eg4xxx-owners-manual",
+      "https://device.report/manuals/egauge-eg4xxx-installation-manual-guide",
+      "https://www.manualslib.com/manual/3201796/Egauge-Eg4-Series.html",
+      "https://kb-old.egauge.net/books/egauge-meter-documentation/page/eg30xx-owners-manual"
+    ]
+  },
+  {
+    "device": "Ember Mug",
+    "brand": "Keen Home",
+    "policy_urls": [
+      "https://ember.com/pages/privacy-policy",
+      "https://keenhome.io/pages/privacy",
+      "https://keenhomecare.com/privacy-policy/",
+      "https://help.keen.com/hc/en-us/articles/1500000300002-Ingenio-Privacy-Policy",
+      "https://keends.com/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://www.luxuryformen.com/en/our-brands/ember",
+      "https://ember.com/collections/home",
+      "https://www.bestbuy.com/site/ember-temperature-control-smart-mug2-10-oz-black/6367424.p",
+      "https://www.amazon.com/Ember-Mug/s?k=Ember+Mug",
+      "https://www.target.com/b/ember/-/N-q643leyexcp"
+    ],
+    "manual_urls": [
+      "https://ember.com/pages/instruction-manuals",
+      "https://www.manuals.ca/ember/mug2/manual",
+      "https://www.manua.ls/ember/mug-2/manual",
+      "https://embertech.zendesk.com/hc/en-us/articles/115002624512-Ember-Mug-Quick-Start-Guide",
+      "https://keenhome.io/pages/download-the-setup-guide_"
+    ]
+  },
+  {
+    "device": "Enphase Energy Product",
+    "brand": "Enphase",
+    "policy_urls": [
+      "https://enphase.com/legal/privacy-policy",
+      "https://www4.enphase.com/en-in/legal/privacy-policy",
+      "https://lp.understandsolar.com/privacy/",
+      "https://support.enphase.com/s/question/0D5Ps00000dGd70KAC/how-do-i-make-my-privacy-choices",
+      "https://www.solargraf.com/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://solartechonline.com/blog/enphase-solar-kit-complete-guide/",
+      "https://enphase.com/homeowners",
+      "https://support.enphase.com/s/article/Welcome-to-Enphase-for-Homeowners",
+      "https://enphase.com/installers/resources/buy",
+      "https://store.solarcellzusa.com/browse-by-brand/enphase"
+    ],
+    "manual_urls": [
+      "https://www4.enphase.com/en-us/support-downloads/guide-manual",
+      "https://www.manualslib.com/brand/enphase/",
+      "https://enphase.com/installers/resources/documentation",
+      "https://enphase.com/installers/training/getting-started/install",
+      "https://enphaseenergy.com/en-us/support-task-stage/installation-configuration"
+    ]
+  },
+  {
+    "device": "Entone STB",
+    "brand": "Entone",
+    "policy_urls": [
+      "https://www.beltone.com/en-us/beltone-privacy-policy",
+      "https://entone.in/privacy-policy/",
+      "https://entone.co.jp/privacy_policy",
+      "https://www.kintone.com/en-us/privacy-policy/",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control"
+    ],
+    "product_urls": [
+      "https://adrenio.com/index.php/en/products/products2/entone",
+      "https://www.manua.ls/entone",
+      "https://www.manualslib.com/manual/2011723/Distributel-Entone-500.html",
+      "https://www.ebay.com/itm/295471225756?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.eliztech.com/remotes/amino-howto.php"
+    ],
+    "manual_urls": [
+      "https://entone.manymanuals.com/",
+      "https://www.scrtc.com/support/remote-control-programming/entone-amino-nova/",
+      "https://www.manualslib.com/manual/2071018/Itc-Entone.html",
+      "https://manualzz.com/doc/64073552/distributel-entone-500-tv-set-top-box-set-user-guide",
+      "https://manualzilla.com/doc/7366238/entone-janus-hd-setup-guide"
+    ]
+  },
+  {
+    "device": "Samsung SmartThings Hub",
+    "brand": "Samsung",
+    "policy_urls": [
+      "https://eula.samsungiotcloud.com/legal/history/us/en/pps_1.3.0.html",
+      "https://www.samsung.com/us/account/privacy-policy/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.samsung.com/us/privacy/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://eula.samsungiotcloud.com/legal/history/global/default/pps_1.2.1.html",
+      "https://community.smartthings.com/t/privacy-protection-question/179259"
+    ],
+    "product_urls": [
+      "https://www.samsung.com/us/support/smart-home/smartthings/hubs/smartthings-hub/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.samsung.com/us/apps/smartthings/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://smarthomeace.com/where-to-buy-smartthings-hub/",
+      "https://www.amazon.com/samsung-smartthings-hub/s?k=samsung+-+smartthings+hub",
+      "https://partners.smartthings.com/hub-everywhere"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/1315371/Samsung-Smartthings-Hub.html",
+      "https://usermanual.com/support/smartthings/hub/manual",
+      "https://www.manualshelf.com/manual/samsung/f-hub-us-2/owner-s-manual-english.html",
+      "https://www.samsung.com/us/support/answer/ANS00048957/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://smarthomeace.com/how-to-setup-samsung-smartthings/"
+    ]
+  },
+  {
+    "device": "Samsung STB",
+    "brand": "Samsung",
+    "policy_urls": [
+      "https://www.samsung.com/us/account/privacy-policy/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://smarthub.termsnprivacy.com/terms/US_en/US_en.html",
+      "https://terms.samsungconsent.com/temp/14446/0000000001/SEC_PP/1.1/USA/USA_eng.html",
+      "https://www.samsung.com/us/privacy/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://eu.community.samsung.com/t5/wearables/samsung-s-data-collection-policy-and-gdpr-compliance/td-p/11451814"
+    ],
+    "product_urls": [
+      "https://manualsdump.com/en/manuals/samsung-hg40nb690qfxza-hg46nb690qfxza-hg55nb690qfxza-hg32nb690pfxza/186960/14",
+      "https://www.samsung.com/sg/support/tv-audio-video/what-is-a-set-top-box/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=samsung+smart+tv+box",
+      "https://www.amazon.com/samsung-smart-tvs/s?k=samsung+smart+tvs",
+      "https://eu.community.samsung.com/t5/tv/smart-stb-app/td-p/1914972"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/575989/Samsung-Smt-H3260.html",
+      "https://www.manua.ls/samsung/stb-e7500/manual",
+      "https://manualsdump.com/en/manuals/samsung-hg40nb690qfxza-hg46nb690qfxza-hg55nb690qfxza-hg32nb690pfxza/186960/14",
+      "https://www.samsung.com/us/support/answer/ANS00062199/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://manualzz.com/doc/html/54743026/samsung-smt-e5012--smt-e5030--smt-h3362--smt-s1080--smt-s..."
+    ]
+  },
+  {
+    "device": "Sensibo Sky",
+    "brand": "Sensibo",
+    "policy_urls": [
+      "https://sensibo.com/pages/privacy-policy/",
+      "https://sensibo.com/pages/terms-of-use",
+      "https://sensibo.com/pages/legal"
+    ],
+    "product_urls": [
+      "https://www.amazon.com/stores/page/0454DC14-71AF-4415-8701-41946516AEAF/",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=sensibo+sky,+smart+home+air+conditioner+system",
+      "https://www.amazon.com/Sensibo-Conditioner-Controller-Thermometer-Temperature/dp/B07MTGD3D9",
+      "https://play.google.com/store/apps/details?id=com.sensibo.app&hl=en",
+      "https://sensibo.com/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/1321233/Sensibo-Sky.html",
+      "https://www.manualslib.com/products/Sensibo-Sky-8816466.html",
+      "https://www.manuallib.com/file/3157456/",
+      "https://manualsfile.com/product/p976a10dh7.html",
+      "https://musiek.africa.com/song/sensibo-sky-v2-unboxing-review-set-up-guide-smart-convert-any-ac-or-heat-pump-mahesh-walatara"
+    ]
+  },
+  {
+    "device": "Freebox",
+    "brand": "Freebox",
+    "policy_urls": [
+      "https://www.freebox.gr/en/privacy-policy/",
+      "https://aifreebox.com/privacy-policy",
+      "https://lifehacker.com/tech/how-to-protect-your-privacy-when-using-smart-home-tech",
+      "https://statsandinsights.com/2025/01/10/iot-data-privacy-regulations-best-practices/"
+    ],
+    "product_urls": [
+      "https://moncompte.free.fr/",
+      "https://apps.apple.com/us/developer/freebox/id529497062",
+      "https://www.gearrice.com/article/all-that-for-that-frees-new-product-is-a-freebox-ultra-that-sheds-light/",
+      "https://apps.apple.com/us/app/freebox/id6444154502",
+      "https://www.freenews.fr/freebox/freebox-pop-chaines-offertes-2025"
+    ],
+    "manual_urls": [
+      "https://manualmachine.com/free/freeboxv3/7343249-user-manual/",
+      "https://www.manualslib.fr/manual/839733/Free-Freebox.html",
+      "https://archive.org/details/manualzilla-id-6460339",
+      "https://assistance.free.fr/articles/consulter-le-guide-dinstallation-rapide-de-ma-freebox-revolution-781",
+      "https://as-bat.com/installer-freebox-facilement/"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Frontier",
+    "policy_urls": [
+      "https://frontier.com/corporate/privacy-policy",
+      "https://legal.yahoo.com/us/en/frontier/privacy/index.html",
+      "https://www.flyfrontier.com/legal/privacy-policy/",
+      "https://gccsr.org/exploring-frontier-communications-data-privacy-policy/",
+      "https://www.gdpr-advisor.com/how-gdpr-affects-smart-home-data-privacy-concerns-for-connected-devices/"
+    ],
+    "product_urls": [
+      "https://www.frontiersmart.com/",
+      "https://frontiersemi.com/",
+      "https://swling.com/blog/tag/frontier-silicon/",
+      "https://www.electronicsdatasheets.com/manufacturers/frontier-silicon/parts/",
+      "https://www.cbinsights.com/company/frontier-silicon"
+    ],
+    "manual_urls": [
+      "https://manualsbrain.com/en/manuals/1978032/",
+      "https://fccid.io/YYX-HA-FS2028-F/User-Manual/Venice8-DS-1407542",
+      "https://fccid.io/YYX-HA-FS2230-F/User-Manual/Tuscany-User-Guide-2064454",
+      "https://frontier.com/helpcenter/internet/fiber-internet-self-installation-guide",
+      "https://www.allconnect.com/providers/frontier-communications/self-installation"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Como Audio",
+    "policy_urls": [
+      "https://frontier.com/corporate/privacy-policy",
+      "https://audio.com/legal/privacy-notice",
+      "https://studiocomo.com/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://swling.com/blog/2016/10/como-audio-solo-and-duet-how-to-add-and-organize-internet-radio-stations/",
+      "https://recommendedstations.com/2024/11/01/an-internet-radio-update/",
+      "https://www.ecoustics.com/news/como-audio-ceases-operation/",
+      "https://www.amazon.com/stores/ComoAudio/ComoAudio/page/CCE59669-C2EE-4153-B5A0-355E0AA13362",
+      "https://www.genealogy.com/forum/surnames/topics/welch/5835/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/como-audio/",
+      "https://manualsfile.com/brand/brb82oxf8d/"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Baggen",
+    "policy_urls": [
+      "https://frontier.com/corporate/privacy-policy",
+      "https://skagen.fgservices.com/s/article/SKAGEN-Privacy-Policy-skagen?language=en_US",
+      "https://aviagen.com/en/privacy-policy/u-s-privacy-statement/",
+      "https://bagegan.com/pages/privacy-policies",
+      "https://aviagen-na.aviagen.com/privacy-policy"
+    ],
+    "product_urls": [
+      "https://bagen.com/en",
+      "https://www.frontiersmart.com/",
+      "https://aeg.mcproductions.nl/frontier.html",
+      "https://smartechonline.com/products/reusable-vacuum-bagging/",
+      "https://www.electronicsdatasheets.com/manufacturers/frontier-silicon/parts/verona-fs2052"
+    ],
+    "manual_urls": [
+      "https://www.urbanears.com/se/en/baggen-user-manual.html",
+      "https://www.manualslib.com/brand/baggen/",
+      "https://www.manualslib.com/",
+      "https://frontier.com/helpcenter/internet/fiber-internet-self-installation-guide"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "JBL",
+    "policy_urls": [
+      "https://support.jbl.com/us/en/policy-legal/terms.html",
+      "https://www.jbl.de/en/privacy/data-protection-declaration?country=us",
+      "https://www.jbl.com/privacy/privacy-policy.html",
+      "https://jblstore.com.ph/pages/privacy-policy",
+      "https://jblstore.co.id/en/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://mm.jbl.com/home-audio",
+      "https://www.jbl.com/all-speakers/",
+      "https://evertiq.com/news/42996",
+      "https://www.amazon.com/co2CREA-Silicone-Waterproof-Bluetooth-Protective/dp/B0F43DVG68",
+      "https://start.cortera.com/company/research/m4j3qrk2q/jbl-holdings-llc/"
+    ],
+    "manual_urls": [
+      "https://www.manualowl.com/JBL/Manuals",
+      "https://allusermanuals.com/jbl/",
+      "https://support.jbl.com/us/en/howto/bluetooth-pairing-connecting-us/000017785.html",
+      "https://support.jbl.com/us/en/howto/",
+      "https://support.jbl.com/us/en/customer-service/"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Nad",
+    "policy_urls": [
+      "https://nadelectronics.com/privacy-policy/",
+      "https://www.nad.com/privacy-policy",
+      "https://frontier.com/corporate/privacy-policy",
+      "https://privacy.nadadventist.org/",
+      "https://nadelectronics.in/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://vinylsound.com/collections/nad",
+      "https://nadelectronics.com/downloads/",
+      "https://nadelectronics.com/?search=usa",
+      "https://theaudiofactory.com/collections/nad-electronics",
+      "https://www.wfasny.com/what-internet-radio-software-does-frontier-smart-technologies-use/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/nad/",
+      "https://manualsnet.com/nad",
+      "https://nad-electronics.manymanuals.com/",
+      "https://support.nadelectronics.com/hc/en-us/categories/115002460947-Setup",
+      "https://support.nadelectronics.com/hc/en-us/articles/1500010337702-Where-can-I-find-the-Product-Documentation"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Hama",
+    "policy_urls": [
+      "https://frontier.com/corporate/privacy-policy",
+      "https://hamaholding.com/legal-privacy",
+      "https://hamagroup.org/privacy-policy/",
+      "https://hama-europe.org/privacy-policy/",
+      "https://www.hama.app/privacy-policy-en"
+    ],
+    "product_urls": [
+      "https://www.frontiersmart.com/",
+      "https://www.hama.com/",
+      "https://v2.openhab.org/addons/bindings/frontiersiliconradio1/",
+      "https://www.digitec.ch/en/s1/product/hama-ir360mbt-web-radio-bluetooth-wi-fi-radios-10733479",
+      "https://play.google.com/store/apps/details?id=com.frontier_silicon.fsirc.dok2&hl=de"
+    ],
+    "manual_urls": [
+      "https://www.manualsdir.com/brands/hama.html",
+      "https://www.manualslib.com/brand/hama/",
+      "https://hama.manymanuals.com/",
+      "https://manualzz.com/doc/7481354/frontier-silicon-undok-remote-control-app-setup-guide"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Roberts",
+    "policy_urls": [
+      "https://frontier.com/corporate/privacy-policy",
+      "https://privacy.robertscamera.com/privacy-policy",
+      "https://content.roberts.edu/privacy-policy/",
+      "https://robertsresorts.com/privacy-policy/",
+      "https://gccsr.org/exploring-frontier-communications-data-privacy-policy/"
+    ],
+    "product_urls": [
+      "https://www.frontiersmart.com/",
+      "https://www.avforums.com/threads/roberts-radio-stream-95i.2495352/",
+      "https://www.internet-radio.com/community/threads/roberts-83i-and-frontier-silicon.14274/",
+      "https://www.radioworld.com/news-and-business/frontier-silicon-dab-radios-top-list",
+      "https://forums.digitalspy.com/discussion/2454031/frontier-directory-to-become-subscription-service"
+    ],
+    "manual_urls": [
+      "https://www.robertsradio.com/en-gb/support/quickstart-guides",
+      "https://manualzz.com/doc/52505286/roberts-stream-67-user-guide"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Medion",
+    "policy_urls": [
+      "https://community.medion.com/t5/Community-Knowledge-Base/Data-Privacy-Policy/ta-p/182409",
+      "https://frontier.com/corporate/privacy-policy",
+      "https://www.medion.co.id/en/privacy-and-policy/",
+      "https://community.medion.com/t5/custom/page/page-id/medion_dataprivacy",
+      "https://www.medion.com/gb/privacy-policy/index.html"
+    ],
+    "product_urls": [
+      "https://www.frontiersmart.com/",
+      "https://www.medion.com/en/",
+      "https://github.com/milooop2/frontier-silicon-firmwares",
+      "https://community.medion.com/t5/FAQs/Why-is-my-internet-radio-silent/ta-p/76355",
+      "https://www.inven.ai/company-lists/top-19-semiconductor-companies-in-north-carolina"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/medion/",
+      "https://medion.manymanuals.com/"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Ruark",
+    "policy_urls": [
+      "https://www.ruarkaudio.com/us/privacy-policy",
+      "https://www.ruarktechnology.com/privacypolicytcs",
+      "https://ruark.co/privacy-policy/",
+      "https://www.ruarkaudio.com/privacy-policy",
+      "https://ruarkaudio.in/privacy-policy"
+    ],
+    "product_urls": [
+      "https://audionation.ca/collections/ruark-audio",
+      "https://shop.ruarkaudio.com/collections/product-range",
+      "https://shop.ruarkaudio.com/",
+      "https://www.hifishark.com/search?q=ruark",
+      "https://www.target.com/c/speakers-audio-systems-electronics/ruark-audio/-/N-5xte2Zq643lexksat"
+    ],
+    "manual_urls": [
+      "https://www.ruarkaudio.com/customer-support/user-guides",
+      "https://www.manuals.co.uk/ruark-audio"
+    ]
+  },
+  {
+    "device": "Frontier Silicon",
+    "brand": "Teufel",
+    "policy_urls": [
+      "https://us.teufelaudio.com/privacy-notice-us",
+      "https://frontier.com/corporate/privacy-policy",
+      "https://support.teufel.de/hc/en-us/articles/360000759169-Privacy",
+      "https://www.teufel-international.com/privacy-statement/?lang=en"
+    ],
+    "product_urls": [
+      "https://www.airablenow.com/airable/airable-portal/",
+      "https://support.teufel.de/hc/en-us",
+      "https://github.com/0fner/SyncFSToRaumfeld",
+      "https://www.frontiersmart.com/products/",
+      "https://www.home-assistant.io/integrations/frontier_silicon/"
+    ],
+    "manual_urls": [
+      "https://lu.teufelaudio.com/Operating-instructions",
+      "https://support.teufel.de/hc/en-us/articles/115005015069-User-manuals-for-Teufel-products",
+      "https://www.manualslib.com/brand/teufel/",
+      "https://support.teufel.de/hc/en-us/articles/360001910680-Home-theater-installation-and-setup",
+      "https://support.teufel.de/hc/en-us"
+    ]
+  },
+  {
+    "device": "Ring Security Camera",
+    "brand": "Ring",
+    "policy_urls": [
+      "https://thegamersmall.com/blog/ring-privacy-settings-2025/",
+      "https://ring.com/terms",
+      "https://ring.com/privacy-notice",
+      "https://ring.com/privacy",
+      "https://smartcampicks.com/privacy-features-of-ring-indoor-cam/"
+    ],
+    "product_urls": [
+      "https://ring.com/",
+      "https://ring.com/collections/home-security-cameras",
+      "https://ring.com/collections/all-products",
+      "https://www.target.com/c/smart-security-cameras-systems-home-monitoring-connected-living/ring/-/N-4xoy3Z4y5ju",
+      "https://www.costco.com/ring-whole-home-camera-kit.product.4000360541.html"
+    ],
+    "manual_urls": [
+      "https://ring.com/gb/en/support/articles/q39h4/Ring-Device-Manuals",
+      "https://www.manualslib.com/brand/ring/security-camera.html",
+      "https://manualsnet.com/ring/camera",
+      "https://ring.com/support/articles/8wx60/camera-setup-guide",
+      "https://blinksandbuttons.net/how-to-install-the-ring-camera/"
+    ]
+  },
+  {
+    "device": "General Electric Connected Appliance",
+    "brand": "General",
+    "policy_urls": [
+      "https://secure.geappliances.com/privacy/privacy_policy_connected.htm",
+      "https://www.geappliances.com/privacy/privacy_policy.htm",
+      "https://www.geappliances.com/privacy/privacy_center.htm",
+      "https://termly.io/resources/templates/privacy-policy-template/",
+      "https://www.privacypolicies.com/blog/privacy-policy-template/"
+    ],
+    "product_urls": [
+      "https://www.ge.com/",
+      "https://geappliancesco.com/",
+      "https://geappliances.ca/connected-appliances",
+      "https://www.bestbuy.com/site/brands/ge/pcmcat158500050029.c?id=pcmcat158500050029",
+      "https://www.distinctivekitchenandappliance.com/by-brand/ge/GE-Appliances.html"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/geappliances/",
+      "https://www.manuals.ca/ge",
+      "https://products.geappliances.com/appliance/gea-support-search-content?contentId=37684",
+      "https://www.geappliances.com/ge/service-and-support/literature.htm",
+      "https://hotfoodoven.com/how-to-install-ge-wall-oven-microwave-combination/"
+    ]
+  },
+  {
+    "device": "Gigaset Communications",
+    "brand": "Gigaset",
+    "policy_urls": [
+      "https://www.gigaset.com/en_en/cms/gigaset/privacy-policy.html",
+      "https://www.gigaset.com/en_en/cms/home/support/support/gigasetnet/gigaset-net-privacy-policy.html",
+      "https://www.gigaset.com/hq_en/cms/gigaset/privacy-policy.html",
+      "https://www.gigaset.com/hq_en/cms/home/support/support/gigasetnet/gigaset-net-privacy-policy.html",
+      "https://teamwork.gigaset.com/gigawiki/display/PDP/Personal+Data+Protection+Policy"
+    ],
+    "product_urls": [
+      "https://www.gigaset.com/en_en/cms/cc/products.html",
+      "https://www.gigaset.com/en_en/cms/phones.html",
+      "https://www.amazon.com/gigaset/s?k=gigaset",
+      "https://www.ebay.com/b/Gigaset-Cell-Phones-Smartphones/9355/bn_7117363435?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.networkdistri.com/brand/gigaset"
+    ],
+    "manual_urls": [
+      "https://www.gigaset.com/en_en/cms/home/support/support/downloads/manuals.html",
+      "https://www.manualslib.com/brand/gigaset/",
+      "https://teamwork.gigaset.com/gigawiki/display/GPPPO/Installation+Guide+-+Devices",
+      "https://help.it.ox.ac.uk/gigasets"
+    ]
+  },
+  {
+    "device": "VoIP Device",
+    "brand": "Grandstream",
+    "policy_urls": [
+      "https://www.grandstream.com/privacy-statement",
+      "https://documentation.grandstream.com/knowledge-base/softwareucm-privacy-statement",
+      "https://www.grandstream.uk/privacy-policy/",
+      "https://www.grandstream.com/ipvideotalk_terms.html",
+      "https://documentation.grandstream.com/knowledge-base/ucm6300-series-ip-pbx-privacy-statement/"
+    ],
+    "product_urls": [
+      "https://grandstream.in/products/ip-voice-telephony/",
+      "https://documentation.spectrumvoip.com/en_US/desk-phones-grandstream/set-up-a-grandstream-phone-for-the-first-time",
+      "https://grandstream.co.id/en/ipvoice-telephony/",
+      "https://www.amazon.com/Grandstream-Accounts-4-3-Inch-Dual-Port-Integrated/dp/B019X06IFS",
+      "https://www.grandstream.com/products/ip-voice-telephony/gxp-series-ip-phones"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/grandstream-networks/",
+      "https://www.manuals.ca/phones/grandstream",
+      "https://documentation.spectrumvoip.com/en_US/desk-phones-grandstream/set-up-a-grandstream-phone-for-the-first-time",
+      "https://www.modn.com/blog/step-by-step-guide-to-installing-grandstream-phones-",
+      "https://documentation.grandstream.com/knowledge-base/basic-configuration-guide/"
+    ]
+  },
+  {
+    "device": "Grandstream VoIP",
+    "brand": "Grandstream",
+    "policy_urls": [
+      "https://www.grandstream.com/privacy-statement",
+      "https://www.grandstream.uk/privacy-policy/",
+      "https://www.grandstream.com/ipvideotalk_terms.html",
+      "https://documentation.grandstream.com/knowledge-base/softwareucm-privacy-statement",
+      "https://www.gdpr-advisor.com/how-gdpr-affects-smart-home-data-privacy-concerns-for-connected-devices/"
+    ],
+    "product_urls": [
+      "https://grandstream.in/products/ip-voice-telephony/",
+      "https://www.grandstream.com/",
+      "https://www.raleighbusinessphonesystems.com/grandstream-business-phone-systems-raleigh-nc/",
+      "https://www.ebay.com/b/Grandstream/bn_21825999?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.ipphone-warehouse.com/voip-phone-systems/grandstream-phone-systems/"
+    ],
+    "manual_urls": [
+      "https://manualsnet.com/grandstream",
+      "https://grandstream-networks.manymanuals.com/ip-phones",
+      "https://documentation.grandstream.com/knowledge-base/gxp21xx-series-user-guide/",
+      "https://www.modn.com/blog/step-by-step-guide-to-installing-grandstream-phones-",
+      "https://documentation.spectrumvoip.com/en_US/desk-phones-grandstream/set-up-a-grandstream-phone-for-the-first-time"
+    ]
+  },
+  {
+    "device": "Broadlink Plugs",
+    "brand": "Broadlink",
+    "policy_urls": [
+      "https://1401476e0c0ab68eca2277527d87efa0appservice.ibroadlink.com/appfront/v1/webui/app-h5-privacy_notice-1353/",
+      "https://cloud-oauth-usa-acf15bd5.ibroadlink.com/cloud-blewxwebui-2126-privacy/en.html",
+      "https://www.broadlinc.com/legal-policies-agreements/privacy-policy/",
+      "https://broadlink.com.au/help/privacypolicy",
+      "https://cloud-oauth-usa-acf15bd5.ibroadlink.com/ble_bl_magichome_privacy_policy/en.html"
+    ],
+    "product_urls": [
+      "https://ebroadlink.com/",
+      "https://www.ibroadlink.com/",
+      "https://www.amazon.com/BroadLink-Required-Control-Occupies-Assistant/dp/B07MM4HNSZ",
+      "https://www.ibroadlink.com/wheretobuy",
+      "https://www.ebay.com/shop/broadlink-smart-plug?_nkw=broadlink+smart+plug&msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://usermanual.wiki/m/276fffd29c5e9e98b3be5f841a295eee42b5ce20e840c60bcd1b8669ce8b2fbd",
+      "https://manualzz.com/doc/66174356/broadlink-sp4l-eu--amz--owner-s-manual"
+    ]
+  },
+  {
+    "device": "Samsung TV",
+    "brand": "Hikvision",
+    "policy_urls": [
+      "https://www.hikvision.com/en/policies/privacy-policy/",
+      "https://www.samsung.com/us/info/privacy/smarttv/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://us-legacy.hikvision.com/en/support-resources/privacy-policy",
+      "https://www.hik-connect.com/views/terms/dataProtectionAddendum.html",
+      "https://www.hik-connect.com/views/terms/termsofservice.html"
+    ],
+    "product_urls": [
+      "https://www.hikvision.com/us-en/products/",
+      "https://www.cctvaware.com/general/install-hikvision-ivms-4500-hd-smart-tv",
+      "https://www.hikvision.com/en/",
+      "https://www.hikvision.com/us-en/where-to-buy/",
+      "https://securitycamcenter.com/view-ip-camera-smart-tv/"
+    ],
+    "manual_urls": [
+      "https://www.manualowl.com/Hikvision/Manuals",
+      "https://www.manualslib.com/brand/hikvision/",
+      "https://www.hikvision.com/en/support/how-to/how-to-guide/",
+      "https://us-legacy.hikvision.com/en/support-resources/documentation",
+      "https://www.cctvaware.com/general/install-hikvision-ivms-4500-hd-smart-tv"
+    ]
+  },
+  {
+    "device": "HP Printer",
+    "brand": "HP",
+    "policy_urls": [
+      "https://www.hp.com/us-en/privacy/privacy-central.html?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.hp.com/us-en/privacy/privacy.html?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.hp.com/us-en/privacy/ww-privacy.html?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://help.hpauthsuite.com/support/solutions/articles/47001240938-hp-privacy-policy-statement",
+      "https://info.lens.poly.com/docs/hp-us-privacy-statement"
+    ],
+    "product_urls": [
+      "https://support.hp.com/us-en/drivers",
+      "https://support.hp.com/",
+      "https://www.bestbuy.com/site/hp/hp-printers/pcmcat1513022463335.c?id=pcmcat1513022463335",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=hp+printers+",
+      "https://www.hp.com/us-en/shop/printers?ggep_is_embeddable=false&msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/h/hp+printers.html",
+      "https://support.hp.com/manuals",
+      "https://support.hp.com/us-en/printer-setup",
+      "https://easytechsolver.com/how-do-i-install-my-hp-printer-on-my-computer/",
+      "https://support.hp.com/us-en/document/ish_1780623-1698506-16"
+    ]
+  },
+  {
+    "device": "Obihai VoIP",
+    "brand": "Obihai",
+    "policy_urls": [
+      "https://www.ohai.ai/privacy-policy",
+      "https://ohailife.com/pages/privacy-policy",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control",
+      "https://learnhomeautomation.com/blog/smart-home-privacy/",
+      "https://digitalprivacy.ieee.org/publications/topics/data-privacy-and-the-internet-of-things/"
+    ],
+    "product_urls": [
+      "https://www.amazon.com/Obihai-OBi110-Service-Telephone-Adapter/dp/B0045RMEPI",
+      "http://www.www3.obitalk.com/info/faq/About-the-OBi/OBi202-OBi100-and-OBi110",
+      "https://www.ebay.com/b/Obihai-VoIP-Home-Phone-Adapters/99269/bn_88398461?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.ipphone-warehouse.com/obihai/",
+      "https://www.ebay.com/itm/296832244189?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://all-guidesbox.com/brand/obihai.html",
+      "https://support-portal.8x8.com/helpcenter/viewArticle.html?d=fc6804bf-15f5-4f68-b71c-6d7b5e7657f3&hl=en",
+      "https://www.search-manual.com/obihai-technology-obi200-voip-phone-adapter-with-t-38-fax-connection-359093-manual",
+      "https://zadarma.com/en/support/instructions/obihai/",
+      "https://help.sonictel.com/support/solutions/articles/9000160229-obi-obihai-admin-manual"
+    ]
+  },
+  {
+    "device": "HUMAX STB",
+    "brand": "HUMAX",
+    "policy_urls": [
+      "https://global.humaxdigital.com/privacy-policy/",
+      "https://myhumax.org/forum/topic/privacy-policy",
+      "https://www.humax-networks.com/privacy_policy/view",
+      "https://uk.humaxdigital.com/notice-product-privacy-policy/",
+      "https://www.humax-networks.com/privacy_policy"
+    ],
+    "product_urls": [
+      "https://uk.humaxdigital.com/support/",
+      "https://www.humaxdirect.co.uk/",
+      "https://uk.humaxdigital.com/product-category/set-top-boxes/",
+      "https://shopping.mercatos.com/en/TV-set-top-boxes_c19965/Humax",
+      "https://www.trustedreviews.com/best/best-set-top-boxes-4021733"
+    ],
+    "manual_urls": [
+      "https://manualmachine.com/humax/settopbox/899896-user-manual/",
+      "https://humax.manymanuals.com/satellite/digital-set-top-box/user-manual-5120",
+      "https://manualsdump.com/en/manuals/humax-digital_set-top_box/182694/1",
+      "https://fccid.io/O6ZSPECTRUM210-H/User-Manual/User-Manual-3453841",
+      "https://www.manualowl.com/Humax/Manuals"
+    ]
+  },
+  {
+    "device": "HUMAX STB",
+    "brand": "DIRECTV",
+    "policy_urls": [
+      "https://www.directv.com/legal/legal-policy-center/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.directv.com/privacy/directv-privacy-policies/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.directvplans.com/privacy-policy",
+      "https://www.directvbusinesssavings.com/privacy-policy/",
+      "https://www.directv.com/privacy/video-privacy-policy/?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "product_urls": [
+      "https://www.usdirect.com/equipment",
+      "https://www.manualshelf.com/manual/humax/d12/user-s-manual-english.html",
+      "https://www.eetimes.com/conexants-satellite-system-solution-powers-new-humax-set-top-box/",
+      "https://www.amazon.com/directv-stream-box/s?k=directv+stream+box",
+      "https://www.networksaround.com/directv/directv-equipment.html"
+    ],
+    "manual_urls": [
+      "https://www.manualshelf.com/manual/humax/d12/user-s-manual-english.html",
+      "https://www.manualslib.com/brand/directv/",
+      "https://fccid.io/O6ZSPECTRUM210-H/User-Manual/User-Manual-3453841",
+      "https://fccid.io/O6ZH44/User-Manual/User-Manual-2622507",
+      "https://archive.org/details/manualsonline-id-109ab154-7e37-4c11-bb20-c9f8e4b0d0ba"
+    ]
+  },
+  {
+    "device": "Hybroad Vision IPTV or STB",
+    "brand": "Hybroad",
+    "policy_urls": [
+      "https://www.hybroad.com/privacy-policy",
+      "https://lifehacker.com/tech/how-to-protect-your-privacy-when-using-smart-home-tech",
+      "https://thegoodhome.org/best-practices-for-smart-home-privacy/",
+      "https://umatechnology.org/8-smart-home-privacy-concerns-you-should-be-aware-of/",
+      "https://iothybridsolutions.com/privacy-policy"
+    ],
+    "product_urls": [
+      "https://www.androidtv-guide.com/oem/hybroad/",
+      "https://www.anvimur.com/gb/iptv/638-iptv-set-top-box-hybroad-trueip.html",
+      "https://www.viaccess-orca.com/partners/hybroad",
+      "https://www.hybroad.com/component/k2/itemlist/category/2-hybrid-set-top-box",
+      "https://www.xnxx.com/todays-selection"
+    ],
+    "manual_urls": [
+      "https://usermanual.wiki/Hybroad-Vision-Electronics-Technology/SP-110/html",
+      "https://fccid.io/2ARDH-Z123/User-Manual/Z123-user-manual-FCC-ver3-4059327",
+      "https://doc.haivision.com/Play20004000STB/1.2/user-s-guide",
+      "https://fccid.io/2ARDH-A350A/User-Manual/2ARDH-A350A-User-manual-4636204",
+      "https://usermanual.wiki/Hybroad-Vision-Electronics-Technology/A312/info"
+    ]
+  },
+  {
+    "device": "Hybroad Vision IPTV or STB",
+    "brand": "Fetch",
+    "policy_urls": [
+      "https://www.fetchtvbox.com/policy/",
+      "https://fetch.com/privacy-policy",
+      "https://fetch.ai/privacy-policy",
+      "https://fetch.com/privacy-policy-wa-consumer-health-data",
+      "https://www.studyfetch.com/legal/privacy"
+    ],
+    "product_urls": [
+      "https://www.fetchtv.com.au/specs",
+      "https://www.hybroad.com/component/k2/itemlist/category/2-hybrid-set-top-box",
+      "https://www.hybroad.com/component/content/article/92-case-study/87-successful-case-fetch-tv?Itemid=437",
+      "https://www.anvimur.com/gb/iptv/638-iptv-set-top-box-hybroad-trueip.html",
+      "https://secured.westnet.com.au/tv/fetch/faq/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/830849/Fetch-Tv-Set-Top-Box.html",
+      "https://www.fetchtv.com.au/support/user-guides",
+      "https://device.report/manuals/fetch-tv-quick-start-guide",
+      "https://www.internode.on.net/support/guides/fetch_tv/",
+      "https://usermanual.wiki/Hybroad-Vision-Electronics-Technology/SP-110/html"
+    ]
+  },
+  {
+    "device": "Hybroad Vision IPTV or STB",
+    "brand": "NimiTV",
+    "policy_urls": [
+      "https://tivibridge.com/iptv-security-and-privacy/",
+      "https://iotprivacy.io/privacy-policy"
+    ],
+    "product_urls": [
+      "https://nimitv.com/en.html",
+      "https://www.anvimur.com/gb/iptv/638-iptv-set-top-box-hybroad-trueip.html",
+      "https://nimitv.com/en/options/set-top-box.html",
+      "https://www.androidtv-guide.com/oem/hybroad/",
+      "https://apps.apple.com/vu/app/nimitv/id1311469051"
+    ],
+    "manual_urls": [
+      "https://usermanual.wiki/Hybroad-Vision-Electronics-Technology/SP-110/html",
+      "https://doc.haivision.com/Play20004000STB/1.2/user-s-guide",
+      "https://fccid.io/2ARDH-A350A/User-Manual/2ARDH-A350A-User-manual-4636204",
+      "https://www.androidtv-guide.com/oem/hybroad/"
+    ]
+  },
+  {
+    "device": "WD TV Live Plus",
+    "brand": "Logitech",
+    "policy_urls": [
+      "https://www.logitechs.us/privacy-policy-2/",
+      "https://www.westerndigital.com/legal/privacy-statement",
+      "https://logitech-privacy.relyance.ai/",
+      "https://support.logi.com/hc/en-150/articles/360050041773-How-do-I-ensure-my-privacy-and-is-my-video-footage-secure"
+    ],
+    "product_urls": [
+      "https://support-en.wd.com/app/products/product-detailweb/p/189",
+      "https://support.logi.com/hc/en-gb?lang=en",
+      "https://www.manua.ls/western-digital/wd-tv-live-plus/manual",
+      "https://www.amazon.com/Live-Plus-1080p-Media-Player/dp/B003MVZ60I",
+      "https://www.ebay.com/b/Wd-Tv-Live/168058/bn_7023355235?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manua.ls/western-digital/wd-tv-live-plus/manual",
+      "https://www.manualslib.com/products/Western-Digital-Tv-Live-Plus-3447326.html",
+      "https://www.manuals.ca/western-digital/tv-live/manual",
+      "https://www.manualsdir.com/manuals/575860/western-digital-wd-tv-live_live-plus-media-player-user-manual.html",
+      "https://support-en.wd.com/app/products/product-detailweb/p/189"
+    ]
+  },
+  {
+    "device": "Logitech Speaker",
+    "brand": "Logitech",
+    "policy_urls": [
+      "https://www.logitechs.us/privacy-policy-2/",
+      "https://logitech-privacy.relyance.ai/",
+      "https://www.logi.com/en-gb/legal/privacy-policy",
+      "https://support.logi.com/hc/en-150/articles/360050041773-How-do-I-ensure-my-privacy-and-is-my-video-footage-secure"
+    ],
+    "product_urls": [
+      "https://support.logi.com/hc/en-gb?lang=en",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=logitech+speakers+",
+      "https://www.bestbuy.com/site/shop/logitech-speakers",
+      "https://www.amazon.com/logitech-speakers/s?k=logitech+speakers",
+      "https://www.target.com/c/speakers-audio-systems-electronics/logitech/-/N-5xte2Z5y6yk"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/logitech/speakers.html",
+      "https://www.manuals.ca/speakers/logitech",
+      "https://support.logi.com/hc/en-gb?lang=en",
+      "https://www.usermanuals.tech/brand/logitech/speaker",
+      "https://www.manualowl.com/c/Logitech/Speaker/Manuals"
+    ]
+  },
+  {
+    "device": "iDevices Smart Home",
+    "brand": "iDevices",
+    "policy_urls": [
+      "https://idevicesinc.com/privacy/",
+      "https://mydevices.com/privacy-policy/",
+      "https://bipartisanpolicy.org/blog/smart-homes-privacy-policy/",
+      "https://technocapture.com/tech-guide/smart-home-data-privacy/",
+      "https://idevicesinc.com/news/privacy-matters-2-simple-ways-to-keep-your-smart-home-secure"
+    ],
+    "product_urls": [
+      "https://www.amazon.com/stores/iDevicesLLC/page/87093624-632A-425F-AF3E-52C96A99C309",
+      "https://store.idevicesinc.com/",
+      "https://www.amazon.com/stores/iDevicesLLC/Thermostat/page/C146BC83-FF6C-46EB-AC3D-8669C3974A0D",
+      "https://www.amazon.com/stores/iDevicesLLC/page/58E2CB0A-8257-4ECA-BB17-A8EDB32353BC",
+      "https://idevicesinc.com/where-to-buy/"
+    ],
+    "manual_urls": [
+      "https://www.manualshelf.com/manual/idevices/idev0005and5/user-manual-english.html",
+      "https://manualzz.com/doc/73524482/idevices-idev0001-user-manual",
+      "https://www.manualslib.com/manual/1332153/Idevices-Idev0001.html",
+      "https://www.manualslib.com/manual/1356663/Idevices-Idev0020.html",
+      "https://ideviceworld.com/blog/tutorials/install-idevices-thermostat/"
+    ]
+  },
+  {
+    "device": "iSmart Alarm Home Security and Control",
+    "brand": "iSmart",
+    "policy_urls": [
+      "https://ismartalarm.meshare.com/ismartalarm/application/info/privacynotice.html",
+      "https://ismartsafe.com/privacy-policy/",
+      "https://ismarthomesecurity.com/pages/legal-notice",
+      "https://www.mgmotor.eu/privacy-notice/ismart",
+      "https://www.mgmotor.eu/privacy-notice"
+    ],
+    "product_urls": [
+      "https://www.alarm.com/US/ismart",
+      "https://www.amazon.com/iSmartAlarm-Security-Wireless-Compatible-iSA9/dp/B06W2J2YSC",
+      "https://ismartsafe.com/product-details/",
+      "https://ismarthomesecurity.com/collections/smart-alarm-security-system",
+      "https://www.alarmsystemstore.com/blogs/diy/ismart-alarms-diy-security/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/877707/Ismartalarm-Home-Security-System.html",
+      "https://manualzilla.com/doc/5782263/ismartalarm-home-security-system-owner-s-manual",
+      "https://manualzz.com/doc/4481542/ismartalarm-home-security-system-owner-s-manual",
+      "https://www.manualshelf.com/manual/ismart-alarm/isc5/user-manual-english-french.html"
+    ]
+  },
+  {
+    "device": "Wyze Camera",
+    "brand": "Wyze",
+    "policy_urls": [
+      "https://support.wyze.com/hc/en-us/articles/360032397992-Security-Privacy",
+      "https://forums.wyze.com/t/privacy-policy-questions-concerns/29071",
+      "https://support.wyze.com/hc/en-us/articles/9992232527515-How-is-my-data-stored-Is-my-privacy-protected",
+      "http://www.wyzemarketplace.com/about/privacy"
+    ],
+    "product_urls": [
+      "https://www.wyze.com/pages/home",
+      "https://www.wyze.com/pages/welcome-to-wyze",
+      "https://www.bestbuy.com/site/brands/wyze/pcmcat1684954122882.c?id=pcmcat1684954122882",
+      "https://www.bestbuy.com/site/shop/wyze-security-camera",
+      "https://support.wyze.com/hc/en-us/articles/360046711052-Who-are-your-authorized-retailers"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/wyze/",
+      "https://manualsnet.com/wyze/camera",
+      "https://manualzz.com/doc/70180413/wyze-a53934-cam-v3-security-camera-user-guide",
+      "https://support.wyze.com/hc/en-us/articles/23746352335771-Wyze-Cam-v4-Setup-Guide",
+      "https://wasserstein-home.com/blogs/smart-home/how-to-set-up-wyze-cam-easy-step-by-step-guide"
+    ]
+  },
+  {
+    "device": "Wyze Smart Home",
+    "brand": "Wyze",
+    "policy_urls": [
+      "https://support.wyze.com/hc/en-us/articles/9992232527515-How-is-my-data-stored-Is-my-privacy-protected",
+      "https://forums.wyze.com/t/updates-to-wyzes-privacy-statements-3-27-20/93827",
+      "https://support.wyze.com/hc/en-us/articles/360032397992-Security-Privacy",
+      "http://www.wyzemarketplace.com/about/privacy",
+      "https://thewyze.com/privacy-policy"
+    ],
+    "product_urls": [
+      "https://www.wyze.com/pages/home",
+      "https://www.wyze.com/pages/welcome-to-wyze",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=wyze",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=wyze+security+camera",
+      "https://www.wyze.com/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/wyze/",
+      "https://manualsnet.com/wyze/camera",
+      "https://manualzz.com/doc/en/70180408/wyze-video-doorbell-pro-user-guide",
+      "https://support.wyze.com/hc/en-us/articles/23746352335771-Wyze-Cam-v4-Setup-Guide",
+      "https://smarthometutorial.com/wyze-camera-setup/"
+    ]
+  },
+  {
+    "device": "Kaonmedia STB",
+    "brand": "Kaonmedia",
+    "policy_urls": [
+      "https://www.kaonmedia.com:8443/utility/privacy_policy.asp"
+    ],
+    "product_urls": [
+      "http://www.kaonmedia.com/eng/product/pro02_1.asp",
+      "http://www.kaonmedia.net/product/AI_STB.asp",
+      "https://www.adrenio.com/index.php/en/products/products2/kaon",
+      "https://www.kaonmedia.com:8443/eng/product/pro02_3.asp?pgrp=41&pidx=37",
+      "https://www.androidtv-guide.com/oem/kaonmedia/"
+    ],
+    "manual_urls": [
+      "https://www.manualshelf.com/manual/kaonmedia/kstb2100/installation-guide-german-english.html",
+      "https://fccid.io/WQTKSTB2100/User-Manual/User-Manual-5186927",
+      "https://usermanual.wiki/KAONMEDIA/VM1510/html",
+      "https://www.manualslib.com/manual/2066517/Kaon-Kstb2100.html",
+      "https://device.report/manuals/kaonmedia-kstb2100r-ip-set-top-box-user-manual"
+    ]
+  },
+  {
+    "device": "Bluesound International",
+    "brand": "Bluesound",
+    "policy_urls": [
+      "https://www.bluesound.com/usa/privacy-policy",
+      "https://www.bluesoundprofessional.com/privacy-policy/",
+      "https://bluesound.in/privacy-policy/",
+      "https://smarthomeace.com/which-smart-speaker-is-best-for-privacy/",
+      "https://www.bestsmartproducts.com/guide/smart-speakers-and-privacy-what-you-need-to-know/"
+    ],
+    "product_urls": [
+      "https://www.bluesound.com/usa/all-products",
+      "https://bluesound.in/",
+      "https://bluesoundprofessional.com/",
+      "https://www.bluesound.com/usa/dealer-locator",
+      "https://bluesoundprofessional.com/distributor-rep-locator/"
+    ],
+    "manual_urls": [
+      "https://www.bluesound.com/manuals",
+      "https://www.manualslib.com/brand/bluesound/",
+      "https://support1.bluesound.com/hc/en-us/sections/200065326-Setup-and-Configuration",
+      "https://support.bluesoundprofessional.com/hc/en-us/sections/360009556374-Setup",
+      "https://support1.bluesound.com/hc/en-us"
+    ]
+  },
+  {
+    "device": "Leviton Smart Home",
+    "brand": "Leviton",
+    "policy_urls": [
+      "https://leviton.com/company/footer/privacy-policy",
+      "https://leviton.com/company/footer/terms-of-use",
+      "https://leviton.com/company/footer/privacy-policy/california-consumer-privacy-act",
+      "https://leviton.com/products/industrial/motor-controls---safety-switches/inform-technology/inform-app-privacy-policy",
+      "https://testing.leviton.com/privacy/"
+    ],
+    "product_urls": [
+      "https://leviton.com/products/all-products",
+      "http://www.levitonproducts.com/",
+      "https://leviton.com/products/network-solutions",
+      "https://leviton.com/where-to-buy",
+      "https://www.onestopbuy.com/shop/electrical-products-r19.asp"
+    ],
+    "manual_urls": [
+      "https://leviton.com/support/partners/specifiers/lighting-and-controls/support/library/manuals-and-user-guides",
+      "https://www.manualslib.com/brand/leviton/",
+      "https://www.manuals.ca/leviton",
+      "https://leviton.com/support/literature/libraries",
+      "https://decorasmartsupport.leviton.com/hc/en-us"
+    ]
+  },
+  {
+    "device": "Lexmark Printer",
+    "brand": "Lexmark",
+    "policy_urls": [
+      "https://www.lexmark.com/en_us/legal/privacy-policy.html",
+      "https://csr.lexmark.com/security-privacy.php",
+      "https://www.lexmark.com/en_us/legal/terms-of-use.html",
+      "https://www.lexmark.com/en_xm/legal/privacy-policy.html",
+      "https://www.lexmark.com/en_xc/legal/privacy-policy.html"
+    ],
+    "product_urls": [
+      "https://www.lexmark.com/en_us.html",
+      "https://www.lexmark.com/en_us.html?lang=0",
+      "https://support.lexmark.com/en_us/printers.html",
+      "https://www.amazon.com/lexmark-printer/s?k=lexmark+printer",
+      "https://www.staples.com/Lexmark-Printers/cat_CL167883/006c0?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://support.lexmark.com/en_us/manuals-guides.html",
+      "https://manualsnet.com/lexmark/printer",
+      "https://www.techsolutions.support.com/how-to/how-to-set-up-a-lexmark-printer-10228",
+      "https://support.lexmark.com/content/support/guides/en/v55525003/set-up-install-and-configure/installing-and-updating-software-drivers-and-firmw/adding-printers-to-a-computer-v56532425.html",
+      "https://www.manuals.co.uk/printers/lexmark"
+    ]
+  },
+  {
+    "device": "Libratone Smart Speaker",
+    "brand": "Libratone",
+    "policy_urls": [
+      "https://libratone.shop/pages/terms-and-conditions",
+      "http://assets.libratone.com/app/en/terms/",
+      "https://robertmasoncompany.com/privacy-in-smart-homes/",
+      "https://iotlenses.com/Privacy-policy.html"
+    ],
+    "product_urls": [
+      "https://libratone.shop/",
+      "https://cdn.little-bird.com/guide/UP/index.html?EN",
+      "https://usshop.libratone.com/collections/all",
+      "https://www.amazon.com/libratone-speakers/s?k=libratone+speakers",
+      "https://www.ebay.com/shop/libratone?_nkw=libratone&msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/956715/Libratone-Live.html",
+      "https://www.manualslib.com/brand/libratone/speakers.html",
+      "https://libratone.shop/pages/support",
+      "http://support.birdytone.com/guide/en/zipp/index.html",
+      "https://www.manualslib.com/brand/libratone/"
+    ]
+  },
+  {
+    "device": "LIFX lighting",
+    "brand": "LIFX",
+    "policy_urls": [
+      "https://www.lifx.com/pages/privacy-policy",
+      "https://www.lifx.com/pages/legals",
+      "https://www.lifx.com/pages/terms-of-service",
+      "https://www.lifx.com/pages/cookie-policy"
+    ],
+    "product_urls": [
+      "https://www.lifx.com/collections/all",
+      "https://www.stuff.tv/features/lifx-smart-lighting-guide/",
+      "https://www.amazon.com/stores/LIFX/page/3C9F3E44-5D72-4613-B180-1FD68433B78E",
+      "https://www.amazon.com/lifx/s?k=lifx",
+      "https://www.bestbuy.com/site/shop/lifx-lighting"
+    ],
+    "manual_urls": [
+      "https://support.lifx.com/hc/en-us/sections/14498892908439-User-Manuals",
+      "https://manualzz.com/doc/52942268/lifx-lha19e26uc10-led-bulb-user-guide",
+      "https://www.lifx.com.au/pages/manuals-and-installation-guides",
+      "https://content.nexus.support.com/how-to/how-to-set-up-lifx-smart-lights-12047",
+      "https://content.nexus.support.com/how-to/how-to-use-lifx-smart-lights-12049"
+    ]
+  },
+  {
+    "device": "LightwaveRF Smart Home",
+    "brand": "LightwaveRF",
+    "policy_urls": [
+      "https://shop.lightwaverf.com/pages/privacy-policy-1",
+      "https://lightwaveglobal.com/privacy-policy/",
+      "https://shop.lightwaverf.com/pages/privacy-policy?lang=en",
+      "https://law.stackexchange.com/questions/13410/what-to-include-in-disclaimer-and-privacy-policy-of-iot-devices-and-services"
+    ],
+    "product_urls": [
+      "https://shop.lightwaverf.com/collections/all",
+      "https://shop.lightwaverf.com/pages/smart-lighting",
+      "https://shop.lightwaverf.com/collections/starter-kits",
+      "https://thedombot.com/collections/lightwaverf-smart-home-automation-made-easy",
+      "https://www.responseelectronics.com/starter-kits-bundles-t218/"
+    ],
+    "manual_urls": [
+      "https://support.lightwaverf.com/knowledge/installation-manuals",
+      "https://www.manualslib.com/brand/lightwaverf/",
+      "https://all-guidesbox.com/model/lightwaverf/jsjs-lw100.html",
+      "https://manualzz.com/doc/10398496/lightwaverf-jsjs-lw200-1-gang-2-way-rf-dimmer-operation-m...",
+      "https://support.lightwaverf.com/knowledge"
+    ]
+  },
+  {
+    "device": "Google Chromecast",
+    "brand": "Lenovo",
+    "policy_urls": [
+      "https://www.lenovo.com/us/en/privacy/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.lenovo.com/us/en/privacy/2024/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.lenovo.com/us/en/privacy/2020/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://pcsupport.lenovo.com/us/en/solutions/ht512602-lenovo-smart-privacy-services-personalizing-your-privacy-for-greater-control",
+      "https://www.howtogeek.com/751593/lenovo-wants-to-sell-you-privacy-as-a-subscription-service/"
+    ],
+    "product_urls": [
+      "https://www.google.com/cast/setup/",
+      "https://www.lenovo.com/us/members/gtech/en/glossary/chromecast/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.support.google.com/chromecast/chromecast/?hl=en",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=google+chromecast.",
+      "https://www.bestbuy.com/site/streaming-media-devices/google-chromecast/pcmcat748301684651.c?id=pcmcat748301684651"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/2036969/Google-Chromecast.html",
+      "https://support.google.com/chromecast/answer/6006232?hl=en",
+      "https://support.google.com/chromecast/answer/6006232?hl=en-CA",
+      "https://www.tomsguide.com/us/chromecast-how-to,review-1811.html",
+      "https://www.solveyourtech.com/how-to-set-up-chromecast-a-step-by-step-guide/"
+    ]
+  },
+  {
+    "device": "Lutron Dimmer and Light Control",
+    "brand": "Lutron",
+    "policy_urls": [
+      "https://privacy.lutron.com/us/en/lutron-privacy-policy",
+      "https://lutronhomeautomation.com/privacy-policy/",
+      "https://privacy.lutron.com/us/en/residential-systems-privacy-notice",
+      "https://www.lutron.com/us/en/terms/terms-conditions-of-Sale",
+      "https://www.illusiveautomation.com/blog/smart-shades-instant-privacy-by-lutron"
+    ],
+    "product_urls": [
+      "https://lutronhomeautomation.com/products/stand-alone-controls/led-plus-dimmers/",
+      "https://commercial.lutron.com/uk/en/home",
+      "https://www.amazon.com/stores/Lutron/page/F5D04145-3826-4565-9A21-4A4DD677A88B",
+      "https://www.amazon.com/lutron-switch-dimmer/s?k=lutron+switch+dimmer",
+      "https://forums.lutron.com/index.php?s=bdb97e50be66f5a31943f17e9fb94309"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/lutron-electronics/dimmer.html",
+      "https://support.lutron.com/us/en",
+      "https://manualsfile.com/product/ft9pwjpnn.html",
+      "https://sciora.blog/wiring-lutron-dimmer-guide",
+      "https://support.lutron.com/us/en/product/skylark/documents/installation-guide"
+    ]
+  },
+  {
+    "device": "MagicJack Plus",
+    "brand": "MagicJack",
+    "policy_urls": [
+      "https://www.thevoiphub.com/providers/magicjack/terms-of-service/",
+      "https://magicjackservice.com/privacy-policy/",
+      "https://www.magicjack.com/CCPA-privacy.html",
+      "https://www.magicjack.com/privacy-policy/",
+      "https://thegoodhome.org/best-practices-for-smart-home-privacy/"
+    ],
+    "product_urls": [
+      "https://www.voipreview.org/reviews/magicjack-plus",
+      "https://www.amazon.com/stores/MagicJack/magicJacktheOfficialManufacturer/page/46A2824A-B06D-4B44-A85B-447E502A0316",
+      "https://secure.magicjack.com/my.magicjack/index.html",
+      "https://www.magicjack.com/",
+      "https://www.ebay.com/sch/i.html?_nkw=magic+jack+plus&_sop=12&msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://fccid.io/Y79S1013/User-Manual/Users-Manual-1965548",
+      "https://usermanual.wiki/YMAX-Communications/S1013",
+      "https://blackmagictocontrol.com/the-magic-jack-plus-user-manual.html",
+      "https://hogonext.com/how-to-install-magicjack-plus/",
+      "https://help.magicjack.com/faq/canadian-saps/"
+    ]
+  },
+  {
+    "device": "Microsoft Gaming Console",
+    "brand": "Microsoft",
+    "policy_urls": [
+      "https://www.microsoft.com/en-us/privacy/data-collection-xbox?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.xbox.com/en-US/legal/digital-safety-at-xbox?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.microsoft.com/en-us/privacy/privacystatement?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.microsoft.com/en-us/privacy?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://account.microsoft.com/account/privacy"
+    ],
+    "product_urls": [
+      "https://www.xbox.com/en-US/?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.amazon.com/Xbox-S/dp/B08G9J44ZN",
+      "https://www.xbox.com/en-US/consoles?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.bestbuy.com/site/xbox-series-x-and-s/xbox-series-x-and-s-consoles/pcmcat1586900952752.c?id=pcmcat1586900952752",
+      "https://www.amazon.com/Microsoft-Xbox-512GB-SSD-Console-S/dp/B0D932YWSZ"
+    ],
+    "manual_urls": [
+      "https://support.xbox.com/en-US/help/hardware-network/console/manuals-specs",
+      "https://www.manualslib.com/brand/microsoft/game-console.html",
+      "https://all-guidesbox.com/model/microsoft/xbox.html",
+      "https://umatechnology.org/how-to-use-your-xbox-series-x-series-s-complete-beginners-guide/",
+      "https://www.thegamer.com/console-set-up-guide-faqs-switch-xbox-playstation/"
+    ]
+  },
+  {
+    "device": "Xbox One",
+    "brand": "Microsoft",
+    "policy_urls": [
+      "https://support.xbox.com/en-US/help/family-online-safety/online-safety/manage-online-safety-and-privacy-settings-xbox-one",
+      "https://www.microsoft.com/en-us/privacy/privacystatement?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.microsoft.com/en-us/privacy/data-collection-xbox?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.microsoft.com/en-us/privacy?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://account.microsoft.com/account/privacy"
+    ],
+    "product_urls": [
+      "https://www.microsoft.com/en-us/store/b/xbox?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.xbox.com/en-US/consoles?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.xbox.com/en-US/consoles/xbox-series-x?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.gamestop.com/consoles-hardware/xbox-one?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.xbox.com/en-US/games/browse?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://support.xbox.com/en-US/help/hardware-network/console/manuals-specs",
+      "https://manualsfile.com/product/pfd4rm4g9z.html",
+      "https://www.search-manual.com/microsoft-xbox-one-wireless-controller-326555-manual",
+      "https://support.xbox.com/en-US/help/hardware-network/getting-started-set-up/set-up-new-system",
+      "https://support.microsoft.com/en-us"
+    ]
+  },
+  {
+    "device": "Miele Smart Appliance",
+    "brand": "Miele",
+    "policy_urls": [
+      "https://www.mieleusa.com/c/privacy-policy-14.htm",
+      "https://www.miele.com/en/p/data-protection-7064.htm",
+      "https://www.miele.ca/en/privacy-policy",
+      "https://www.miele.co.uk/c/privacy-notice-14.htm",
+      "https://miele.knoji.com/questions/miele-privacy-data-policy/"
+    ],
+    "product_urls": [
+      "https://www.miele.com/en/com/products-2066.htm",
+      "https://www.mieleusa.com/c/kitchen-appliances-56.htm",
+      "https://www.miele.ca/en/",
+      "https://www.lowes.com/pl/appliances/miele/4294937007-721986050114?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.airportappliance.com/all-brands/miele"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/miele/",
+      "https://www.miele.com/en/p/manuals.htm",
+      "https://myhomeniche.com/31169/how-to-install-miele-washing-machine/",
+      "https://www.mieleusa.com/f/us/manuals-125.aspx",
+      "https://www.mieleusa.support/support"
+    ]
+  },
+  {
+    "device": "ROBE",
+    "brand": "ROBE",
+    "policy_urls": [
+      "https://robehaircare.com/pages/privacy",
+      "https://roycerobe.com/privacy-policy/",
+      "https://robeontheinternet.com/pages/privacy-policy",
+      "https://www.robelawfirm.com/privacy-policy",
+      "https://www.robeco.com/en-int/privacy-and-cookie-policy"
+    ],
+    "product_urls": [
+      "https://chasa.com/collections/robes",
+      "https://thomasrobes.com/",
+      "https://www.nordstrom.com/browse/women/clothing/sleepwear-robes/robes?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.target.com/c/robes-women-s-clothing/-/N-5xtc0",
+      "https://www.marshalls.com/us/store/shop/womens-robes/_/N-2267691735"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/robe/",
+      "https://manualzz.com/doc/81915176/robe-rbe-10718701-robe-robin-megapointe®-beam-and-spot-dtlc...",
+      "https://www.manualslib.com/products/Robe-Robospot-Motioncamera-14139597.html",
+      "https://www.manualslib.com/manual/3565570/Wren-Robe.html",
+      "https://www.bosswardrobes.com.au/wardrobe-installation/"
+    ]
+  },
+  {
+    "device": "Google Chromecast",
+    "brand": "Netgear",
+    "policy_urls": [
+      "https://www.netgear.com/about/privacy-policy/",
+      "https://policy.netgear.com/privacy/privacy.html",
+      "https://www.netgear.com/about/privacy-policy/governance/",
+      "https://www.netgear.com/about/analyticsdatapolicy/",
+      "https://community.netgear.com/discussions/home-wifi-routers-general/privacy-warning/2376874"
+    ],
+    "product_urls": [
+      "https://support.google.com/chromecast/answer/7281538?hl=en",
+      "https://www.google.com/cast/setup/",
+      "https://www.amazon.com/Chromecast-Google-TV-Streaming-Entertainment/dp/B0B9HS6DLZ",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=google+chromecast.",
+      "https://www.target.com/s/google+chromecast"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/2036969/Google-Chromecast.html",
+      "https://support.google.com/chromecast/answer/6006232?hl=en",
+      "https://manualzz.com/doc/o/bx5hc/netgear-mymedia-user-manual-use-the-mobile-genie-app-to-share-media-with-chromecast",
+      "https://support.google.com/chromecast/answer/7281538?hl=en",
+      "https://smarthomeace.com/how-to-setup-chromecast-without-google-home-app/"
+    ]
+  },
+  {
+    "device": "Netgem STB",
+    "brand": "Netgem",
+    "policy_urls": [
+      "https://netgem.co.uk/privacy-policy/",
+      "https://sdk.netgem.com/index_termsofuse.php",
+      "https://www.netgear.com/about/privacy-policy/",
+      "https://netgem.co.uk/terms-conditions/",
+      "https://barriermagz.com/technology/smart-home-privacy/"
+    ],
+    "product_urls": [
+      "https://support.netgem.co.uk/hc/en-us",
+      "https://support.netgem.co.uk/hc/en-us/sections/360004168691-Setting-up-your-device",
+      "https://support.netgem.co.uk/hc/en-us/categories/360000248752-Set-up",
+      "https://www.ebay.com/itm/375869333941?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.techradar.com/reviews/netgem-netbox-4k"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/netgem/",
+      "https://support.netgem.co.uk/hc/en-us",
+      "https://support.netgem.co.uk/hc/en-us/sections/360004168691-Setting-up-your-device",
+      "https://support-ie.netgem.tv/hc/en-us/categories/360001597311-Set-up-registration",
+      "https://support.netgem.co.uk/hc/en-us/categories/360000248752-Set-up"
+    ]
+  },
+  {
+    "device": "Night Owl Security",
+    "brand": "Night Owl",
+    "policy_urls": [
+      "https://privacy-policy.nightowlsp.com/",
+      "https://nightowl.com.au/privacy/",
+      "https://nightowlsp.com/pages/privacy-policy",
+      "https://www.nightovvl.com/privacy-policy/",
+      "https://www.nightowl.group/privacy-policy"
+    ],
+    "product_urls": [
+      "https://www.no-protect.com/account/",
+      "https://nightowlsp.com/collections/all",
+      "https://www.no-protect.com/",
+      "https://www.amazon.com/Night-Owl-Security-Outdoor-Expandable/dp/B087QPR8KH",
+      "https://nightowlsp.com/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/night-owl/",
+      "https://manualmachine.com/nightowl/wmc/1631713-user-manual/",
+      "https://www.manualshelf.com/manual/night-owl/d2p1l-166-v2/full-product-manual-english.html",
+      "https://support.nightowlsp.com/hc/en-us/articles/360038980013-Initial-Setup-Wired-DVR",
+      "https://device.report/manuals/night-owl-dvr-setup-guide-wired-security-systems"
+    ]
+  },
+  {
+    "device": "Nintendo Gaming Console",
+    "brand": "Nintendo",
+    "policy_urls": [
+      "https://www.nintendo.com/region-selector/privacy-policy/",
+      "https://www.nintendo.com/en-gb/Legal-information/Website-Privacy-Policy/Website-Privacy-Policy-637785.html",
+      "https://www.nintendo.com/us/privacy-policy/",
+      "https://www.nintendo.co.jp/csr/en-gb/privacy_policy/index.html"
+    ],
+    "product_urls": [
+      "https://www.nintendo.com/us/gaming-systems/switch/system/",
+      "https://www.nintendo.com/us/store/",
+      "https://www.nintendo.com/en-ca/gaming-systems/switch/",
+      "https://www.target.com/s/nintendo+console",
+      "https://www.amazon.com/b?node=16227130011"
+    ],
+    "manual_urls": [
+      "https://en-americas-support.nintendo.com/app/answers/detail/a_id/16881/~/downloadable-manuals",
+      "https://www.manualslib.com/brand/nintendo/game-console.html",
+      "https://www.gameslearningsociety.org/how-to-setup-a-nintendo-switch/",
+      "https://blog.race.com/nintendo-switch-how-to-guide/",
+      "https://en-americas-support.nintendo.com/app/answers/detail/a_id/10540/~/how-to-set-up-your-nintendo-console-for-the-first-time"
+    ]
+  },
+  {
+    "device": "Nintendo Switch",
+    "brand": "Nintendo",
+    "policy_urls": [
+      "https://www.nintendo.com/us/privacy-policy/",
+      "https://www.nintendo.com/region-selector/privacy-policy/",
+      "https://www.nintendo.com/en-gb/Legal-information/Website-Privacy-Policy/Website-Privacy-Policy-637785.html",
+      "https://www.nintendo.co.jp/csr/en-gb/privacy_policy/index.html"
+    ],
+    "product_urls": [
+      "https://www.nintendo.com/us/gaming-systems/switch/",
+      "https://www.nintendo.com/us/",
+      "https://www.nintendo.com/us/gaming-systems/switch/system/",
+      "https://www.bestbuy.com/site/nintendo-switch/nintendo-switch-consoles/pcmcat1484077694025.c?id=pcmcat1484077694025/",
+      "https://www.nintendo.com/us/store/products/nintendo-switch-117972-3/"
+    ],
+    "manual_urls": [
+      "https://en-americas-support.nintendo.com/app/answers/detail/a_id/16881/~/downloadable-manuals",
+      "https://www.manua.ls/nintendo/switch/manual",
+      "https://www.pdfmanuals.ca/manual/nintendo-switch/",
+      "https://en-americas-support.nintendo.com/app/answers/detail/a_id/22501/~/nintendo-switch-first-time-setup-and-connection",
+      "https://www.imore.com/beginners-guide-how-set-and-start-using-your-nintendo-switch"
+    ]
+  },
+  {
+    "device": "Tablo DVR",
+    "brand": "Tablo",
+    "policy_urls": [
+      "https://tablo.sodio.tech/privacy-policy",
+      "https://www.tablo.co.in/privacy-policy"
+    ],
+    "product_urls": [
+      "https://cbsdeals.com/products/tablo-2-tuner-dvr-30-mile-antenna-bundle?variant=46473382035715",
+      "https://hometheaterreview.com/product/tablo-4th-gen-2-tuner-over-the-air-dvr/",
+      "https://support.tablotv.com/hc/en-us/articles/19819790366100-Where-Can-I-Buy-Tablo",
+      "https://www.amazon.com/Tablo-4-Tuner-Over-Air-DVR/dp/B0CQD65DVZ",
+      "https://www.amazon.com/Tablo-4th-Gen-2-Tuner-Subscriptions/dp/B0CBVT6SLL"
+    ],
+    "manual_urls": [
+      "https://support.tablotv.com/hc/en-us/articles/115002718066-Find-Your-Tablo-Quick-Start-Guide",
+      "https://www.manualslib.com/products/Tablo-Dual-8705377.html",
+      "https://www.teklib.com/library/tablo-dual-128gb-ota-dvr-manual/",
+      "https://support.tablotv.com/hc/en-us/articles/18377355383700-4th-Generation-Tablo-First-Time-Setup",
+      "https://www.manualslib.com/manual/3067333/Tablo-Dual-128gb.html"
+    ]
+  },
+  {
+    "device": "Google Chromecast",
+    "brand": "Nvidia",
+    "policy_urls": [
+      "https://www.nvidia.com/en-us/about-nvidia/privacy-policy/",
+      "https://www.nvidia.com/en-us/privacy/",
+      "https://www.nvidia.com/en-us/about-nvidia/privacy-center/",
+      "https://www.nvidia.com/en-us/about-nvidia/privacy-policy/2020/",
+      "https://nvidia.custhelp.com/app/answers/detail/a_id/4666/~/how-can-i-change-my-privacy-settings?"
+    ],
+    "product_urls": [
+      "https://www.nvidia.com/en-us/shield/support/shield-tv/chromecast-4k/",
+      "https://www.google.com/cast/chromecast/home",
+      "https://www.google.com/cast/setup/",
+      "https://www.amazon.com/Google-Nest-GA01919-GA01919-US-Chromecast/dp/B08KRV7S22",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=google+chromecast+4k+with+google+tv"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/2036969/Google-Chromecast.html",
+      "https://support.google.com/chromecast/answer/6006232?hl=en",
+      "https://www.manuals.ca/google/chromecast/manual",
+      "https://www.solveyourtech.com/how-to-set-up-chromecast-a-step-by-step-guide/",
+      "https://www.nvidia.com/en-us/shield/support/shield-tv/chromecast-4k/"
+    ]
+  },
+  {
+    "device": "Onkyo",
+    "brand": "Onkyo",
+    "policy_urls": [
+      "https://onkyo.com/privacy-policy",
+      "https://www.onkyo.net/en/privacy-policy",
+      "https://www.onkyo.net/privacy-policy",
+      "https://onkyo.toyama.jp/privacy-policy/",
+      "https://www.hachidori-onkyo.com/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://support.onkyousa.com/hc/en-us",
+      "https://onkyo.com/intl",
+      "https://www.amazon.com/onkyo-usa/s?k=onkyo+usa",
+      "https://www.sweetwater.com/store/manufacturer/Onkyo?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.bestbuy.com/site/brands/onkyo/pcmcat344200050026.c?id=pcmcat344200050026"
+    ],
+    "manual_urls": [
+      "https://support.onkyousa.com/hc/en-us",
+      "https://www.manuals.ca/onkyo",
+      "https://www.manualsdir.com/brands/onkyo.html",
+      "https://blinksandbuttons.net/how-do-you-do-initial-setup-on-onkyo-receiver/",
+      "https://thetechylife.com/how-do-i-setup-my-onkyo-network/"
+    ]
+  },
+  {
+    "device": "Ooma VoIP",
+    "brand": "Ooma",
+    "policy_urls": [
+      "https://tryooma.com/pages/privacy-policy",
+      "https://www.ooma.com/legal/voice-and-messaging-terms/",
+      "https://www.ooma.com/legal/residential-terms-and-conditions/",
+      "https://www.ooma.com/legal/privacy-center/",
+      "https://www.ooma.com/legal/terms/"
+    ],
+    "product_urls": [
+      "https://www.ooma.com/home-phone-service/",
+      "https://www.ooma.com/home-phone-service/products/",
+      "https://support.ooma.com/home/manuals/",
+      "https://www.amazon.com/Ooma-Phone-Unlimited-Calling-Mobile/dp/B085RV13ZP",
+      "https://www.bestbuy.com/site/ooma-telo-internet-home-phone-service-black/3404027.p"
+    ],
+    "manual_urls": [
+      "https://support.ooma.com/home/manuals/",
+      "https://www.manualslib.com/brand/ooma/",
+      "https://www.manualslib.com/manual/2506843/Ooma-Ip-Phone.html",
+      "https://device.report/manual/11702095",
+      "https://manualzilla.com/doc/5880964/user-manual---ooma-support"
+    ]
+  },
+  {
+    "device": "Osram",
+    "brand": "Osram",
+    "policy_urls": [
+      "https://www.osram.us/cb/privacy-policy/index.jsp",
+      "https://www.osram.com/privacy/",
+      "https://xchange.osram.com/apex/ccrz__CCPage?pageKey=PrivacyPolicy&guestUser=true&cclcl=en_US",
+      "https://ams-osram.com/privacy-policy",
+      "https://www.osram.com/os/info/os_privacy_policy.jsp"
+    ],
+    "product_urls": [
+      "https://ams-osram.com/products",
+      "https://www.osram-lamps.com/",
+      "https://www.ledvance.com/en-int/professional-lighting/products/led-lamps/osram-led-lamps-c248438",
+      "https://www.amazon.com/osram-LED-Bulbs-Light/s?k=osram&rh=n:2314207011",
+      "https://www.lightbulbs.com/brand/osram-light-bulbs"
+    ],
+    "manual_urls": [
+      "https://osram.manymanuals.com/",
+      "https://manualsnet.com/osram",
+      "https://www.manualsdir.com/brands/osram/189.html",
+      "https://osram.manymanuals.com/lighting",
+      "https://www.manualslib.com/brand/osram/"
+    ]
+  },
+  {
+    "device": "Polycom VVX",
+    "brand": "Polycom",
+    "policy_urls": [
+      "https://poly.cam/legal/privacy-policy",
+      "http://ni.poly.home.chrischro.me/www.poly.com/us/en/legal/privacy/privacy-policy.html",
+      "https://www.polycomsolutions.com/privacy-policy/",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control",
+      "https://thegoodhome.org/best-practices-for-smart-home-privacy/"
+    ],
+    "product_urls": [
+      "https://downloads.polycom.com/voice/voip/uc_sw_releases_matrix.html",
+      "https://docs.poly.com/",
+      "https://all-guidesbox.com/manual/1362976/polycom-vvx-201-operation-user-s-manual-159.html?page=130",
+      "https://www.amazon.com/Polycom-250-IP-Phone-Mountable/dp/B07HBYZVC8",
+      "https://www.businessphonesystems.com/buy-sell-used-polycom-vvx-201-2200-40450-001.htm"
+    ],
+    "manual_urls": [
+      "https://support.smartcitytelecom.com/knowledge-base/polycom-vvx-250-350-450-quick-start-guide/",
+      "https://support.intermedia.com/app/articles/detail/a_id/28161/~/polycom-vvx-250-quick-start-guide",
+      "https://support.hp.com/us-en/product/setup-user-guides/poly-vvx-accessories-series/model/2101765522",
+      "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0062214",
+      "https://support-portal.8x8.com/"
+    ]
+  },
+  {
+    "device": "Rainforest Automation",
+    "brand": "Rainforest",
+    "policy_urls": [
+      "https://www.rainforestautomation.com/privacy/",
+      "https://www.rainforestqa.com/privacy",
+      "https://www.rainforest-alliance.org/privacy-policy/",
+      "https://rainforestclean.com/privacy-policy/",
+      "https://www.rainforestqa.com/terms-of-service"
+    ],
+    "product_urls": [
+      "https://www.madeforplanet.com/resource/rainforest-automation",
+      "https://climatebase.org/company/6566/rainforest-automation",
+      "https://foresightcac.com/company/rainforest-automation",
+      "https://www.rainforestautomation.com/buy-rainforest-products/",
+      "http://green-home-product-source.com/rainforest-automation-energy-monitoring-solutions.html"
+    ],
+    "manual_urls": [
+      "https://support.rainforestautomation.com/support/solutions/articles/66000376950-emu-2-user-manual-and-tech-guide",
+      "https://www.manualslib.com/brand/rainforest-automation/",
+      "https://manualzilla.com/doc/5759501/user-manual---rainforest-automation",
+      "https://www.rainforestautomation.com/support/eagle-3-support/",
+      "https://support.rainforestautomation.com/support/solutions/articles/66000510086-setting-up-the-eagle-3"
+    ]
+  },
+  {
+    "device": "Securitas Direct Alarm System",
+    "brand": "Securitas",
+    "policy_urls": [
+      "https://www.securitasinc.com/stand-alone-page/securitas-usa-privacy-policy/",
+      "https://www.securitastechnology.com/online-privacy-policy",
+      "https://www.securitas.com/en/about-us/securitas-technology-and-healthcare-global-privacy-policy/",
+      "https://www.securitas.in/about-us/privacy-policy/",
+      "https://www.securitas.com/en/about-us/data-privacy-policy-for-securitas-workplace/"
+    ],
+    "product_urls": [
+      "https://www.securitas.com/",
+      "https://www.securitas.ca/services/technology/commercial-wireless-alarm-system-en/",
+      "https://alarm-system.es/misleading-claims/",
+      "https://www.ebay.com/itm/326011515670?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.alarm.com/US/directalarm?home=1"
+    ],
+    "manual_urls": [
+      "https://wealthrenew346.weebly.com/securitas-direct-alarm-user-manual-in-english.html",
+      "https://newagegifts569.weebly.com/securitas-direct-alarm-user-manual-in-english.html",
+      "https://www.noticemanuel.com/document_init.php?marque=ALARME&modele=SECURITAS+DIRECT&doctype1=Manuel&doctype2=Installation",
+      "https://www.xfinity.com/support/contact-us?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ]
+  },
+  {
+    "device": "Epson Projectors",
+    "brand": "Epson",
+    "policy_urls": [
+      "https://corporate.epson/en/privacy/",
+      "https://global.epson.com/privacy/projectorapps_privacy.html",
+      "https://www.projection-service.epson.com/pages/epm-connected/privacy-statement/ps_enUS.htm",
+      "https://global.epson.com/privacy/area_select_confirm_eula.html",
+      "https://epson.com/terms-of-use?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "product_urls": [
+      "https://www.bestbuy.com/site/epson/epson-projectors/pcmcat256100050015.c?id=pcmcat256100050015",
+      "https://www.projectorcentral.com/Epson-projectors.htm",
+      "https://www.epson.eu/en_EU/products/projector/c/projector",
+      "https://epson.com/Projectors/c/e3?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.newegg.com/p/pl?d=epson+projector&msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/epson/projector.html",
+      "https://epson.manymanuals.com/projectors",
+      "https://manualsnet.com/epson/projector",
+      "https://files.support.epson.com/docid/cpd6/cpd65868/EN/Setup/Reference/projector_setup_install.html",
+      "https://nexttools.net/how-to-setup-epson-projector/"
+    ]
+  },
+  {
+    "device": "Printer or Scanner",
+    "brand": "Epson",
+    "policy_urls": [
+      "https://corporate.epson/en/privacy/",
+      "https://global.epson.com/privacy/area_select_confirm_eula.html",
+      "https://epson.com/terms-of-use?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://global.epson.com/privacy/itservice/privacy_statement_outside_eu.html",
+      "https://support.epson.net/appinfo/smartpanel/privacy/PrivacyStatement_en.html"
+    ],
+    "product_urls": [
+      "https://download.ebz.epson.net/dsc/search/01/search/searchModule",
+      "https://www.epson.com.ph/Support/sl/s",
+      "https://epson.com/printers?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.bestbuy.com/site/epson/epson-printers/pcmcat139900050009.c?id=pcmcat139900050009",
+      "https://www.target.com/c/printers-scanners-home-office-electronics/epson/-/N-5xtf2Z5y65f"
+    ],
+    "manual_urls": [
+      "https://epson.com/Support/Printers/sh/s1?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://epson.com/Support/sl/s?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://epson.com/support/epson-connect-printer-setup-for-windows?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://support2.epson.net/manuals/english/index.html",
+      "https://epson.com/support/printer-problems?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ]
+  },
+  {
+    "device": "Sleep Number Bedding",
+    "brand": "Sleep Number",
+    "policy_urls": [
+      "https://www.sleepnumber.com/pages/legal-privacy-policy",
+      "https://support.sleepnumber.com/hc/en-us/articles/233079468-Privacy-and-security",
+      "https://www.digitaltrends.com/home/sleep-number-privacy-policy-record-audio/",
+      "https://patch.com/us/across-america/smart-beds-sleep-apps-data-collection-raises-privacy-concerns",
+      "https://support.sleepnumber.com/hc/en-us/articles/360043190713-Sleep-Number-app-Data-Privacy-and-Account-Deletion"
+    ],
+    "product_urls": [
+      "https://sleepnum.com/",
+      "https://www.sleepnumber.com/categories/bedding",
+      "https://sleepbloom.com/how-much-do-sleep-number-beds-cost/",
+      "https://www.amazon.com/stores/SleepNumber/page/15DB1B9D-B02A-4EB7-830C-D354D816E3EC",
+      "https://www.walmart.com/c/kp/sleep-number-bed-sheets"
+    ],
+    "manual_urls": [
+      "https://usermanual.wiki/Sleep-Number",
+      "https://manualzz.com/doc/22421093/sleep-number-p7--i9-bed-user-manual",
+      "https://manualzz.com/doc/23091178/sleep-number-innovation-series-i8--i10-bed-user-manual",
+      "https://support.sleepnumber.com/hc/en-us/sections/18519287815319-Guides-and-Manuals",
+      "https://sleepopolis.com/guides/ultimate-guide-to-sleep-number-scale-settings/"
+    ]
+  },
+  {
+    "device": "High-Flying Electronics",
+    "brand": "High-Flying",
+    "policy_urls": [
+      "https://www.highflyingmodels.com/pages/privacy-policy",
+      "https://www.highflyingdesign.com/privacy",
+      "https://www.stephenaforte.com/privacy-policy",
+      "https://www.dcslegal.com/news-insights/drones-and-data-privacy-risks/",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control"
+    ],
+    "product_urls": [
+      "http://www.hi-flying.com/",
+      "https://www.aliexpress.com/store/3864090",
+      "https://hf-sophia.en.made-in-china.com/",
+      "https://flyingelectronics.com/",
+      "https://www.alibaba.com/showroom/flying-electronics_5.html"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/1341736/Shanghai-High-Flying-Electronics-Technology-Co-Hf-Lpt120.html",
+      "https://www.manualshelf.com/manual/high-flying-electronics-technology/hf-a21/user-s-manual-english.html",
+      "https://fccid.io/2ACSV-HF-A21-SMT/User-Manual/User-manual-2709965",
+      "https://usermanual.wiki/High-Flying-Electronics-Technology/HF-A21/html",
+      "https://www.manualslib.com/manual/2024157/High-Flying-Hf-Lpb100.html"
+    ]
+  },
+  {
+    "device": "Reolink",
+    "brand": "Reolink",
+    "policy_urls": [
+      "https://reolink.shipipo.com/legal",
+      "https://support.reolink.com/hc/en-us/articles/18208181849241-Overview-of-Reolink-Advanced-Data-Protection/",
+      "https://support.reolink.com/hc/en-us/articles/37046076925209-Introduction-to-Reolink-Privacy-Mode/",
+      "https://www.thesmarthomehookup.com/indoor-cameras-reviewed-and-tested-for-privacy-concerns/",
+      "https://reolink.ee/en/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://reolink.com/gb/product-registration/",
+      "https://store.reolink.com/__/security-cameras/",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=reolink+go",
+      "https://ipcamtalk.com/threads/which-system-is-better-reolink-or-lorex.71874/",
+      "https://ipcamtalk.com/threads/alternatives-to-reolink.61748/"
+    ],
+    "manual_urls": [
+      "https://support.reolink.com/hc/en-us/articles/900000539406-Where-to-Find-and-Download-User-Manual-Quick-Start-Guide-for-Reolink-Cameras-NVRs/",
+      "https://www.manualslib.com/brand/reolink/",
+      "https://www.manuals.ca/reolink",
+      "https://vacationhomeautomation.com/reolink-camera-installation-guide-step-by-step-nvr-setup/",
+      "https://support.reolink.com/hc/en-us/categories/360000280013-Guide/"
+    ]
+  },
+  {
+    "device": "Geniatech ATV1200",
+    "brand": "MyGica",
+    "policy_urls": [
+      "https://www.trustabletech.org/how-smart-home-devices-impact-your-privacy/",
+      "https://iotlenses.com/Privacy-policy.html"
+    ],
+    "product_urls": [
+      "https://www.mygica.com/support/",
+      "https://www.manualshelf.com/manual/mygica/atv1200/user-manual-english.html",
+      "https://shop.geniatech.us/products/brand/mygica/",
+      "https://www.ebay.ca/sch/i.html?_nkw=mygica+atv+1200&_dcat=8444",
+      "https://www.ebay.com/p/193835041?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/2312712/Mygica-Atv1200.html",
+      "https://www.manualshelf.com/manual/mygica/atv1200/user-manual-english.html",
+      "https://mygica.manymanuals.com/tv-accessories/atv1200",
+      "https://all-guidesbox.com/model/geniatech/atv1200.html",
+      "https://www.manualslib.com/a/atv1200.html"
+    ]
+  },
+  {
+    "device": "SiliconDust HD HomeRun",
+    "brand": "SiliconDust",
+    "policy_urls": [
+      "https://www.silicondust.com/terms-and-conditions/",
+      "https://forum.silicondust.com/forum/ucp.php?mode=privacy",
+      "https://shop.silicondust.com/shop/silicondust-website-terms-of-service/",
+      "https://www.nist.gov/publications/smart-home-security-and-privacy-mitigations-consumer-perceptions-practices-and",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control"
+    ],
+    "product_urls": [
+      "http://info.hdhomerun.com/info/",
+      "https://www.amazon.com/stores/Silicondust/page/FB4F4ED7-17CA-428F-BC7B-A5236666D4E2",
+      "https://www.silicondust.com/support/downloads/",
+      "https://www.ebay.com/sch/i.html?_nkw=SiliconDust+HDHomeRun&_sop=12&msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://shop.silicondust.com/shop/product/dvr_yearly/"
+    ],
+    "manual_urls": [
+      "https://www.manualshelf.com/manual/silicondust/hdhomerun/instruction-manual-english.html",
+      "https://all-guidesbox.com/model/silicondust/hdhomerun.html",
+      "https://manualzilla.com/doc/7353732/silicondust-hdhomerun-instruction-manual",
+      "https://www.manualslib.com/manual/1740688/Silicondust-Hdhomerun.html"
+    ]
+  },
+  {
+    "device": "SkyBell Security",
+    "brand": "SkyBell",
+    "policy_urls": [
+      "https://skybell.com/pages/skybell-terms-of-service",
+      "https://skybell.com/pages/california-privacy-notice"
+    ],
+    "product_urls": [
+      "https://brinkshome.com/help-center/articles/20021_skybell_guide",
+      "https://skybell.com/collections/all",
+      "https://www.standardsecurity.com/skybell.aspx",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=skybell+doorbell",
+      "https://www.alarmgrid.com/faq/where-can-i-buy-a-skybell-doorbell"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/1062363/Skybell-Hd-Doorbell.html",
+      "https://usermanual.com/support/skybell",
+      "https://genfamilytree.com/skybell-doorbell-manual/",
+      "https://brinkshome.com/help-center/articles/20021_skybell_guide",
+      "https://support.skybell.com/hc/en-us/categories/115000560546-SkyBell-Support-Knowledge-Base"
+    ]
+  },
+  {
+    "device": "Slingbox",
+    "brand": "Slingbox",
+    "policy_urls": [
+      "https://www.slingbox.com/Legal/PrivacyPolicy",
+      "https://slingcustomer.support/privacy-policy.html",
+      "https://www.slingbox.com/Legal/PrivacyPolicy.aspx",
+      "https://getsling.com/privacy-statement/",
+      "https://www.slingbox.com/Legal/"
+    ],
+    "product_urls": [
+      "https://www.slingbox.com/",
+      "https://thedroidguy.com/does-slingbox-still-work-in-2025-1267312",
+      "https://www.amazon.com/Sling-Media-SB375-100-Slingbox-M2/dp/B011QHAOWO",
+      "https://www.ebay.com/b/Slingbox-Media-Streamers/168058/bn_71608723?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=sling+box"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/319031/Sling-Media-Slingbox.html",
+      "https://manualzz.com/doc/o/2gfoy/sling-media-slingbox-user-guide-using-slingremote",
+      "https://www.manualslib.com/products/Sling-Media-Slingbox-2485432.html",
+      "https://www.techsolutions.support.com/how-to/how-to-set-up-a-slingbox-10451",
+      "https://manualzz.com/doc/62047879/sling-media-slingplayer--slingbox-user-manual"
+    ]
+  },
+  {
+    "device": "Sonos Player",
+    "brand": "Sonos",
+    "policy_urls": [
+      "https://www.sonos.com/en/legal/privacy",
+      "https://www.macrumors.com/2024/06/14/sonos-privacy-policy-change-suggests-it-might-sell-your-data/",
+      "https://www.techradar.com/computing/software/sonos-updates-its-privacy-policy-and-seemingly-hints-theyll-begin-selling-user-data&quot",
+      "https://www.sonos.com/en/legal",
+      "https://www.sonos.com/en-us/legal/privacy"
+    ],
+    "product_urls": [
+      "https://support.sonos.com/en-us/downloads",
+      "https://support.sonos.com/en/products",
+      "https://www.sonos.com/en-us/support/by-product",
+      "https://www.bestbuy.com/site/sonos/all-sonos-products/pcmcat1542380741851.c?id=pcmcat1542380741851",
+      "https://www.sonos.com/en-us/shop"
+    ],
+    "manual_urls": [
+      "https://usermanual.com/support/sonos",
+      "https://www.manuals.ca/sonos",
+      "https://manualsnet.com/sonos",
+      "https://www.trustedreviews.com/news/sonos-setup-guide-2945848",
+      "https://www.sonos.com/en-us/support/by-product"
+    ]
+  },
+  {
+    "device": "Amazon Alexa",
+    "brand": "Sonos",
+    "policy_urls": [
+      "https://www.sonos.com/en/legal",
+      "https://www.macrumors.com/2024/06/14/sonos-privacy-policy-change-suggests-it-might-sell-your-data/",
+      "https://www.sonos.com/en-us/legal/privacy",
+      "https://www.mozillafoundation.org/en/privacynotincluded/sonos-smart-speakers/",
+      "https://skyportsystems.net/sonos-privacy-policy-customer-data-controversy/"
+    ],
+    "product_urls": [
+      "https://www.amazon.com/Sonos-One-Gen-Controlled-Built/dp/B074XN1LH3",
+      "https://www.sonos.com/en-us//alexa-on-sonos",
+      "https://www.trustedreviews.com/how-to/set-use-sonos-alexa-3690023",
+      "https://www.bestbuy.com/site/sonos/sonos-one/pcmcat1505221333384.c?id=pcmcat1505221333384",
+      "https://www.stuff.tv/features/best-sonos-speakers/"
+    ],
+    "manual_urls": [
+      "https://www.manualshelf.com/manual/sonos/oneg1us1/user-manual-english.html",
+      "https://smart-home-sounds.helpscoutdocs.com/article/240-amazon-alexa-product-control-sonos",
+      "https://support.sonos.com/en/article/control-sonos-with-amazon-alexa"
+    ]
+  },
+  {
+    "device": "Sonos",
+    "brand": "Dlink",
+    "policy_urls": [
+      "https://www.sonos.com/en/legal/privacy",
+      "https://www.dlink.com/en/privacy",
+      "https://www.mydlink.com/privacyPolicy",
+      "https://datalinksoftware.com/privacy/",
+      "https://www.dlink.com/xk/sq/privacy"
+    ],
+    "product_urls": [
+      "https://www.sonos.com/en/support/by-product",
+      "https://www.dlink.com/us/en",
+      "https://www.sonos.com/en/home",
+      "https://www.sonos.com/en-us/storelocator",
+      "https://soundstationsecurity.net/sonos/"
+    ],
+    "manual_urls": [
+      "https://www.dlink.com/en/resource-centre/manuals",
+      "https://usermanual.com/support/sonos",
+      "https://manualsnet.com/sonos",
+      "https://www.trustedreviews.com/news/sonos-setup-guide-2945848",
+      "https://www.sonos.com/en/support/by-product"
+    ]
+  },
+  {
+    "device": "SunPower Corporation",
+    "brand": "SunPower",
+    "policy_urls": [
+      "https://us.sunpower.com/privacy/website-policy",
+      "https://sunpowerglobal.com/us/privacy-policy",
+      "http://secure.sunpower.com/privacy.php",
+      "https://us.sunpower.com/privacy",
+      "https://sunpower.global/int/privacy-policy-sunpower-one"
+    ],
+    "product_urls": [
+      "https://sunpowerglobal.com/int/solar-panel-products",
+      "https://sunpowerglobal.com/int/",
+      "https://investors.sunpower.com/news-releases/news-release-details/complete-solaria-inc-announces-rebrand-sunpower",
+      "https://www.marketscreener.com/quote/stock/SUNPOWER-CORPORATION-9483260/news/Motion-for-Asset-Sale-Approved-for-SunPower-Corporation-47994455/",
+      "https://finance.yahoo.com/quote/SPWRQ/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/sunpower/",
+      "https://usermanual.wiki/SunPower",
+      "https://www.manuals.ca/solar-panels/sunpower",
+      "https://www.manualslib.com/manual/1635666/Sunpower-Sunpower.html",
+      "https://help-centre.starpoweradvancesolartechnology.com/support/solutions/51000293074"
+    ]
+  },
+  {
+    "device": "Telldus Smart Home",
+    "brand": "Telldus",
+    "policy_urls": [
+      "https://telldus.com/privacy/",
+      "https://login.telldus.com/user/privacyPolicy",
+      "https://www.tellius.com/privacy-policy"
+    ],
+    "product_urls": [
+      "https://telldus.com/en/",
+      "https://telldus.com/en/collections/all",
+      "https://telldus.com/en/collections",
+      "https://live.telldus.com/",
+      "https://community.home-assistant.io/t/replacing-telldus-tellsick-net/549408"
+    ],
+    "manual_urls": [
+      "https://live.telldus.com/help/manuals",
+      "https://www.manualslib.com/brand/telldus/",
+      "https://device.report/manual/603837",
+      "https://wiki.domoticz.com/Basic_Tellstick_functionality_with_Domoticz/Install_Telldus_core_latest_release_RaspberryPi",
+      "https://telldus.com/en/pages/support"
+    ]
+  },
+  {
+    "device": "Chamberlain MyQ Smart Home",
+    "brand": "Chamberlain",
+    "policy_urls": [
+      "https://chamberlaingroup.com/privacy-notice",
+      "https://www.chamberlain.com/terms-and-conditions",
+      "https://privacyportal.onetrust.com/webform/b2189c69-d2d2-4d93-a260-462bc53b6c25/179bcfaa-8436-4f1f-a98b-dbcfe70e3004",
+      "https://www.chamberlain.edu/privacy",
+      "https://www.thecgroup.com/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://www.chamberlain.com/myq",
+      "https://support.chamberlaingroup.com/s/myq-accessories",
+      "https://support.chamberlaingroup.com/s/myq-set-up",
+      "https://www.bestbuy.com/site/chamberlain-myq-video-doorbell--2k-camera-battery-wired-color-night-vision-live-view-with-2-way-talk-motion-detection-alerts-black/6642375.p",
+      "https://www.amazon.com/CHAMBERLAIN-Doorbell-Battery-Detection-Real-Time/dp/B0F63VB6JD"
+    ],
+    "manual_urls": [
+      "https://www.manua.ls/chamberlain/myq/manual",
+      "https://support.chamberlaingroup.com/s/myq-hubs",
+      "https://manualzz.com/doc/8220696/chamberlain-myq-user-manual",
+      "https://support.chamberlaingroup.com/s/myq-set-up",
+      "https://insidethecamp.com/chamberlain-myq-garage-door-opener-manual/"
+    ]
+  },
+  {
+    "device": "TiVo TV",
+    "brand": "TiVo",
+    "policy_urls": [
+      "https://tivoidp.tivo.com/tivoCommunitySupport/s/article/Managing-Your-Privacy?language=en_US",
+      "https://tivoidp.tivo.com/tivoCommunitySupport/s/article/Personal-Info-and-Privacy-Settings?language=en_US",
+      "https://tivoidp.tivo.com/tivoCommunitySupport/s/article/Managing-Opt-in-Opt-out-settings-PTCMs-Emails-and-Privacy?language=en_US",
+      "https://www.tivocommunity.com/threads/how-to-change-privacy-setting.424386/",
+      "https://www.buckeyebroadband.com/expresstv-legal"
+    ],
+    "product_urls": [
+      "https://www.tivo.com/shop",
+      "https://www.tivo.com/my-account",
+      "https://online.tivo.com/",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=tivo+tv",
+      "https://www.amazon.com/TiVo-Cable-Streaming-Player-Vision/dp/B07YBT2YVQ"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/tivo/",
+      "https://www.tivocommunity.com/threads/owners-manuals.348886/",
+      "https://all-guidesbox.com/brand/tivo.html",
+      "https://www.tivo.com/support/how-to",
+      "https://tivoidp.tivo.com/tivoCommunitySupport/s/?language=en_US"
+    ]
+  },
+  {
+    "device": "TP-Link Switches",
+    "brand": "TP-Link",
+    "policy_urls": [
+      "https://privacy.tp-link.com/web/official/privacy-policy?region=US",
+      "https://us.store.tp-link.com/pages/privacy-policy",
+      "https://privacy.tp-link.com/app/tpPLC/privacy",
+      "https://privacy.tp-link.com/web/business/privacy-policy",
+      "https://www.tp-link.com/us/about-us/kasa-privacy/"
+    ],
+    "product_urls": [
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=tp-link+switches",
+      "https://www.amazon.com/TP-LINK-JetStream-24-Port-Gigabit-T2600G-28MPS/dp/B01M6V493U",
+      "https://www.amazon.com/tp-link-switch/s?k=tp-link+switch",
+      "https://www.target.com/s/tp+link+switch",
+      "https://www.amazon.com/tplink-switch/s?k=tplink+switch"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/tp-link/switch.html",
+      "https://tp-link.manymanuals.com/network-switches",
+      "https://www.manualslib.com/manual/3268760/Tp-Link-Ts15.html",
+      "https://www.eco-newleaf.com/smart-switch/how-to-set-up-your-tp-link-smart-switch-a-complete-guide",
+      "https://www.tp-link.com/us/support/"
+    ]
+  },
+  {
+    "device": "Google Chromecast",
+    "brand": "Vizio",
+    "policy_urls": [
+      "https://www.vizio.com/en/terms/privacy-policy",
+      "https://www.vizio.com/en/terms/privacy-policy/ads-and-privacy-faq",
+      "https://support.vizio.com/s/article/Warranty-Privacy-Policy-Returns?language=en_US",
+      "https://www.vizio.com/en/terms/privacy-policy/viewing-data-privacy-policy",
+      "https://www.consumerreports.org/electronics/privacy/how-to-turn-off-smart-tv-snooping-features-a4840102036/?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "product_urls": [
+      "https://support.vizio.com/s/?language=en_US",
+      "https://www.vizio.com/en/smartcast",
+      "https://www.amazon.com/VIZIO-Bluetooth-Headphone-Chromecast-V4K43M-08/dp/B0CVBWQ6LP",
+      "https://www.ebay.com/sch/i.html?_nkw=vizio+chromecast&_sop=12&msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.bestbuy.com/site/streaming-media-devices/google-chromecast/pcmcat748301684651.c?id=pcmcat748301684651"
+    ],
+    "manual_urls": [
+      "https://support.vizio.com/s/user-manual-search?language=en_US",
+      "https://support.google.com/chromecast/answer/6006232?hl=en",
+      "https://support.vizio.com/s/article/How-to-Cast-your-VIZIO-SmartCast-Devices?language=en_US",
+      "https://support.vizio.com/s/article/VIZIO-SmartCast-Troubleshooting?language=en_US",
+      "https://www.support.google.com/chromecast/chromecast/?hl=en"
+    ]
+  },
+  {
+    "device": "Vizio TV",
+    "brand": "Vizio",
+    "policy_urls": [
+      "https://www.vizio.com/en/terms/privacy-policy",
+      "https://support.vizio.com/s/article/Warranty-Privacy-Policy-Returns?language=en_US",
+      "https://www.vizio.com/en/terms/privacy-policy/ads-and-privacy-faq",
+      "https://www.vizio.com/en/terms/privacy-policy/viewing-data-privacy-policy",
+      "https://www.vizio.co.in/privacy-policy"
+    ],
+    "product_urls": [
+      "https://viziotvhelp-guide.helpscoutdocs.com/article/4-how-to-activate-vizio-smart-tv-using-activation-code",
+      "https://www.vizio.com/en/tv.html",
+      "https://support.vizio.com/s/?language=en_US",
+      "https://www.target.com/c/tvs-home-theater-electronics/vizio/-/N-5xtdjZq643lesqds6",
+      "https://www.amazon.com/vizio-tvs/s?k=vizio+tvs"
+    ],
+    "manual_urls": [
+      "https://manualsnet.com/vizio/tv",
+      "https://www.manualslib.com/brand/vizio/smart-tv.html",
+      "https://support.vizio.com/s/?language=en_US",
+      "https://www.techsolutions.support.com/how-to/how-to-set-up-a-vizio-smart-tv-10401",
+      "https://www.smartdnsprovider.com/vizio-smart-tv-setup-guide/"
+    ]
+  },
+  {
+    "device": "Trendnet Printserver",
+    "brand": "Trendnet",
+    "policy_urls": [
+      "https://www.trendnet.com/company/?company=privacy_policy",
+      "https://www.trendmicro.com/en_th/about/legal/privacy-policy-product.html",
+      "https://www.ftc.gov/legal-library/browse/cases-proceedings/122-3090-trendnet-inc-matter",
+      "https://www.trendhunter.com/protrends/secured-privacy",
+      "https://effortlesszen.com/privacy-and-security-in-ai-powered-smart-homes-what-you-need-to-know/"
+    ],
+    "product_urls": [
+      "https://trendnet.manymanuals.com/print-servers",
+      "https://manualzz.com/doc/21921033/trendnet-te100-p21-3-port-print-server-quick-installation...",
+      "https://www.trendnet.com/support/support-detail.asp?prod=115_TE100-MP2U",
+      "https://www.ebay.com/b/TRENDnet-Enterprise-Network-Print-Server/64052/bn_881581?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.amazon.com/TRENDnet-Wireless-1-Port-Multi-Function-TEW-MP1U/dp/B0013DGTH6"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/trendnet/print-server.html",
+      "https://trendnet.manymanuals.com/print-servers",
+      "https://www.manualowl.com/c/TRENDnet/Print+Server/Manuals",
+      "https://manualzz.com/doc/21921033/trendnet-te100-p21-3-port-print-server-quick-installation...",
+      "https://www.manualslib.com/manual/484237/Trendnet-Te100-P21.html"
+    ]
+  },
+  {
+    "device": "Ring Stick Up Camera Elite",
+    "brand": "Misc",
+    "policy_urls": [
+      "https://miscproducts.com/privacy-policy/",
+      "https://miscapps.net/privacy-policy/",
+      "https://www.miscbklyn.com/privacy",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control",
+      "https://influencermarketinghub.com/legal-release-forms-for-gifted-ugc/"
+    ],
+    "product_urls": [
+      "https://www.snapav.com/shop/en/snapav/ri-cam-stk-el-wh",
+      "https://ring.com/support/products/cameras/stick-up-cam-elite?page=1&redirect=true",
+      "https://www.manualslib.com/manual/3490240/Ring-Stick-Up-Cam-Elite.html",
+      "https://ring.com/products/stick-up-security-camera-elite-poe",
+      "https://www.ebay.com/shop/ring-stick-up-cam-elite?_nkw=ring+stick+up+cam+elite&msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://ring.com/us/en/support/articles/0edmq/Download-the-manual-Stick-Up-Cam-Elite",
+      "https://www.manualslib.com/manual/3614734/Ring-Stick-Up-Cam-Elite.html",
+      "https://device.report/manual/16932657",
+      "https://www.manualslib.com/manual/3490240/Ring-Stick-Up-Cam-Elite.html",
+      "https://ring.com/us/en/support/articles/xz3u4/Stick-up-Cam-Elite-Information"
+    ]
+  },
+  {
+    "device": "URC Home Assistant",
+    "brand": "URC",
+    "policy_urls": [
+      "https://www.urc-automation.com/legal/privacy-policy/",
+      "https://urc.org.uk/privacy-notice/",
+      "https://sites.google.com/udwresourcecenter.org/udwrc/urc-privacy-policy",
+      "https://urcsupport.com/privacy-policy/",
+      "https://www.urc-automation.com/legal/terms-of-use/"
+    ],
+    "product_urls": [
+      "https://automationxai.com/urc-launches-ai-powered-virtual-assistant-for-consumer-support/",
+      "https://www.cepro.com/news/urc-intros-ai-driven-virtual-assistant-for-consumers/139217/",
+      "https://www.urc-automation.com/urc-announces-phase-2-of-virtual-assistant-with-new-voice-interaction-features/",
+      "http://www.rdutvmounting.com/urc-total-home-controls",
+      "https://www.urc-automation.com/urc-launches-ai-powered-virtual-assistant-for-consumers/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/urc/",
+      "https://www.manuals.ca/urc",
+      "https://www.manualowl.com/URC/Manuals",
+      "https://manualsfile.com/product/k4lqbxhs3wh.html",
+      "https://www.urc-automation.com/support/"
+    ]
+  },
+  {
+    "device": "WD TV Live Plus",
+    "brand": "WESTERN DIGITAL",
+    "policy_urls": [
+      "https://www.westerndigital.com/legal/privacy-statement",
+      "https://westerndigitalholdingcompany.com/privacy-policy",
+      "https://milled.com/westerndigital-com/updates-to-privacy-policies-cctt84OvVkbwuqLH",
+      "https://www.westerndigital.com/privacy-center/protection",
+      "https://www.wd.com/content/store/en-gb/privacy-center/product-privacy.html"
+    ],
+    "product_urls": [
+      "https://support-en.wd.com/app/products/product-detailweb/p/189",
+      "https://www.manua.ls/western-digital/wd-tv-live-plus/manual",
+      "https://www.amazon.com/Live-Plus-1080p-Media-Player/dp/B003MVZ60I",
+      "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=western+\"digital+s\"+wd+tv+live+plus",
+      "https://www.ebay.com/b/Wd-Tv-Live/168058/bn_7023355235?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manua.ls/western-digital/wd-tv-live-plus/manual",
+      "https://www.manuals.ca/western-digital/tv-live/manual",
+      "https://manualzz.com/doc/2396220/western-digital-wd-tv-live---user-manual",
+      "https://www.manualsdir.com/manuals/575860/western-digital-wd-tv-live_live-plus-media-player-user-manual.html",
+      "https://support-en.wd.com/app/products/product-detailweb/p/189"
+    ]
+  },
+  {
+    "device": "Emerson - White-Rodgers Climate",
+    "brand": "Emerson",
+    "policy_urls": [
+      "https://emerson-us.com/privacy-policy/",
+      "https://www.emerson.com/en-us/privacy-notice",
+      "https://www.emerson.com/en-us/data-protection",
+      "https://www.assetarchive.emerson.com/templates/Emerson_Privacy_notice.html"
+    ],
+    "product_urls": [
+      "https://www.emerson.com/en-us/livecontext-fragments-hidden-page/white-rodgers-brand",
+      "https://www.copeland.com/en-us/brands/white-rodgers",
+      "https://thewhiterodgers.com/",
+      "https://www.discountpartsupplies.com/emerson-climate-white-rodgers/",
+      "https://www.emerson.com/en-us"
+    ],
+    "manual_urls": [
+      "https://www.copeland.com/en-us/products/thermostats/thermostat-manuals",
+      "https://www.smarthomeperfected.com/white-rodgers-emerson-thermostat-manuals/",
+      "https://white-rodgers.manymanuals.com/thermostats",
+      "https://www.manualslib.com/manual/3624707/Emerson-White-Rodgers-1c20.html",
+      "https://thermostat.guide/emerson/emerson-white-rodgers-1f78-non-programmable-thermostat-installation-instructions/"
+    ]
+  },
+  {
+    "device": "WiLife IP Camera",
+    "brand": "WiLife",
+    "policy_urls": [
+      "https://wilife.art/privacy-policy/",
+      "https://digitalprivacy.ieee.org/publications/topics/data-privacy-and-the-internet-of-things/"
+    ],
+    "product_urls": [
+      "http://online.wilife.com/",
+      "https://www.manualslib.com/manual/666885/Wilife-Video-Security-System.html",
+      "https://www.manualsdir.com/manuals/222650/wilife-v21.html",
+      "https://www.bestbuy.com/site/wilife-outdoor-security-camera-system-silver/8560764.p",
+      "https://www.ebay.com/sch/i.html?_nkw=wilife&_sop=12&msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/products/Wilife-V2-1-429919.html",
+      "https://www.manualsdir.com/manuals/222650/wilife-v21.html",
+      "https://wilife.manymanuals.com/security-access-control-systems/v2-1/users-guide-26500",
+      "https://www.manualslib.com/manual/194733/Wilife-V2-1.html",
+      "https://manualsdump.com/en/manuals/wilife-v2.5/212483/24"
+    ]
+  },
+  {
+    "device": "Google Chromecast",
+    "brand": "AT&T",
+    "policy_urls": [
+      "https://www.att.com/legal/general-policies.html?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://about.att.com/privacy/privacy-notice.html",
+      "https://www.privacyhawk.com/resources/at-and-ts-privacy-policies-and-how-to-delete-your-data-or-opt-out",
+      "https://sustainability.att.com/priority-topics/privacy"
+    ],
+    "product_urls": [
+      "https://www.google.com/cast/chromecast/home",
+      "https://www.google.com/cast/setup/",
+      "https://www.att.com/buy/accessories/smart-home/google-chromecast-ultra-streaming-device-black.html?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://store.google.com/us/product/google_tv_streamer?hl=en-US&pli=1",
+      "https://www.att.com/es-us/buy/accessories/specialty-items/google-chromecast-4k-google-tv.html?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/2036969/Google-Chromecast.html",
+      "https://www.att.com/support/how-to/user-guides?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://support.google.com/chromecast/answer/6006232?hl=en",
+      "https://www.tomsguide.com/us/chromecast-how-to,review-1811.html",
+      "https://www.google.com/cast/setup/"
+    ]
+  },
+  {
+    "device": "Nokia - Withings IoT",
+    "brand": "Nokia",
+    "policy_urls": [
+      "https://www.withings.net/eu/en/legal/privacy-policy",
+      "https://support.withings.com/hc/en-us/articles/4404719917457-Privacy-FAQ",
+      "https://www.nokia.com/privacy/",
+      "https://www.nas-nokia.com/Legal/PrivacyPolicy",
+      "https://nokiakrakow.pl/en/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://www.nokia.com/",
+      "https://www.digitaltrends.com/mobile/nokia-withings-acquisition-news/",
+      "https://www.rtinsights.com/nokia-acquires-iot-company-withings/",
+      "https://iotwashington.com/nokia-to-buy-connected-health-gadgets-firm-withings-for-191-million/",
+      "https://www.nokia.com/newsroom/nokia-completes-the-acquisition-of-withings/"
+    ],
+    "manual_urls": [
+      "https://support.withings.com/hc/en-us/articles/360020238793-BPM-User-Guide",
+      "https://manualsfile.com/product/p1mw5env28n.html",
+      "https://usermanual.wiki/NOKIA-TECHNOLOGIES/WBP02/pdf",
+      "https://www.withings.com/us/en/guides",
+      "https://support.withings.com/hc/en-us/articles/360016900397-How-to-Get-Help-or-Contact-Withings"
+    ]
+  },
+  {
+    "device": "Xerox Printer",
+    "brand": "Xerox",
+    "policy_urls": [
+      "https://www.xeroxscanners.com/en/privacy-policy/",
+      "https://www.xerox.com/en-us/about/privacy-policy",
+      "https://www.xerox.com/corporate-citizenship/2017/customer-experience/data-privacy.html",
+      "https://www.xerox.co.uk/en-gb/about/privacy-policy/policy-archive/12242020"
+    ],
+    "product_urls": [
+      "https://www.xeroxbusinesssolutions.com/en-us",
+      "https://www.support.xerox.com/",
+      "https://www.xeroxbusinesssolutions.com/en-us/printers",
+      "https://www.staples.com/Xerox-Printers/cat_CL167883/0077q?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.shop.xerox.com/products"
+    ],
+    "manual_urls": [
+      "https://www.support.xerox.com/en-us/content/52948",
+      "https://www.manualslib.com/brand/xerox/printer.html",
+      "https://www.manuals.ca/printers/xerox",
+      "https://www.support.xerox.com/en-us/content/150448",
+      "https://www.support.xerox.com/en-us/article/KB0427186"
+    ]
+  },
+  {
+    "device": "Printer or Scanner",
+    "brand": "Xerox",
+    "policy_urls": [
+      "https://www.xerox.com/en-us/about/privacy-policy",
+      "https://www.xeroxscanners.com/en/privacy-policy/",
+      "https://www.xerox.com/corporate-citizenship/2017/customer-experience/data-privacy.html"
+    ],
+    "product_urls": [
+      "https://www.xeroxbusinesssolutions.com/en-us",
+      "https://www.xerox.com/en-us",
+      "https://www.xeroxbusinesssolutions.com/en-us/multifunction-printers",
+      "https://www.shop.xerox.com/products",
+      "https://www.amazon.com/Xerox-C325-Printer-Letter-Certified/dp/B0D92VG5DM"
+    ],
+    "manual_urls": [
+      "https://www.support.xerox.com/en-us/content/52948",
+      "https://www.manualslib.com/brand/xerox/",
+      "https://manualsnet.com/xerox/printer",
+      "https://www.support.xerox.com/en-us/article/KB0326369",
+      "https://www.support.xerox.com/en-us/content/150448"
+    ]
+  },
+  {
+    "device": "Xiaomi Security Camera",
+    "brand": "Xiaomi",
+    "policy_urls": [
+      "https://privacy.miui.com/en/",
+      "http://p.www.xiaomi.com/policy/privacyPolicy.html",
+      "https://www.scribd.com/document/826027122/xiaomiPrivacyPolicy",
+      "https://www.mi.com/global/about/privacy/",
+      "https://trust.mi.com/docs/iot-privacy-white-paper-global/3"
+    ],
+    "product_urls": [
+      "https://www.mi.com/global/product-list/home-security/camera",
+      "https://smarthomeace.com/a-xiaomi-mijia-1080p-smart-ip-camera/",
+      "https://mifirm.net/downloadeu/10922",
+      "https://www.amazon.com/Xiaomi-Detection-Enhanced-Encryption-Protection/dp/B0BL1PYL4Z",
+      "https://www.mi.com/in/product/xiaomi-360-home-security-camera-2k/buy"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/3775094/Xiaomi-Mi-Home-Security-Camera.html",
+      "https://www.manua.ls/xiaomi/mi-home-security-camera-3600-1080p/manual",
+      "https://www.mi.com/global/support/user-guide-pdf/no/mi-home-security-camera-360°-1080p",
+      "https://lensviewing.com/how-to-install-mi-home-security-camera-360-degree/",
+      "https://www.mi.com/global/support/faq/details/KA-12766"
+    ]
+  },
+  {
+    "device": "Xiaomi Mijia Clock",
+    "brand": "Xiaomi",
+    "policy_urls": [
+      "http://p.www.xiaomi.com/policy/privacyPolicy.html",
+      "https://privacy.miui.com/en/",
+      "https://privacy.mi.com/all/en_US/",
+      "https://www.mi.com/global/about/privacy/",
+      "https://trust.mi.com/docs/iot-privacy-white-paper-global/3"
+    ],
+    "product_urls": [
+      "https://www.mi.com/global/product/mi-smart-clock/",
+      "https://en.xiaomitoday.it/xiaomi-smart-clock-smart-watch-thermometer-hygrometer-screen-and-ink.html",
+      "https://www.mi.com/global/select-location",
+      "https://www.ebay.com/shop/xiaomi-mi-clock?_nkw=xiaomi+mi+clock&msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.ebay.com/sch/i.html?_nkw=xiaomi+mi+smart+clock&_sop=12&msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://manualsnet.com/xiaomi",
+      "https://xiaomi-support.org/en/manuals/",
+      "https://www.manuals.co.uk/xiaomi/mi-smart-clock/manual",
+      "https://device.report/manuals/mi-smart-clock-user-manual-setup-features-troubleshooting",
+      "https://www.manuals.ca/xiaomi/mi-smart-clock/manual"
+    ]
+  },
+  {
+    "device": "Dahua",
+    "brand": "Dahua",
+    "policy_urls": [
+      "https://www.dahuasecurity.com/aboutUs/privacy-policy",
+      "https://www.dahuamachinery.com/privacy-policy/",
+      "https://www.dahuachinese.com/private-policy",
+      "https://usallstar.dahuasecurity.com/dealer-privacy-policy.html",
+      "https://materialfile.dahuasecurity.com/uploads/cpq/DOR/PUM0009981/202507/Dahua_Charging_Station_Privacy_Policy.pdf"
+    ],
+    "product_urls": [
+      "https://dahuawiki.com/Main_Page",
+      "https://www.sourcesecurity.com/companies/dahua-technology-ltd/brochures.html",
+      "https://dahua.pk/",
+      "https://www.amazon.com/dahua-camera-system/s?k=dahua+camera+system",
+      "https://www.bhphotovideo.com/c/browse/dahua-technology-store/ci/57438?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/dahua/",
+      "https://dahuawiki.com/File:Dahua_Network_Video_Recorder_User's_Manual_V4.5.3.pdf",
+      "https://dahuawiki.com/NVR/Basic_Setup/Initial_Setup",
+      "https://cctvdesk.com/dahua-ip-camera-setup/",
+      "https://portal.dahuatech.support/en/support/solutions"
+    ]
+  },
+  {
+    "device": "Zmodo",
+    "brand": "Zmodo",
+    "policy_urls": [
+      "https://zmodo.app/privacy-policy/",
+      "https://www.zmodo.com/legal/",
+      "https://www.zmodo.com/terms-of-services",
+      "http://surveillance.zmodo.com/privacy-policy/"
+    ],
+    "product_urls": [
+      "https://www.zmodo.com/",
+      "https://www.zmodo.com/store/",
+      "https://surveillance.zmodo.com/support-software",
+      "https://www.amazon.com/Zmodo-Cameras-Security-Wireless-Detection/dp/B08XNQXQJR",
+      "https://www.bestbuy.com/site/zmodo-sight-indoor-outdoor-1080p-wi-fi-security-camera-black/6214314.p"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/zmodo/",
+      "https://blinksandbuttons.net/how-to-setup-zmodo-wired-camera/",
+      "https://wisephotographer.com/zmodo-camera-setup/",
+      "https://zmodosecure.com/zmodo-zp-ibh13-w-setup/",
+      "https://surveillance.zmodo.com/supports"
+    ]
+  },
+  {
+    "device": "Sercomm RC8221 Camera",
+    "brand": "Sercomm",
+    "policy_urls": [
+      "https://www.sercom.io/en/privacy-policy",
+      "https://www.serco.com/privacy-policy",
+      "https://www.analyticsinsight.net/white-papers/privacy-and-security-in-smart-homes-are-we-trading-comfort-for-control"
+    ],
+    "product_urls": [
+      "https://fccid.io/P27-RC8221/User-Manual/User-manual-1418906",
+      "https://www.asmag.com/suppliers/productcontent.aspx?co=sercomm&id=23064",
+      "https://www.manualshelf.com/manual/sercomm/rc8221/user-s-manual-english.html",
+      "https://www.ebay.com/p/23022105699?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://camcokeen.com/rc8221"
+    ],
+    "manual_urls": [
+      "https://manualmachine.com/sercomm/rc8221/11323088-user-manual/",
+      "https://www.manualshelf.com/manual/sercomm/rc8221/user-s-manual-english.html",
+      "https://fccid.io/P27-RC8221/User-Manual/User-manual-1418906",
+      "https://www.manualshelf.com/manual/sercomm/rc8221v2/user-s-manual-english.html",
+      "https://fccid.io/P27RC8221V2/User-Manual/User-manual-2438184"
+    ]
+  },
+  {
+    "device": "LaMetric Clock",
+    "brand": "LaMetric",
+    "policy_urls": [
+      "https://smile.lametric.com/legal/privacy-policy",
+      "https://lametric.thedutchguys.com/privacy/",
+      "https://lametric.com/en-US/follower_counter_tt_privacy_policy",
+      "https://lametric.com/en-US/legal/privacy-policy",
+      "https://github.com/mroeckl/lametric-renewables-share/blob/main/Privacy-Policy.md"
+    ],
+    "product_urls": [
+      "https://store.lametric.com/products/lametric",
+      "https://store.lametric.com/",
+      "https://lametric.com/en-US/about",
+      "https://www.ebay.com/shop/lametric?_nkw=lametric&msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.amazon.com/lametric/s?k=lametric"
+    ],
+    "manual_urls": [
+      "https://manualzz.com/doc/45242798/lametric-lm-37x8-time-wi-fi-clock-user-manual",
+      "https://lametric.com/en-US/user_guides",
+      "https://all-guidesbox.com/brand/lametric/time-clocks.html",
+      "https://manualzz.com/doc/52943243/lametric-lm-37x8-clock-user-guide",
+      "https://help.lametric.com/support/home"
+    ]
+  },
+  {
+    "device": "Meross Smart WiFi Garage Door Opener",
+    "brand": "Meross",
+    "policy_urls": [
+      "https://www.meross.com/en-gc/privacy_policy/",
+      "https://www.meross.com/en-gc/privacy-policy",
+      "https://shop.meross.com/pages/privacy-policy",
+      "https://us-iot.meross.com/public/smart/policy.html"
+    ],
+    "product_urls": [
+      "https://www.amazon.com/meross-Compatible-Assistant-SmartThings-Notification/dp/B084Z5QZR2",
+      "https://shop.meross.com/",
+      "https://www.meross.com/en-gc/product-detail/Smart+Wi-Fi+Garage+Door+Opener/68",
+      "https://www.amazon.com/meross-Garage-Opener-Remote-Sensors/dp/B0D6QS36VS",
+      "https://www.reviewed.com/smarthome/best-right-now/best-smart-garage-door-openers"
+    ],
+    "manual_urls": [
+      "https://www.meross.com/en-gc/support/download",
+      "https://www.manua.ls/meross/msg100/manual",
+      "https://www.manualslib.com/manual/3492345/Meross-Msg100.html",
+      "https://garagedoorpedia.com/install-meross-garage-door-opener/",
+      "https://www.manualslib.com/manual/3492346/Meross-Msg200.html"
+    ]
+  },
+  {
+    "device": "Meross Lighting",
+    "brand": "Meross",
+    "policy_urls": [
+      "https://www.meross.com/en-gc/privacy-policy",
+      "https://shop.meross.com/pages/privacy-policy",
+      "https://us-iot.meross.com/public/smart/policy.html"
+    ],
+    "product_urls": [
+      "https://www.meross.net/",
+      "https://shop.meross.com/collections/smart-lighting",
+      "https://www.amazon.com/stores/page/1E86E362-1358-4261-AB23-1BE2927A0E97/",
+      "https://shop.meross.com/",
+      "https://www.amclightinganddecor.com/catalog"
+    ],
+    "manual_urls": [
+      "https://www.meross.com/en-gc/support/download",
+      "https://manualsfile.com/brand/b5uc2f1lcx/",
+      "https://manualzz.com/doc/64285680/meross-msl420hk-smart-light-user-manual",
+      "https://support.bbsolar.cc/support/user_manual",
+      "https://forums.macrumors.com/threads/review-meross-smart-power-strip-and-plug-offer-affordable-and-versatile-homekit-sockets-but-setup-difficulties-can-cause-frustration.2274759/"
+    ]
+  },
+  {
+    "device": "Smanos Doorbell",
+    "brand": "Smanos",
+    "policy_urls": [
+      "https://www.smanos.com/Privacy_pc",
+      "https://digitalprivacy.ieee.org/publications/topics/data-privacy-and-the-internet-of-things/"
+    ],
+    "product_urls": [
+      "https://www.amazon.com/stores/smanos/page/A7467B3F-7A1C-4B59-9001-EE964BF39B2A",
+      "https://smarthomedirect.com.au/product/smanos-smart-video-doorbell/",
+      "https://manualmachine.com/smanos/smartvideodoorbell/18716273-instruction-manual/",
+      "https://www.amazon.com/stores/smanos/cameradoorbell/page/D8BBDEA0-9B3D-46A7-8A18-3A5CB99A7FBD",
+      "https://www.pbtech.com/product/CCTSMA1004/SMANOS-DB-20-Smart-Video-Doorbell"
+    ],
+    "manual_urls": [
+      "https://www.manua.ls/smanos/smart-video-doorbell-db-20/manual",
+      "https://manualmachine.com/smanos/smartvideodoorbell/18716273-instruction-manual/",
+      "https://www.manuals.ca/smanos",
+      "https://www.manualslib.com/manual/1677724/Smanos-Db-30.html",
+      "https://www.manualshelf.com/manual/smanos/db-20/2-user-manual-english.html"
+    ]
+  },
+  {
+    "device": "Arlo  Q Plus",
+    "brand": "Arlo",
+    "policy_urls": [
+      "https://kb.arlo.com/000062614/About-the-Arlo-Privacy-Center"
+    ],
+    "product_urls": [
+      "https://www.arlo.com/en-us/support/products/arlo-q-plus.html",
+      "https://ww2.arlo.com/pages/arlo-q-plus-support",
+      "https://www.amazon.com/Arlo-Plus-Security-Included-VMC3040S/dp/B01DNFE25C",
+      "https://www.bestbuy.com/site/arlo-security-cameras-surveillance/arlo-security-cameras/pcmcat1552073483216.c?id=pcmcat1552073483216",
+      "https://www.ebay.com/sch/i.html?_nkw=arlo+q+plus&_sop=12&msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/products/Arlo-Technologies-Inc-Arlo-Q-Plus-10316572.html",
+      "https://www.manua.ls/arlo/q-plus/manual",
+      "https://www.manualowl.com/m/Arlo/Q-Plus/Manual/675865",
+      "https://www.manualslib.com/manual/1391599/Arlo-Technologies-Inc-Q-Plus.html",
+      "https://www.manualslib.com/manual/2907024/Netgear-Arlo-Q-Plus.html"
+    ]
+  },
+  {
+    "device": "Blink Camera",
+    "brand": "Blink",
+    "policy_urls": [
+      "https://thegadgetbuyer.com/blink-cameras-addressing-privacy-concerns/",
+      "https://blinkforhome.com/additional-state-specific-privacy-disclosures",
+      "https://www.joinblink.com/blink-data-protection-agreement",
+      "https://blinkforhome.com/privacy-policy",
+      "https://blink.net/privacy-policy"
+    ],
+    "product_urls": [
+      "https://www.blinksmartvideo.com/",
+      "https://www.amazon.com/All-new-Blink-Video-Doorbell-Outdoor/dp/B0F1BXQC78",
+      "https://blinkforhome.com/products",
+      "https://www.amazon.com/blink/s?k=blink",
+      "https://blinkforhome.com/"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/3667713/Blink-Outdoor-3rd-Gen.html",
+      "https://manualsfile.com/product/k5dnlc7vpkc.html",
+      "https://support.blinkforhome.com/en_US/setting-up-your-outoor-indoor-cameras/blink-outdoor-and-indoor-camera-3rd-gen-setup-guide",
+      "https://support.blinkforhome.com/en_US/how-to-setup-devices",
+      "https://helpdesk.joinblink.com/en/collections/12311587-support"
+    ]
+  },
+  {
+    "device": "Arcadyan HMB2260",
+    "brand": "Yamaha",
+    "policy_urls": [
+      "https://yamaha-motor.com/privacy-policy",
+      "https://yamahaoutboards.com/about/privacy-policy",
+      "https://www.yamaha.com/en/privacy-policy/",
+      "https://www.yamaha-motor-georgia.com/privacy-policy",
+      "https://usa.yamaha.com/privacy_policy/index.html"
+    ],
+    "product_urls": [
+      "https://download.yamaha.com/",
+      "https://manualsplanet.com/arcadyan/arcadyan-hmb2260-kpn-interactieve-tv/",
+      "https://www.bkmanuals.com/manual/arcadyan/hmb2260-kpn-interactieve-tv",
+      "https://www.ebay.com/itm/174928321616?msockid=0ae1187de8d8688b22a50e34e9fa69a9",
+      "https://www.ebay.com/itm/174909014916?msockid=0ae1187de8d8688b22a50e34e9fa69a9"
+    ],
+    "manual_urls": [
+      "https://manualsplanet.com/arcadyan/arcadyan-hmb2260-kpn-interactieve-tv/",
+      "https://www.bkmanuals.com/manual/arcadyan/hmb2260-kpn-interactieve-tv",
+      "https://www.manualscat.com/en/arcadyan-hmb2260-kpn-manual",
+      "https://usa.yamaha.com/support/manuals/index.html",
+      "https://forum.netduma.com/forum/136-telstra-internet-optimiser-support/"
+    ]
+  },
+  {
+    "device": "GD Midea Air-Conditioning",
+    "brand": "GD",
+    "policy_urls": [
+      "https://www.midea.com/us/privacy-policy",
+      "https://www.midea.com/global/privacy-policy",
+      "https://www.midea.com/us/terms-of-use",
+      "https://www.gd-ots.com/privacy-policy/",
+      "https://gdenergyproducts.com/legal-information"
+    ],
+    "product_urls": [
+      "https://www.mideacomfort.us/",
+      "https://www.mideahomecomfort.com/en/us/products",
+      "https://www.midea.com/global/heating-cooling",
+      "https://www.amazon.com/midea-air-conditioner/s?k=midea+air+conditioner",
+      "https://www.midea.com/us/store"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/manual/730224/Midea-Air-Conditioner.html",
+      "https://usermanual.wiki/GD-Midea-Air-conditioning-Equipment",
+      "https://www.manuals.ca/air-conditioning/midea",
+      "https://www.manualslib.com/brand/gd-midea-refrigeration-equipment/air-conditioner.html",
+      "https://bankofmanuals.com/manuals/device/gd-midea-refrigeration-equipment/elite-series/"
+    ]
+  },
+  {
+    "device": "Shelly",
+    "brand": "Shelly",
+    "policy_urls": [
+      "https://us.shelly.com/pages/privacy-policy",
+      "https://www.shellyco.com/our-company/privacy-policy/",
+      "https://my.shelly.cloud/privacy_policy.html",
+      "https://us.shelly.com/pages/privacy-policy-1"
+    ],
+    "product_urls": [
+      "https://us.shelly.com/",
+      "https://us.shelly.com/collections/",
+      "https://us.shelly.com/collections/frontpage",
+      "https://www.amazon.com/stores/Shelly/page/7F275637-1653-477A-A942-3C9837647425",
+      "https://opencircuit.shop/brand/shelly"
+    ],
+    "manual_urls": [
+      "https://www.manualslib.com/brand/shelly/",
+      "https://kb.shelly.cloud/knowledge-base/installation-guides",
+      "https://stevessmarthomeguide.com/a-beginners-guide-to-shelly-devices/",
+      "https://kb.shelly.cloud/knowledge-base/installation-guide",
+      "https://support.shelly.cloud/"
+    ]
+  }
+]

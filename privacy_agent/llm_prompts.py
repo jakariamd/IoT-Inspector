@@ -151,3 +151,99 @@ def device_privacy_information_agent(device_description):
         return response.json().get("response", "No response").strip()
     except Exception as e:
         return f"LLM error: {str(e)}"
+
+
+@functools.lru_cache(maxsize=256)
+def predict_device_vendor_and_name(hostname, vendor, oui, metadata=None):
+    """
+    Predict device vendor and name based on device information.
+    Returns a dictionary with predicted vendor and device name.
+    """
+    # Convert JSON string back to dict if needed
+    # metadata = json.loads(metadata) if metadata else None
+
+    prompt = f"""
+    You are a network device identification expert. Based on device information, 
+    predict the most likely device vendor and specific device name/model.
+
+    Examples:
+    Device Info:
+    - OUI: AA:BB:CC
+    - Hostname: ["android-dcbab", "google.com"]
+    - Vendor: Google
+    - Metadata: {{"os": "Android", "device_type": "phone"}}
+    Prediction: {{"vendor": "Google", "device_name": "Pixel Phone"}}
+
+    Device Info:
+    - OUI: 11:22:33
+    - Hostname: ["LGWebOSTV", "lg.com"]
+    - Vendor: LG
+    - Metadata: {{"os": "WebOS", "device_type": "TV"}}
+    Prediction: {{"vendor": "LG", "device_name": "WebOS Smart TV"}}
+
+    Device Info:
+    - OUI: FF:EE:DD
+    - Hostname: ["hp-printer"]
+    - Vendor: HP
+    - Metadata: None
+    Prediction: {{"vendor": "HP", "device_name": "LaserJet Printer"}}
+
+    Device Info:
+    - OUI: 44:85:00
+    - Hostname: ["AppleTV"]
+    - Vendor: Apple
+    - Metadata: {{"os": "tvOS", "device_type": "streaming_device"}}
+    Prediction: {{"vendor": "Apple", "device_name": "Apple TV 4K"}}
+
+    Now predict for this device:
+    Device Info:
+    - OUI: {oui}
+    - Hostname: {hostname}
+    - Vendor: {vendor}
+    - Metadata: {metadata if metadata else "None"}
+
+    Return only a JSON object with "vendor" and "device_name" fields. Use the provided vendor if it's reliable, otherwise predict the most likely vendor based on OUI and hostname patterns.
+    Do not return any explanation."""
+
+    payload = {
+        "model": MODEL_NAME,
+        "prompt": prompt,
+        "stream": False
+    }
+    
+    try:
+        response = requests.post(LLM_API_URL, json=payload)
+        response_text = response.json().get("response", "").strip()
+        
+        # Try to parse the JSON response
+        try:
+            # Clean the response to extract JSON
+            if response_text.startswith("```"):
+                # Remove code block formatting if present
+                response_text = response_text.split("```")[1]
+                if response_text.startswith("json"):
+                    response_text = response_text[4:]
+            
+            prediction = json.loads(response_text)
+            
+            # Ensure the response has the expected format
+            if isinstance(prediction, dict) and "vendor" in prediction and "device_name" in prediction:
+                return prediction
+            else:
+                return {"vendor": vendor or " ", "device_name": "Unknown Device"}
+                
+        except json.JSONDecodeError:
+            # Fallback: try to extract vendor and device name from text response
+            lines = response_text.split('\n')
+            result = {"vendor": vendor or " ", "device_name": "Unknown Device"}
+            
+            for line in lines:
+                if "vendor" in line.lower() and ":" in line:
+                    result["vendor"] = line.split(":")[-1].strip().strip('"')
+                elif "device" in line.lower() and "name" in line.lower() and ":" in line:
+                    result["device_name"] = line.split(":")[-1].strip().strip('"')
+            
+            return result
+            
+    except Exception as e:
+        return {"vendor": vendor or "", "device_name": f"LLM error: {str(e)}"}
