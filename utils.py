@@ -234,16 +234,11 @@ def query_general_information(query: str, device_mac: str, context: dict) -> dic
     try:
         # Enhanced query with device context for RAG
         enhanced_query = f"""
-        Query about device {device_mac}:
         Device Context: {json.dumps(context, indent=2)}
         
         User Question: {query}
-        
-        Please provide comprehensive information about this device's:
-        - Available functions and capabilities
-        - Privacy policies and data sharing practices
-        - Security features and concerns
-        - Typical usage patterns and behaviors
+
+        Please provide comprehensive information on this question about this device.
         """
         
         if not rag_iot.is_service_running():
@@ -427,7 +422,7 @@ def execute_device_action_async(action_type: str, device_mac: str, context: dict
             result = block_device(device_mac, device_info)
             return {
                 'status': 'success',
-                'answer': f'⚠️ Device blocking is not implemented yet for {device_name} ({device_mac}).\n\n'
+                'answer': f'⚠️ Device/network blocking is not implemented yet for {device_name} ({device_mac}).\n\n'
                          f'This feature will be added soon.',
                 'timestamp': datetime.now().isoformat(),
                 'action_performed': 'block_device'
