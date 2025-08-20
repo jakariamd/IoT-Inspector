@@ -3,7 +3,7 @@ Constructs all the pages in a single module.
 
 """
 import streamlit as st
-import device_list_page, device_detail_page, settings_page
+import device_list_page, device_detail_page, settings_page, ai_agent
 import functools
 import libinspector.core
 
@@ -117,4 +117,11 @@ settings_page_ref = get_page(
     title='Settings',
     material_icon='settings',
     show_page_func=settings_page.show
+)
+
+
+device_chat_page_ref = get_page(
+    title='Connect an AI Agent',
+    material_icon='chat',
+    show_page_func=ai_agent.main  # Note: using show function
 )

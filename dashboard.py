@@ -6,9 +6,9 @@ import common
 nav_menu_list = [
     page_manager.device_list_page_ref,
     page_manager.device_detail_page_ref,
+    page_manager.device_chat_page_ref,
     page_manager.settings_page_ref
 ]
-
 
 
 

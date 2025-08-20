@@ -247,3 +247,115 @@ def predict_device_vendor_and_name(hostname, vendor, oui, metadata=None):
             
     except Exception as e:
         return {"vendor": vendor or "", "device_name": f"LLM error: {str(e)}"}
+
+
+def analyze_intent(prompt: str) -> dict:
+    """
+    Analyze user prompt to determine if it's asking for information or requesting an action using LLM
+    
+    Returns:
+        dict: {
+            'intent': 'information' | 'action' | 'unknown',
+            'confidence': float,
+            'action_type': str (if intent is 'action'),
+            'original_prompt': str
+        }
+    """
+    
+    llm_prompt = f"""
+    You are an intent classification system for IoT device management. Analyze the user prompt and classify it as either requesting "information" or requesting an "action".
+
+    Classification Guidelines:
+    1. INFORMATION intent: User is asking questions, wants explanations, or seeking data about devices
+       - Examples: "What is this device?", "How does it work?", "Show me network traffic", "Tell me about privacy"
+    
+    2. ACTION intent: User wants to perform an operation or change something
+       - Action types: block, unblock, scan, restart, update, configure, monitor, backup, factory_reset
+       - Examples: "Block this device", "Turn off the camera", "Scan the network", "Restart the router"
+
+    Examples:
+    
+    User: "What is this device doing?"
+    Response: {{"intent": "information", "confidence": 0.9, "action_type": null}}
+    
+    User: "Please block this device"
+    Response: {{"intent": "action", "confidence": 0.9, "action_type": "block"}}
+    
+    User: "Can you explain how it connects?"
+    Response: {{"intent": "information", "confidence": 0.8, "action_type": null}}
+    
+    User: "Turn off this smart TV"
+    Response: {{"intent": "action", "confidence": 0.8, "action_type": "block"}}
+    
+    User: "Scan my network for vulnerabilities"
+    Response: {{"intent": "action", "confidence": 0.9, "action_type": "scan"}}
+    
+    User: "Hello"
+    Response: {{"intent": "information", "confidence": 0.3, "action_type": null}}
+
+    Now analyze this user prompt:
+    User: "{prompt}"
+    
+    Respond with ONLY a JSON object containing:
+    - "intent": either "information" or "action"
+    - "confidence": float between 0.1 and 0.9 
+    - "action_type": specific action type if intent is "action", otherwise null
+    
+    Valid action types: block, unblock, scan, restart, update, configure, monitor, backup, factory_reset, generic
+    """
+
+    # Use the same LLM configuration as other functions
+    from privacy_agent.llm_prompts import LLM_API_URL, MODEL_NAME
+    
+    payload = {
+        "model": MODEL_NAME,
+        "prompt": llm_prompt,
+        "stream": False
+    }
+    
+    try:
+        response = requests.post(LLM_API_URL, json=payload, timeout=10)
+        response_text = response.json().get("response", "").strip()
+        
+        # Clean and parse JSON response
+        if response_text.startswith("```"):
+            response_text = response_text.split("```")[1]
+            if response_text.startswith("json"):
+                response_text = response_text[4:]
+        
+        result = json.loads(response_text)
+        
+        # Validate and format response
+        if isinstance(result, dict) and "intent" in result and "confidence" in result:
+            # Ensure confidence is within valid range
+            confidence = max(0.1, min(0.9, float(result.get("confidence", 0.5))))
+            
+            # Validate intent
+            intent = result.get("intent", "information")
+            if intent not in ["information", "action"]:
+                intent = "information"
+            
+            # Handle action_type
+            action_type = result.get("action_type", None)
+            if intent == "information":
+                action_type = None
+            elif intent == "action" and not action_type:
+                action_type = "generic"
+            
+            return {
+                'intent': intent,
+                'confidence': confidence,
+                'action_type': action_type,
+                'original_prompt': prompt
+            }
+    
+    except (requests.exceptions.RequestException, json.JSONDecodeError, ValueError, KeyError) as e:
+        print(f"LLM intent analysis failed: {e}")
+    
+    # Fallback to information intent with low confidence
+    return {
+        'intent': 'information',
+        'confidence': 0.3,
+        'action_type': None,
+        'original_prompt': prompt
+    }

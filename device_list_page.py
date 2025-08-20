@@ -165,169 +165,174 @@ def show_device_card(device_dict):
         st.caption(f'IP Address: `{device_dict["ip_address"]}` -- MAC Address: `{device_dict["mac_address"]}` -- OUI: {metadata_dict["oui_vendor"]}')
         st.caption(f'Probable Device: {llm_predicted_device_info.get("vendor", "")} {llm_predicted_device_info.get("device_name", "")}')
         
-        # Show a dropdown to select a question
-        question_options = [
-            f"What is the privacy implication of {device_display_name} device?",
-            f"What functionality does this {device_display_name} device have?",
-            f"What data does this {device_display_name} device collect?",
-            f"Is this {device_display_name} device safe to use on my network?",
-            f"Can this {device_display_name} device be hacked remotely?"
-        ]
-        question_options.insert(0, "(Select a question)")
+        # # Show a dropdown to select a question
+        # question_options = [
+        #     f"What is the privacy implication of {device_display_name} device?",
+        #     f"What functionality does this {device_display_name} device have?",
+        #     f"What data does this {device_display_name} device collect?",
+        #     f"Is this {device_display_name} device safe to use on my network?",
+        #     f"Can this {device_display_name} device be hacked remotely?"
+        # ]
+        # question_options.insert(0, "(Select a question)")
 
-        # Get the currently selected question from session state
-        question_key = f"device_question_{device_dict['mac_address']}"
-        selected_question_index = st.session_state.get(question_key, 0)
+        # # Get the currently selected question from session state
+        # question_key = f"device_question_{device_dict['mac_address']}"
+        # selected_question_index = st.session_state.get(question_key, 0)
 
-        selected_question = st.selectbox(
-            "Ask about this device:",
-            question_options,
-            index=selected_question_index,
-            key=f"device_question_select_{device_dict['mac_address']}"
-        )
+        # selected_question = st.selectbox(
+        #     "Ask about this device:",
+        #     question_options,
+        #     index=selected_question_index,
+        #     key=f"device_question_select_{device_dict['mac_address']}"
+        # )
 
-        device_mac = device_dict['mac_address']
-        query_status_key = f"rag_status_{device_mac}"
+        # device_mac = device_dict['mac_address']
+        # query_status_key = f"rag_status_{device_mac}"
         
-        if selected_question and selected_question != "(Select a question)":
-            # Store the selected question index
-            st.session_state[question_key] = question_options.index(selected_question)
+        # if selected_question and selected_question != "(Select a question)":
+        #     # Store the selected question index
+        #     st.session_state[question_key] = question_options.index(selected_question)
             
-            # Check if we have a current query status
-            current_status = st.session_state.get(query_status_key, {})
+        #     # Check if we have a current query status
+        #     current_status = st.session_state.get(query_status_key, {})
             
-            # Check if query is in progress or completed
-            if current_status.get('status') == 'processing':
-                # Check if query completed
-                result = check_rag_query_status(device_mac)
+        #     # Check if query is in progress or completed
+        #     if current_status.get('status') == 'processing':
+        #         # Check if query completed
+        #         result = check_rag_query_status(device_mac)
                 
-                if result is None:
-                    # Still processing
-                    elapsed_time = time.time() - current_status.get('start_time', 0)
-                    st.info(f"🔄 Processing query: '{selected_question}' (Running for {elapsed_time:.1f}s)")
-                    st.progress(min(elapsed_time / 120, 1.0))  # Assume max 2 minutes
+        #         if result is None:
+        #             # Still processing
+        #             elapsed_time = time.time() - current_status.get('start_time', 0)
+        #             st.info(f"🔄 Processing query: '{selected_question}' (Running for {elapsed_time:.1f}s)")
+        #             st.progress(min(elapsed_time / 120, 1.0))  # Assume max 2 minutes
                     
-                    # Add cancel button
-                    col1, col2, col3 = st.columns([1, 1, 3])
-                    with col1:
-                        if st.button("Cancel", key=f"cancel_query_{device_mac}"):
-                            # Cancel the query
-                            future_key = f"rag_future_{device_mac}"
-                            if future_key in st.session_state:
-                                future = st.session_state[future_key]
-                                future.cancel()  # This might not work if already running
-                                del st.session_state[future_key]
-                            del st.session_state[query_status_key]
-                            st.rerun()
+        #             # Add cancel button
+        #             col1, col2, col3 = st.columns([1, 1, 3])
+        #             with col1:
+        #                 if st.button("Cancel", key=f"cancel_query_{device_mac}"):
+        #                     # Cancel the query
+        #                     future_key = f"rag_future_{device_mac}"
+        #                     if future_key in st.session_state:
+        #                         future = st.session_state[future_key]
+        #                         future.cancel()  # This might not work if already running
+        #                         del st.session_state[future_key]
+        #                     del st.session_state[query_status_key]
+        #                     st.rerun()
                     
-                    with col2:
-                        if st.button("Refresh", key=f"refresh_query_{device_mac}"):
-                            st.rerun()
+        #             with col2:
+        #                 if st.button("Refresh", key=f"refresh_query_{device_mac}"):
+        #                     st.rerun()
                     
-                    # Auto-refresh every 2 seconds
-                    time.sleep(2)
-                    st.rerun()
-                else:
-                    # Query completed, show result
-                    if result['status'] == 'success':
-                        st.success(f"✅ Answer to: '{selected_question}'")
-                        st.markdown(result['answer'])
-                    else:
-                        st.error(f"❌ Error processing query: '{selected_question}'")
-                        st.error(result['answer'])
+        #             # Auto-refresh every 2 seconds
+        #             time.sleep(2)
+        #             st.rerun()
+        #         else:
+        #             # Query completed, show result
+        #             if result['status'] == 'success':
+        #                 st.success(f"✅ Answer to: '{selected_question}'")
+        #                 st.markdown(result['answer'])
+        #             else:
+        #                 st.error(f"❌ Error processing query: '{selected_question}'")
+        #                 st.error(result['answer'])
                     
-                    # Add button to ask another question
-                    if st.button("Ask Another Question", key=f"ask_another_{device_mac}"):
-                        # Clear the current status
-                        del st.session_state[query_status_key]
-                        st.rerun()
+        #             # Add button to ask another question
+        #             if st.button("Ask Another Question", key=f"ask_another_{device_mac}"):
+        #                 # Clear the current status
+        #                 del st.session_state[query_status_key]
+        #                 st.rerun()
             
-            elif current_status.get('status') == 'completed':
-                # Show completed result
-                result = current_status['result']
-                if result['status'] == 'success':
-                    st.success(f"✅ Answer to: '{selected_question}'")
-                    st.markdown(result['answer'])
-                else:
-                    st.error(f"❌ Error processing query: '{selected_question}'")
-                    st.error(result['answer'])
+        #     elif current_status.get('status') == 'completed':
+        #         # Show completed result
+        #         result = current_status['result']
+        #         if result['status'] == 'success':
+        #             st.success(f"✅ Answer to: '{selected_question}'")
+        #             st.markdown(result['answer'])
+        #         else:
+        #             st.error(f"❌ Error processing query: '{selected_question}'")
+        #             st.error(result['answer'])
                 
-                # Add button to ask another question
-                if st.button("Ask Another Question", key=f"ask_another_{device_mac}"):
-                    # Clear the current status
-                    del st.session_state[query_status_key]
-                    st.rerun()
+        #         # Add button to ask another question
+        #         if st.button("Ask Another Question", key=f"ask_another_{device_mac}"):
+        #             # Clear the current status
+        #             del st.session_state[query_status_key]
+        #             st.rerun()
             
-            else:
-                # No query in progress, show button to start
-                col1, col2 = st.columns([2, 3])
+        #     else:
+        #         # No query in progress, show button to start
+        #         col1, col2 = st.columns([2, 3])
                 
-                with col1:
-                    if st.button("Get Answer", key=f"get_answer_{device_mac}", type="primary"):
-                        # Check if RAG service is available first
-                        if rag_iot.is_service_running():
-                            # Start async query
-                            request_id = start_rag_query(selected_question, device_mac)
-                            st.success(f"🚀 Query started! (ID: {request_id[:8]}...)")
-                            time.sleep(1)
-                            st.rerun()
-                        else:
-                            st.error("❌ RAG service is not running. Please start the service first.")
+        #         with col1:
+        #             if st.button("Get Answer", key=f"get_answer_{device_mac}", type="primary"):
+        #                 # Check if RAG service is available first
+        #                 if rag_iot.is_service_running():
+        #                     # Start async query
+        #                     request_id = start_rag_query(selected_question, device_mac)
+        #                     st.success(f"🚀 Query started! (ID: {request_id[:8]}...)")
+        #                     time.sleep(1)
+        #                     st.rerun()
+        #                 else:
+        #                     st.error("❌ RAG service is not running. Please start the service first.")
                 
-                with col2:
-                    # Show service status
-                    if rag_iot.is_service_running():
-                        st.success("🟢 RAG Service Online")
-                    else:
-                        st.error("🔴 RAG Service Offline")
+        #         with col2:
+        #             # Show service status
+        #             if rag_iot.is_service_running():
+        #                 st.success("🟢 RAG Service Online")
+        #             else:
+        #                 st.error("🔴 RAG Service Offline")
 
-        elif selected_question == "(Select a question)":
-            st.info("Please select a question to get an answer.")
+        # elif selected_question == "(Select a question)":
+        #     st.info("Please select a question to get an answer.")
             
-            # Show service status
-            col1, col2 = st.columns([1, 1])
-            with col1:
-                if rag_iot.is_service_running():
-                    st.success("🟢 RAG Service Online")
-                else:
-                    st.error("🔴 RAG Service Offline")
+        #     # Show service status
+        #     col1, col2 = st.columns([1, 1])
+        #     with col1:
+        #         if rag_iot.is_service_running():
+        #             st.success("🟢 RAG Service Online")
+        #         else:
+        #             st.error("🔴 RAG Service Offline")
             
-            with col2:
-                if st.button("Check Service", key=f"check_service_{device_mac}"):
-                    if rag_iot.is_service_running():
-                        try:
-                            client = rag_iot.RAGClient()
-                            status = client.get_status()
-                            if status.get('status') == 'success':
-                                service_info = status['system_status']
-                                st.info(f"✅ Service OK - {service_info.get('available_models', 0)}/{service_info.get('total_models', 0)} models ready")
-                            else:
-                                st.warning("⚠️ Service responding but may have issues")
-                        except Exception as e:
-                            st.error(f"❌ Service error: {str(e)}")
-                    else:
-                        st.error("❌ Service not responding")
+        #     with col2:
+        #         if st.button("Check Service", key=f"check_service_{device_mac}"):
+        #             if rag_iot.is_service_running():
+        #                 try:
+        #                     client = rag_iot.RAGClient()
+        #                     status = client.get_status()
+        #                     if status.get('status') == 'success':
+        #                         service_info = status['system_status']
+        #                         st.info(f"✅ Service OK - {service_info.get('available_models', 0)}/{service_info.get('total_models', 0)} models ready")
+        #                     else:
+        #                         st.warning("⚠️ Service responding but may have issues")
+        #                 except Exception as e:
+        #                     st.error(f"❌ Service error: {str(e)}")
+        #             else:
+        #                 st.error("❌ Service not responding")
 
     with right_col:
-        st.toggle(
-            label='Monitored',
-            value=is_inspected,
-            key=f"device_inspected_toggle_{device_dict['mac_address']}",
-            on_change=common.config_set,
-            args=(device_inspected_config_key, not is_inspected),
-        )
+        # Put toggles side by side in columns
+        toggle_col1, toggle_col2 = st.columns(2)
+        
+        with toggle_col1:
+            st.toggle(
+                label='Monitored',
+                value=is_inspected,
+                key=f"device_inspected_toggle_{device_dict['mac_address']}",
+                on_change=common.config_set,
+                args=(device_inspected_config_key, not is_inspected),
+            )
 
-        device_pinned_config_key = f'device_is_pinned_{device_dict["mac_address"]}'
-        device_is_pinned = common.config_get(device_pinned_config_key, False)
-        st.toggle(
-            label='Pinned to top',
-            value=device_is_pinned,
-            key=f"device_pinned_toggle_{device_dict['mac_address']}",
-            on_change=common.config_set,
-            args=(device_pinned_config_key, not device_is_pinned),
-        )
+        with toggle_col2:
+            device_pinned_config_key = f'device_is_pinned_{device_dict["mac_address"]}'
+            device_is_pinned = common.config_get(device_pinned_config_key, False)
+            st.toggle(
+                label='Pinned to top',
+                value=device_is_pinned,
+                key=f"device_pinned_toggle_{device_dict['mac_address']}",
+                on_change=common.config_set,
+                args=(device_pinned_config_key, not device_is_pinned),
+            )
 
-        c1, c2 = st.columns(2)
+        c1, c2 = st.columns(2) 
 
         # A button to show the device activities
         c1.link_button(
@@ -385,4 +390,14 @@ def show_device_card(device_dict):
                 # Exit rename mode after saving
                 st.session_state[rename_mode_key] = False
                 st.rerun()
+
+        # A button to open device chat interface
+        st.link_button(
+            label=':material/chat: Connect an AI Agent',
+            url=f"/connect_an_ai_agent?device_mac_address={device_dict['mac_address']}",
+            use_container_width=True,
+            disabled=not is_inspected,
+            help="Chat with AI about this device and control its settings"
+        )
+
 
