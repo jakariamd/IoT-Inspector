@@ -172,9 +172,9 @@ def main():
                 if message["role"] == "user" and "intent_info" in message:
                     intent_info = message["intent_info"]
                     if intent_info['intent'] == 'action':
-                        st.info(f"🎛️ Detected Action Request: {intent_info['action_type']}")
+                        st.info(f"🎛️ Received Action Request: {intent_info['action_type']}")
                     else:
-                        st.info(f"📚 Detected Information Query: Prompted RAG based LLM")
+                        st.info(f"📚 Received Information Query")
                 
                 # Add copy button for assistant responses - ADD UNIQUE KEYS
                 if message["role"] == "assistant" and len(message["content"]) > 50:
@@ -258,9 +258,9 @@ def handle_user_query(prompt: str, device_mac: str, device_context: dict):
         intent_analysis = llm_prompts.analyze_intent(prompt)
 
         if intent_analysis['intent'] == 'action':
-            st.info(f"🎛️ Detected Action Request: {intent_analysis['action_type']}")
+            st.info(f"🎛️ Received Action Request: {intent_analysis['action_type']}")
         else:
-            st.info(f"📚 Detected Information Query: Prompting RAG based LLM")
+            st.info(f"📚 Received Information Query")
     
         # Add user message with intent info
         st.session_state[chat_key].append({

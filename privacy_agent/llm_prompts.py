@@ -359,3 +359,111 @@ def analyze_intent(prompt: str) -> dict:
         'action_type': None,
         'original_prompt': prompt
     }
+
+
+def determine_query_type_llm(query: str) -> str:
+    """
+    Use LLM to determine if the query is about device activity or general information
+    
+    Args:
+        query: User's question
+        
+    Returns:
+        'device_activity' or 'general_information'
+    """
+    
+    llm_prompt = f"""
+    You are a query classification system for IoT device information requests. Analyze the user query and classify it as either "device_activity" or "general_information".
+
+    Classification Guidelines:
+
+    1. DEVICE_ACTIVITY: Queries about current/recent network behavior, communications, and real-time activities
+       - What endpoints the device communicates with
+       - Current network traffic and connections  
+       - Recent activity logs and behavior patterns
+       - Network communication history
+       - Data transmission patterns
+       - Current device status and operations
+       - Examples: "What is this device doing now?", "What websites does it connect to?", "Show me network activity", "What data is it sending?", "Who is it talking to?"
+
+    2. GENERAL_INFORMATION: Queries about device capabilities, privacy policies, features, and static information
+       - Device functions and capabilities
+       - Privacy policies and data sharing practices
+       - Security features and vulnerabilities
+       - Device specifications and features
+       - How the device works conceptually
+       - Manufacturer information
+       - Examples: "What can this device do?", "What are its privacy policies?", "How does it work?", "What data does it collect?", "Is it secure?"
+
+    Examples:
+
+    User: "What is this device currently communicating with?"
+    Response: device_activity
+
+    User: "Show me the network traffic for this device"
+    Response: device_activity
+
+    User: "What endpoints does this device connect to?"
+    Response: device_activity
+
+    User: "What activities is this device doing right now?"
+    Response: device_activity
+
+    User: "What can this smart TV do?"
+    Response: general_information
+
+    User: "What are the privacy policies for this device?"
+    Response: general_information
+
+    User: "How does this device work?"
+    Response: general_information
+
+    User: "Is this device secure?"
+    Response: general_information
+
+    User: "What data does this device typically collect?"
+    Response: general_information
+
+    User: "Tell me about this device's features"
+    Response: general_information
+
+    Now classify this query:
+    User: "{query}"
+
+    Respond with ONLY one word: either "device_activity" or "general_information"
+    """
+
+    payload = {
+        "model": MODEL_NAME,
+        "prompt": llm_prompt,
+        "stream": False
+    }
+    
+    try:
+        response = requests.post(LLM_API_URL, json=payload, timeout=10)
+        response_text = response.json().get("response", "").strip().lower()
+        
+        # Clean the response
+        response_text = response_text.replace('"', '').replace("'", "").strip()
+        
+        # Return the classification
+        if "device_activity" in response_text:
+            return "device_activity"
+        elif "general_information" in response_text:
+            return "general_information"
+        else:
+            # Default fallback based on simple keyword check
+            query_lower = query.lower()
+            activity_keywords = ['current', 'now', 'activity', 'communication', 'endpoint', 'traffic', 'connection']
+            if any(keyword in query_lower for keyword in activity_keywords):
+                return "device_activity"
+            return "general_information"
+    
+    except Exception as e:
+        print(f"LLM query classification failed: {e}")
+        # Fallback to keyword-based classification
+        query_lower = query.lower()
+        activity_keywords = ['current', 'now', 'activity', 'communication', 'endpoint', 'traffic', 'connection']
+        if any(keyword in query_lower for keyword in activity_keywords):
+            return "device_activity"
+        return "general_information"
