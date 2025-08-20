@@ -427,9 +427,8 @@ def execute_device_action_async(action_type: str, device_mac: str, context: dict
             result = block_device(device_mac, device_info)
             return {
                 'status': 'success',
-                'answer': f'✅ Successfully blocked {device_name} ({device_mac})\n\n'
-                         f'The device has been blocked from accessing the network. '
-                         f'You can unblock it later if needed.',
+                'answer': f'⚠️ Device blocking is not implemented yet for {device_name} ({device_mac}).\n\n'
+                         f'This feature will be added soon.',
                 'timestamp': datetime.now().isoformat(),
                 'action_performed': 'block_device'
             }
@@ -447,19 +446,7 @@ def execute_device_action_async(action_type: str, device_mac: str, context: dict
             
         elif action_type == 'scan':
             # TODO: Implement device scanning
-            result = scan_device(device_mac, device_info)
-            return {
-                'status': 'success',
-                'answer': f'🔍 Device scan initiated for {device_name} ({device_mac})\n\n'
-                         f'Scanning for:\n'
-                         f'• Open ports and services\n'
-                         f'• Security vulnerabilities\n'
-                         f'• Network behavior\n'
-                         f'• Device capabilities\n\n'
-                         f'Results will be available in the device activities section.',
-                'timestamp': datetime.now().isoformat(),
-                'action_performed': 'scan_device'
-            }
+            return query_device_activity(action_type, device_mac, context)
             
         elif action_type == 'restart':
             # TODO: Implement device restart
@@ -474,16 +461,11 @@ def execute_device_action_async(action_type: str, device_mac: str, context: dict
         elif action_type == 'configure':
             # TODO: Implement device configuration
             return {
-                'status': 'success',
-                'answer': f'⚙️ Configuration options for {device_name}:\n\n'
-                         f'Available actions:\n'
-                         f'• Block/Unblock device\n'
-                         f'• Monitor network activity\n'
-                         f'• Set device priorities\n'
-                         f'• Configure alerts\n\n'
-                         f'Please specify what you would like to configure.',
+                'status': 'error',
+                'answer': f'⚙️ Configuration is not supported yet for {device_name} ({device_mac}).\n\n'
+                         f'This feature will be available soon.',
                 'timestamp': datetime.now().isoformat(),
-                'action_performed': 'show_config_options'
+                'action_performed': 'configure_not_supported'
             }
             
         elif action_type == 'monitor':
@@ -492,10 +474,10 @@ def execute_device_action_async(action_type: str, device_mac: str, context: dict
             return {
                 'status': 'success',
                 'answer': f'📊 Monitoring enabled for {device_name} ({device_mac})\n\n'
-                         f'Now tracking:\n'
-                         f'• Network traffic patterns\n'
-                         f'• Connection attempts\n'
-                         f'• Data usage\n'
+                         f'Now tracking:\n\n'
+                         f'• Network traffic patterns\n\n'
+                         f'• Connection attempts\n\n'
+                         f'• Data usage\n\n'
                          f'• Suspicious activity\n\n'
                          f'View real-time data in the Device Activities section.',
                 'timestamp': datetime.now().isoformat(),
@@ -506,10 +488,10 @@ def execute_device_action_async(action_type: str, device_mac: str, context: dict
             return {
                 'status': 'error',
                 'answer': f'❌ Action "{action_type}" not supported yet\n\n'
-                         f'Available actions:\n'
-                         f'• Block/Unblock device\n'
-                         f'• Scan device\n'
-                         f'• Monitor device\n'
+                         f'Probable actions:\n\n'
+                         f'• Block/Unblock device\n\n'
+                         f'• Scan device\n\n'
+                         f'• Monitor device\n\n'
                          f'• Configure settings\n\n'
                          f'More actions coming soon!',
                 'timestamp': datetime.now().isoformat()

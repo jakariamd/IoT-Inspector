@@ -114,8 +114,8 @@ def main():
         st.header("🔧 Quick Actions")
         
         # Quick action buttons that use the new system - ADD UNIQUE KEYS
-        if st.button("🔍 Scan Device", use_container_width=True, key=f"sidebar_scan_{device_mac}"):
-            st.session_state[f"quick_query_{device_mac}"] = "Scan this device for security vulnerabilities"
+        if st.button("🔍 Show Activities", use_container_width=True, key=f"sidebar_scan_{device_mac}"):
+            st.session_state[f"quick_query_{device_mac}"] = "Show network activities for this device"
             st.rerun()
 
         if st.button("🚫 Block Device", use_container_width=True, key=f"sidebar_block_{device_mac}"):
@@ -123,7 +123,7 @@ def main():
             st.rerun()
 
         if st.button("📊 Enable Monitoring", use_container_width=True, key=f"sidebar_monitor_{device_mac}"):
-            st.session_state[f"quick_query_{device_mac}"] = "Enable enhanced monitoring for this device"
+            st.session_state[f"quick_query_{device_mac}"] = "Enable network monitoring for this device"
             st.rerun()
         
         # RAG Service Status
@@ -132,9 +132,9 @@ def main():
             st.success("🟢 RAG Online")
         else:
             st.error("🔴 RAG Offline")
-        
-        st.success("🟢 Actions Online")
-    
+
+        st.success("🟢 Monitoring Network")
+
     # Chat interface
     chat_container = st.container()
     
@@ -217,9 +217,9 @@ def main():
                 st.rerun()
         
         with col3:
-            if st.button("🔍 Security Scan", use_container_width=True, key=f"bottom_scan_{device_mac}"):
+            if st.button("🔍 Network Scan", use_container_width=True, key=f"bottom_scan_{device_mac}"):
                 st.session_state[processing_key] = True
-                st.session_state[f"quick_query_{device_mac}"] = f"Scan the {device_display_name} device for security vulnerabilities"
+                st.session_state[f"quick_query_{device_mac}"] = f"Scan network activities for this {device_display_name} device"
                 st.rerun()
         
         with col4:
