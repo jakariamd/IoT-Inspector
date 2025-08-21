@@ -145,14 +145,14 @@ def main():
             {
                 "role": "assistant",
                 "content": f"👋 Hello! I'm your AI agent for {device_display_name}.\n\n"
-                          f"**I can help you with:** \n "
-                          f"📚 **Information**: Ask questions about privacy, security, functionality\n"
+                          f"**I can help you with:** \n\n "
+                          f"📚 **Information**: Ask questions about privacy, security, functionality\n\n"
                           f"🎛️ **Actions**: Block/unblock, scan, monitor, configure the device\n\n"
-                          f"**Try saying:**\n"
-                          f"• \"What data does this device collect?\"\n"
-                          f"• \"Block this device from the network\"\n"
-                          f"• \"Is this device safe to use?\"\n"
-                          f"• \"Scan this device for vulnerabilities\"\n\n"
+                        #   f"**Try saying:**\n\n"
+                        #   f"• \"What data does this device collect?\"\n\n"
+                        #   f"• \"Block this device from the network\"\n\n"
+                        #   f"• \"Is this device safe to use?\"\n\n"
+                        #   f"• \"Scan this device for vulnerabilities\"\n\n"
                           f"What would you like to know or do?",
                 "timestamp": datetime.now().isoformat()
             }

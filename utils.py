@@ -6,6 +6,7 @@ import hashlib
 from datetime import datetime
 import streamlit as st
 import time
+from privacy_agent.llm_prompts import query_llm_fallback
 import privacy_agent.rag_iot_service as rag_iot
 from datetime import datetime
 
@@ -130,7 +131,7 @@ def determine_query_type(query: str) -> str:
         print(f"Failed to use LLM for query classification: {e}")
         # Fallback to keyword-based classification
         activity_keywords = [
-            'activity', 'activities', 'communication', 'communicate', 'communicates',
+            'turn on', 'turn off', 'activity', 'activities', 'communication', 'communicate', 'communicates',
             'endpoint', 'endpoints', 'connection', 'connections', 'traffic', 'network',
             'contact', 'contacts', 'talking to', 'connects to', 'communicating with',
             'sends data to', 'receives from', 'accessing', 'visited', 'requests',
@@ -242,11 +243,23 @@ def query_general_information(query: str, device_mac: str, context: dict) -> dic
         """
         
         if not rag_iot.is_service_running():
-            return {
-                'status': 'error',
-                'answer': '❌ RAG service is not running. Please start the service first.',
-                'timestamp': datetime.now().isoformat()
-            }
+            try:
+                llm_answer = query_llm_fallback(query, context)
+                return {
+                    'status': 'success',
+                    'answer': llm_answer,
+                    'timestamp': datetime.now().isoformat(),
+                    'query': query,
+                    'query_type': 'general_information',
+                    'source': 'llm_fallback',
+                    'note': '⚠️ RAG service unavailable - using general LLM knowledge'
+                }
+            except Exception as llm_error:
+                return {
+                    'status': 'error',
+                    'answer': f'❌ Error querying LLM fallback: {str(llm_error)}',
+                    'timestamp': datetime.now().isoformat()
+                }
         
         answer = rag_iot.query_rag_system(enhanced_query)
         return {
@@ -265,6 +278,51 @@ def query_general_information(query: str, device_mac: str, context: dict) -> dic
         }
 
 
+def get_device_events(device_mac: str, max_events: int = 20) -> list:
+    """
+    Get detected events for a specific device from the event detection queue
+    
+    Args:
+        device_mac: Device MAC address
+        max_events: Maximum number of events to return
+        
+    Returns:
+        List of (timestamp, event) tuples
+    """
+    try:
+        # Import the event detection global state
+        import sys
+        import os
+        sys.path.append(os.path.join(os.path.dirname(__file__), 'event_detection'))
+        
+        from event_detection import global_state
+        
+        device_events = []
+        
+        # Access the queue in a thread-safe manner
+        with global_state.global_state_lock:
+            # Check if this device has events in the filtered_event_queue dictionary
+            if device_mac in global_state.filtered_event_queue:
+                device_events = global_state.filtered_event_queue[device_mac].copy()
+                
+                # Optionally clear old events (keep only recent ones)
+                if len(device_events) > max_events * 2:
+                    # Keep only the most recent events and update the queue
+                    device_events.sort(key=lambda x: x[0], reverse=True)
+                    global_state.filtered_event_queue[device_mac] = device_events[:max_events * 2]
+                    device_events = device_events[:max_events]
+                else:
+                    device_events = device_events[:max_events]
+        
+        # Sort by timestamp (most recent first)
+        device_events.sort(key=lambda x: x[0], reverse=True)
+        return device_events
+        
+    except Exception as e:
+        print(f"Error getting device events: {e}")
+        return []
+
+
 def format_device_activity(device_name: str, device_mac: str, flows: list, endpoints: list, query: str) -> str:
     """
     Format device activity information into a readable response with table-like structure
@@ -279,7 +337,40 @@ def format_device_activity(device_name: str, device_mac: str, flows: list, endpo
     Returns:
         Formatted activity information string with dataframe-like tables
     """
+    from datetime import datetime
+    import time
+    
     activity_info = f"📊 **Device Activity Report for {device_name}** ({device_mac})\n\n"
+    
+    # Get detected events for this device
+    detected_events = get_device_events(device_mac)
+    
+    # Detected Events Section (NEW)
+    if detected_events:
+        activity_info += "🔍 **Detected Events:**\n\n"
+        activity_info += "| Timestamp | Event Description |\n"
+        activity_info += "|-----------|------------------|\n"
+        
+        for timestamp, event in detected_events[:10]:  # Show last 10 events
+            # Format timestamp
+            if isinstance(timestamp, (int, float)):
+                try:
+                    formatted_time = datetime.fromtimestamp(timestamp).strftime('%m-%d %H:%M:%S')
+                except:
+                    formatted_time = str(timestamp)[:10]
+            else:
+                formatted_time = str(timestamp)[:15] if timestamp else "N/A"
+            
+            # Truncate long event descriptions
+            event_desc = str(event)
+            if len(event_desc) > 40:
+                event_desc = event_desc[:37] + "..."
+            
+            activity_info += f"| {formatted_time:<13} | {event_desc:<40} |\n"
+        
+        activity_info += f"\n**📈 Events Summary:** {len(detected_events)} events detected\n\n"
+    else:
+        activity_info += "🔍 **Detected Events:** No recent events detected\n\n"
     
     # Remote endpoints section with table format
     if endpoints:
@@ -369,35 +460,75 @@ def format_device_activity(device_name: str, device_mac: str, flows: list, endpo
     else:
         activity_info += "🔄 **Recent Activity:** No recent network activity found\n\n"
     
-    # Device behavior analysis table
-    if endpoints or flows:
+    # Device behavior analysis table (UPDATED to include events)
+    if endpoints or flows or detected_events:
         activity_info += "📋 **Device Behavior Analysis:**\n\n"
         activity_info += "| Metric | Value | Status |\n"
         activity_info += "|--------|-------|--------|\n"
+        
+        recent_events_count = 0
+        if detected_events:
+            recent_events_count = len([e for e in detected_events if (time.time() - e[0]) < 3600])  # Last hour
+            activity_info += f"| Recent Events | {len(detected_events)} total | {'⚠️ Active' if recent_events_count > 3 else '✅ Normal'} |\n"
+            
+            # Show latest event info
+            if detected_events:
+                latest_event_time = detected_events[0][0]
+                latest_event = detected_events[0][1]
+                try:
+                    latest_time_str = datetime.fromtimestamp(latest_event_time).strftime('%H:%M:%S')
+                    time_ago = int(time.time() - latest_event_time)
+                    
+                    if time_ago < 60:
+                        status = "🔥 Just now"
+                    elif time_ago < 300:
+                        status = f"🟡 {time_ago//60}m ago"
+                    else:
+                        status = "📝 Logged"
+                        
+                    activity_info += f"| Latest Event | {latest_event[:15]}... | {status} |\n"
+                except:
+                    activity_info += f"| Latest Event | {str(latest_event)[:15]}... | 📝 Logged |\n"
         
         if endpoints:
             most_contacted = endpoints[0][0] if endpoints[0][0] else endpoints[0][1]
             contact_frequency = endpoints[0][2]
             activity_info += f"| Most Contacted | {most_contacted[:20]}... | {contact_frequency} times |\n"
-            activity_info += f"| Total Endpoints | {len(endpoints)} unique | {'Normal' if len(endpoints) < 20 else 'High'} |\n"
+            activity_info += f"| Total Endpoints | {len(endpoints)} unique | {'⚠️ High' if len(endpoints) > 20 else '✅ Normal'} |\n"
         
         if flows:
-            activity_info += f"| Recent Flows | {len(flows)} flows | {'Active' if len(flows) > 10 else 'Low Activity'} |\n"
+            activity_info += f"| Recent Flows | {len(flows)} flows | {'⚠️ Active' if len(flows) > 30 else '✅ Normal'} |\n"
             
-            # Determine activity level
-            if len(flows) > 30:
+            # Determine overall activity level
+            activity_score = 0
+            if len(flows) > 30: activity_score += 2
+            elif len(flows) > 15: activity_score += 1
+            
+            if len(detected_events) > 5: activity_score += 2
+            elif len(detected_events) > 2: activity_score += 1
+            
+            if recent_events_count > 3: activity_score += 1
+            
+            if activity_score >= 4:
                 activity_level = "High Activity"
-            elif len(flows) > 10:
-                activity_level = "Moderate Activity"
+                status = "⚠️ Monitor"
+            elif activity_score >= 2:
+                activity_level = "Moderate Activity"  
+                status = "🟡 Watch"
             else:
                 activity_level = "Low Activity"
+                status = "✅ Normal"
                 
-            activity_info += f"| Activity Level | {activity_level} | {'⚠️ Monitor' if 'High' in activity_level else '✅ Normal'} |\n"
+            activity_info += f"| Activity Level | {activity_level} | {status} |\n"
         
         activity_info += "\n"
     
-    activity_info += "💡 *This data is based on network traffic analysis from your local network monitoring.*\n"
-    activity_info += "📝 *Table shows most recent/frequent connections. Full logs available in Device Details.*"
+    activity_info += "💡 *This data combines network traffic analysis and ML-based event detection.*\n"
+    activity_info += "📝 *Events are detected using machine learning models trained on device behavior patterns.*\n"
+    
+    # Add timestamp for when this report was generated
+    report_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    activity_info += f"🕐 *Report generated at: {report_time}*"
     
     return activity_info
 
@@ -433,8 +564,8 @@ def execute_device_action_async(action_type: str, device_mac: str, context: dict
             result = unblock_device(device_mac, device_info)
             return {
                 'status': 'success',
-                'answer': f'✅ Successfully unblocked {device_name} ({device_mac})\n\n'
-                         f'The device now has access to the network.',
+                'answer': f'⚠️ Device/network unblocking is not implemented yet for {device_name} ({device_mac}).\n\n'
+                         f'This feature will be added soon.',
                 'timestamp': datetime.now().isoformat(),
                 'action_performed': 'unblock_device'
             }
@@ -468,13 +599,8 @@ def execute_device_action_async(action_type: str, device_mac: str, context: dict
             result = enable_monitoring(device_mac, device_info)
             return {
                 'status': 'success',
-                'answer': f'📊 Monitoring enabled for {device_name} ({device_mac})\n\n'
-                         f'Now tracking:\n\n'
-                         f'• Network traffic patterns\n\n'
-                         f'• Connection attempts\n\n'
-                         f'• Data usage\n\n'
-                         f'• Suspicious activity\n\n'
-                         f'View real-time data in the Device Activities section.',
+                'answer': f'⚠️ Device/network monitoring is not implemented yet for {device_name} ({device_mac}).\n\n'
+                         f'This feature will be added soon.',
                 'timestamp': datetime.now().isoformat(),
                 'action_performed': 'enable_monitoring'
             }

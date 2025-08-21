@@ -5,7 +5,6 @@ import sys
 import os
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import utils
 
 # Optional: use Hugging Face API or local model like ollama
 # Ollama default endpoint= "http://localhost:11434/api/generate"  # Ollama default endpoint
@@ -124,7 +123,7 @@ def generate_device_description(hostname, vendor, oui, metadata=None):
     except Exception as e:
         return f"LLM error: {str(e)}"
 
-
+        
 @functools.lru_cache(maxsize=256)
 def device_privacy_information_agent(device_description):
     """
@@ -384,6 +383,7 @@ def determine_query_type_llm(query: str) -> str:
        - Network communication history
        - Data transmission patterns
        - Current device status and operations
+       - Turn on/off commands, settings, and configurations
        - Examples: "What is this device doing now?", "What websites does it connect to?", "Show me network activity", "What data is it sending?", "Who is it talking to?"
 
     2. GENERAL_INFORMATION: Queries about device capabilities, privacy policies, features, and static information
@@ -427,6 +427,9 @@ def determine_query_type_llm(query: str) -> str:
     User: "Tell me about this device's features"
     Response: general_information
 
+    User: "Turn on guest mode for this device"
+    Response: device_activity
+
     Now classify this query:
     User: "{query}"
 
@@ -467,3 +470,81 @@ def determine_query_type_llm(query: str) -> str:
         if any(keyword in query_lower for keyword in activity_keywords):
             return "device_activity"
         return "general_information"
+    
+
+
+
+
+def query_llm_fallback(query: str, context: dict) -> str:
+    """
+    Fallback function to query LLM directly when RAG service is not available
+    
+    Args:
+        query: User's question
+        context: Device context information
+        
+    Returns:
+        LLM response as formatted string
+    """
+    try:
+        # Extract device information from context
+        device_info = context.get('device_info', {})
+        device_name = device_info.get('device_name', 'Unknown Device')
+        # Create comprehensive prompt for LLM
+        llm_prompt = f"""
+You are an IoT device expert and privacy consultant. Answer the user's question about this specific IoT device using your knowledge of common IoT devices, privacy practices, and smart home technology.
+
+Device Information:
+- Device Name: {device_name}
+- {device_info}
+
+User Question: {query}
+
+Please provide a comprehensive answer that includes:
+1. Direct answer to the user's question
+
+Format your response in a clear, informative manner. If you're not certain about specific details for this exact device model, mention general information for similar devices from this vendor.
+
+Note: This response is based on general knowledge since the specialized device database is currently unavailable.
+"""
+        # payload = {
+        #     "model": MODEL_NAME,
+        #     "prompt": llm_prompt,
+        #     "stream": False
+        # }
+        # try:
+        #     response = requests.post(LLM_API_URL, json=payload)
+        #     return response.json().get("response", "No response").strip()
+        # except Exception as e:
+        #     return f"LLM error: {str(e)}"
+    
+        payload = {
+            "model": MODEL_NAME,
+            "prompt": llm_prompt,
+            "stream": False,
+            "options": {
+                "temperature": 0.3,
+                "top_p": 0.9,
+                "num_predict": 800
+            }
+        }
+        
+        response = requests.post(LLM_API_URL, json=payload, timeout=120)
+        
+        if response.status_code == 200:
+            llm_response = response.json().get("response", "").strip()
+            
+            if llm_response:
+                # Add a header indicating this is from general LLM knowledge
+                formatted_response = f"🤖 **General AI Knowledge Response** (RAG Database Unavailable)\n\n{llm_response}\n\n"
+                formatted_response += f"💡 *Note: This response is based on general knowledge about {device_name} devices. "
+                formatted_response += "For the most accurate device-specific information, please ensure the RAG service is running.*"
+                
+                return formatted_response
+            else:
+                return f"❌ **LLM Response Error**: No response received for query: {query}"
+        else:
+            return f"❌ **LLM API Error**: {response.status_code} - {response.text}"
+
+    except requests.exceptions.ConnectionError:
+        return f"❌ **LLM Service Unavailable**"
