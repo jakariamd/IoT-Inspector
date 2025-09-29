@@ -499,10 +499,12 @@ def process_burst(pkt):
         # Check for retransmission
         if process_retransmission(pkt):
             _ws_expert = "re-transmission"   
+            return 
     # Check for duplicate UDP packets
     elif protocol == 'UDP':
         if is_duplicate_udp(pkt):
-            _ws_expert = "duplicate packet"            
+            _ws_expert = "duplicate packet"     
+            return        
 
     # Get MAC, IP addresses, port numbers 
     src_mac_addr = pkt[sc.Ether].src
